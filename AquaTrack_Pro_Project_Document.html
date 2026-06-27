@@ -1,0 +1,2215 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>وثيقة مشروع AquaTrack Pro — منصة تتبع السباحين الناشئين</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  :root {
+    --primary: #0A3D62;
+    --primary-light: #1A5276;
+    --accent: #00B4D8;
+    --accent-light: #90E0EF;
+    --surface: #F8FAFB;
+    --white: #FFFFFF;
+    --text-primary: #0D1B2A;
+    --text-secondary: #4A5568;
+    --text-muted: #718096;
+    --border: #E2E8F0;
+    --success: #0D9488;
+    --warning: #D97706;
+    --danger: #DC2626;
+    --info: #2563EB;
+    --gradient-hero: linear-gradient(135deg, #0A3D62 0%, #0C5A8A 40%, #00B4D8 100%);
+    --shadow-card: 0 4px 24px rgba(0,0,0,0.06), 0 1px 4px rgba(0,0,0,0.04);
+    --shadow-elevated: 0 8px 40px rgba(0,0,0,0.12);
+    --radius: 12px;
+    --radius-sm: 8px;
+    --radius-lg: 16px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Cairo', sans-serif;
+    background: var(--surface);
+    color: var(--text-primary);
+    line-height: 1.8;
+    font-size: 15px;
+  }
+
+  /* ===== SIDEBAR ===== */
+  .sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 280px;
+    height: 100vh;
+    background: var(--primary);
+    overflow-y: auto;
+    z-index: 100;
+    padding: 0 0 40px 0;
+  }
+
+  .sidebar-logo {
+    padding: 28px 24px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    margin-bottom: 12px;
+  }
+
+  .sidebar-logo .app-name {
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--accent-light);
+    letter-spacing: -0.5px;
+  }
+
+  .sidebar-logo .app-sub {
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
+    font-weight: 400;
+    margin-top: 3px;
+  }
+
+  .nav-section-title {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: rgba(255,255,255,0.35);
+    padding: 16px 24px 6px;
+    text-transform: uppercase;
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 24px;
+    color: rgba(255,255,255,0.7);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.2s;
+    border-right: 3px solid transparent;
+    text-decoration: none;
+  }
+
+  .nav-item:hover, .nav-item.active {
+    background: rgba(255,255,255,0.08);
+    color: #fff;
+    border-right-color: var(--accent);
+  }
+
+  .nav-num {
+    font-size: 10px;
+    background: rgba(255,255,255,0.12);
+    color: var(--accent-light);
+    padding: 2px 7px;
+    border-radius: 20px;
+    font-weight: 700;
+  }
+
+  /* ===== MAIN CONTENT ===== */
+  .main {
+    margin-right: 280px;
+    min-height: 100vh;
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    background: var(--gradient-hero);
+    padding: 80px 64px 60px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '🏊';
+    position: absolute;
+    font-size: 200px;
+    left: -20px;
+    top: -30px;
+    opacity: 0.06;
+    filter: grayscale(1);
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.08);
+    bottom: -200px;
+    left: 60%;
+  }
+
+  .doc-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: var(--accent-light);
+    padding: 6px 16px;
+    border-radius: 24px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    letter-spacing: -1px;
+  }
+
+  .hero h1 span { color: var(--accent-light); }
+
+  .hero p {
+    font-size: 16px;
+    color: rgba(255,255,255,0.75);
+    max-width: 600px;
+    margin-bottom: 36px;
+    font-weight: 400;
+  }
+
+  .hero-meta {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+
+  .meta-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .meta-label {
+    font-size: 10px;
+    color: rgba(255,255,255,0.4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+
+  .meta-value {
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.9);
+    margin-top: 2px;
+  }
+
+  /* ===== PAGE SECTIONS ===== */
+  .section {
+    padding: 64px;
+    border-bottom: 1px solid var(--border);
+    scroll-margin-top: 80px;
+  }
+
+  .section:last-child { border-bottom: none; }
+
+  .section-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .section-icon {
+    width: 52px;
+    height: 52px;
+    background: var(--primary);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+  }
+
+  .section-title-block h2 {
+    font-size: 26px;
+    font-weight: 900;
+    color: var(--primary);
+    letter-spacing: -0.5px;
+  }
+
+  .section-title-block p {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-top: 4px;
+    font-weight: 400;
+  }
+
+  .section-num {
+    font-size: 11px;
+    background: var(--accent);
+    color: white;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+
+  /* ===== CARDS & GRIDS ===== */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-bottom: 32px;
+  }
+
+  .card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+    padding: 24px;
+    box-shadow: var(--shadow-card);
+    transition: box-shadow 0.2s;
+  }
+
+  .card:hover { box-shadow: var(--shadow-elevated); }
+
+  .card-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+
+  .card-icon.blue { background: #EFF6FF; }
+  .card-icon.teal { background: #F0FDFA; }
+  .card-icon.amber { background: #FFFBEB; }
+  .card-icon.red { background: #FEF2F2; }
+  .card-icon.purple { background: #F5F3FF; }
+  .card-icon.green { background: #F0FDF4; }
+  .card-icon.ocean { background: #E0F7FA; }
+
+  .card h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 8px;
+  }
+
+  .card p {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+  }
+
+  /* ===== REQUIREMENTS TABLE ===== */
+  .req-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+    margin-bottom: 32px;
+    font-size: 13px;
+  }
+
+  .req-table th {
+    background: var(--primary);
+    color: rgba(255,255,255,0.9);
+    padding: 14px 20px;
+    text-align: right;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    border-bottom: 2px solid var(--accent);
+  }
+
+  .req-table td {
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+
+  .req-table tr:last-child td { border-bottom: none; }
+  .req-table tr:hover td { background: #F8FBFF; }
+
+  /* ===== BADGES ===== */
+  .badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+
+  .badge-high { background: #FEE2E2; color: #991B1B; }
+  .badge-med { background: #FEF3C7; color: #92400E; }
+  .badge-low { background: #DCFCE7; color: #166534; }
+  .badge-blue { background: #DBEAFE; color: #1E40AF; }
+  .badge-purple { background: #EDE9FE; color: #5B21B6; }
+  .badge-teal { background: #CCFBF1; color: #115E59; }
+
+  /* ===== USER STORIES ===== */
+  .story-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-right: 4px solid var(--accent);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    margin-bottom: 14px;
+    box-shadow: var(--shadow-card);
+  }
+
+  .story-card .story-id {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 6px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .story-card .story-text {
+    font-size: 14px;
+    color: var(--text-primary);
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  .story-card .story-criteria {
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  /* ===== ARCHITECTURE ===== */
+  .arch-layer {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    margin-bottom: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+  }
+
+  .arch-layer-header {
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+  }
+
+  .arch-layer-header.presentation { background: linear-gradient(135deg, #0A3D62, #1A5276); color: white; }
+  .arch-layer-header.business { background: linear-gradient(135deg, #0C5A8A, #0A7EA4); color: white; }
+  .arch-layer-header.data { background: linear-gradient(135deg, #00B4D8, #0096C7); color: white; }
+  .arch-layer-header.infrastructure { background: linear-gradient(135deg, #023E8A, #03045E); color: white; }
+
+  .arch-layer-title { font-size: 15px; font-weight: 700; }
+  .arch-layer-body {
+    padding: 20px 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+  }
+
+  .arch-component {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 12px 16px;
+    text-align: center;
+  }
+
+  .arch-component .comp-icon { font-size: 22px; margin-bottom: 6px; }
+  .arch-component .comp-name { font-size: 12px; font-weight: 600; color: var(--primary); }
+  .arch-component .comp-desc { font-size: 11px; color: var(--text-muted); margin-top: 3px; }
+
+  /* ===== DB COLLECTIONS ===== */
+  .collection-block {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+  }
+
+  .collection-header {
+    padding: 16px 24px;
+    background: linear-gradient(135deg, #0A3D62, #0C5A8A);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .collection-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .collection-desc {
+    font-size: 12px;
+    color: rgba(255,255,255,0.65);
+    margin-top: 2px;
+  }
+
+  .field-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12.5px;
+  }
+
+  .field-table th {
+    background: #F1F5F9;
+    padding: 10px 20px;
+    text-align: right;
+    font-weight: 600;
+    color: var(--text-secondary);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .field-table td {
+    padding: 10px 20px;
+    border-bottom: 1px solid #F1F5F9;
+    vertical-align: top;
+  }
+
+  .field-table tr:last-child td { border-bottom: none; }
+
+  .field-name {
+    font-family: 'JetBrains Mono', monospace;
+    color: #C2410C;
+    font-weight: 500;
+  }
+
+  .field-type {
+    color: #1E40AF;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+  }
+
+  .field-desc { color: var(--text-secondary); }
+
+  /* ===== SCREENS ===== */
+  .screen-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    margin-bottom: 24px;
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+  }
+
+  .screen-header {
+    padding: 18px 24px;
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .screen-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+  }
+
+  .screen-body {
+    padding: 24px;
+  }
+
+  .screen-section-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .screen-section-title:first-child { margin-top: 0; }
+
+  .screen-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+
+  .screen-tag {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  .screen-tag.primary { background: #EFF6FF; border-color: #BFDBFE; color: #1E40AF; }
+  .screen-tag.action { background: #F0FDF4; border-color: #BBF7D0; color: #166534; }
+  .screen-tag.warning { background: #FFFBEB; border-color: #FDE68A; color: #92400E; }
+
+  /* ===== MVP ===== */
+  .mvp-phase {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+  }
+
+  .phase-header {
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .phase-header.phase1 { background: linear-gradient(135deg, #0A3D62, #1A5276); }
+  .phase-header.phase2 { background: linear-gradient(135deg, #065F46, #0D9488); }
+  .phase-header.phase3 { background: linear-gradient(135deg, #92400E, #D97706); }
+  .phase-header.phase4 { background: linear-gradient(135deg, #4C1D95, #7C3AED); }
+
+  .phase-number {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 900;
+    color: white;
+  }
+
+  .phase-title { font-size: 15px; font-weight: 700; color: white; }
+  .phase-duration { font-size: 12px; color: rgba(255,255,255,0.65); margin-top: 2px; }
+
+  .phase-body { padding: 20px 24px; }
+
+  .feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 13.5px;
+    color: var(--text-secondary);
+  }
+
+  .feature-item::before {
+    content: '◆';
+    color: var(--accent);
+    font-size: 8px;
+    margin-top: 6px;
+    flex-shrink: 0;
+  }
+
+  /* ===== RAG SYSTEM ===== */
+  .rag-step {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 28px;
+    position: relative;
+  }
+
+  .rag-step::after {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 52px;
+    bottom: -8px;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--accent), transparent);
+  }
+
+  .rag-step:last-child::after { display: none; }
+
+  .rag-num {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: var(--accent-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 900;
+    flex-shrink: 0;
+    border: 3px solid var(--accent);
+  }
+
+  .rag-content { flex: 1; }
+  .rag-title { font-size: 16px; font-weight: 700; color: var(--primary); margin-bottom: 6px; }
+  .rag-desc { font-size: 13.5px; color: var(--text-secondary); line-height: 1.7; }
+
+  /* ===== RISK TABLE ===== */
+  .risk-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    box-shadow: var(--shadow-card);
+  }
+
+  .risk-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+
+  .risk-icon.critical { background: #FEF2F2; }
+  .risk-icon.high { background: #FFF7ED; }
+  .risk-icon.med { background: #FFFBEB; }
+
+  .risk-body .risk-title { font-size: 14px; font-weight: 700; color: var(--primary); margin-bottom: 4px; }
+  .risk-body .risk-desc { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+  .risk-body .risk-mitigation {
+    font-size: 12px;
+    color: var(--success);
+    background: #F0FDF4;
+    border: 1px solid #BBF7D0;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: 500;
+  }
+
+  /* ===== ROADMAP ===== */
+  .roadmap-row {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 16px;
+    margin-bottom: 8px;
+    align-items: start;
+  }
+
+  .roadmap-month {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent);
+    padding-top: 12px;
+    text-align: left;
+  }
+
+  .roadmap-bar {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 12px 16px;
+    box-shadow: var(--shadow-card);
+  }
+
+  .roadmap-bar h4 { font-size: 13px; font-weight: 700; color: var(--primary); margin-bottom: 4px; }
+  .roadmap-bar p { font-size: 12px; color: var(--text-muted); }
+
+  /* ===== CODE BLOCK ===== */
+  .code-block {
+    background: #0D1117;
+    border-radius: var(--radius);
+    padding: 24px;
+    overflow-x: auto;
+    margin: 16px 0;
+    border: 1px solid #21262D;
+    direction: ltr;
+  }
+
+  .code-block code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: #E6EDF3;
+    line-height: 1.8;
+    white-space: pre;
+  }
+
+  .code-keyword { color: #FF7B72; }
+  .code-string { color: #A5D6FF; }
+  .code-comment { color: #8B949E; }
+  .code-type { color: #79C0FF; }
+  .code-value { color: #FFA657; }
+
+  /* ===== FOOTER ===== */
+  .doc-footer {
+    background: var(--primary);
+    padding: 40px 64px;
+    color: rgba(255,255,255,0.6);
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: gap;
+    gap: 20px;
+  }
+
+  .doc-footer strong { color: var(--accent-light); }
+
+  /* ===== DIVIDER ===== */
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    margin: 32px 0;
+    opacity: 0.3;
+  }
+
+  /* ===== HIGHLIGHT BOX ===== */
+  .highlight-box {
+    background: linear-gradient(135deg, #E0F7FA, #B3E5FC);
+    border: 1px solid #81D4FA;
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    margin: 20px 0;
+  }
+
+  .highlight-box.warning {
+    background: linear-gradient(135deg, #FFFDE7, #FFF9C4);
+    border-color: #FFC107;
+  }
+
+  .highlight-box.danger {
+    background: linear-gradient(135deg, #FFEBEE, #FFCDD2);
+    border-color: #EF5350;
+  }
+
+  .highlight-box h4 { font-size: 14px; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+  .highlight-box p { font-size: 13px; color: var(--text-secondary); }
+
+  /* ===== SCROLLBAR ===== */
+  .sidebar::-webkit-scrollbar { width: 4px; }
+  .sidebar::-webkit-scrollbar-track { background: transparent; }
+  .sidebar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 2px; }
+
+  /* ===== RESPONSIVE ===== */
+  @media(max-width: 900px) {
+    .sidebar { display: none; }
+    .main { margin-right: 0; }
+    .section { padding: 32px 24px; }
+    .hero { padding: 40px 24px; }
+    .hero h1 { font-size: 28px; }
+  }
+
+  .print-only { display: none; }
+</style>
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<nav class="sidebar">
+  <div class="sidebar-logo">
+    <div class="app-name">🏊 AquaTrack Pro</div>
+    <div class="app-sub">وثيقة المشروع الشاملة</div>
+  </div>
+
+  <div class="nav-section-title">المشروع</div>
+  <a class="nav-item active" href="#overview">📋 نظرة عامة <span class="nav-num">S1</span></a>
+  <a class="nav-item" href="#functional">⚙️ المتطلبات الوظيفية <span class="nav-num">S2</span></a>
+  <a class="nav-item" href="#nonfunctional">🔒 المتطلبات غير الوظيفية <span class="nav-num">S3</span></a>
+  <a class="nav-item" href="#stories">👤 قصص المستخدم <span class="nav-num">S4</span></a>
+
+  <div class="nav-section-title">التصميم التقني</div>
+  <a class="nav-item" href="#architecture">🏗️ معمارية النظام <span class="nav-num">S5</span></a>
+  <a class="nav-item" href="#database">🗄️ قاعدة البيانات (ERD) <span class="nav-num">S6</span></a>
+  <a class="nav-item" href="#screens">📱 تصميم الشاشات <span class="nav-num">S7</span></a>
+
+  <div class="nav-section-title">الذكاء الاصطناعي</div>
+  <a class="nav-item" href="#rag">🧠 نظام RAG <span class="nav-num">S8</span></a>
+  <a class="nav-item" href="#knowledge">📚 قاعدة المعرفة <span class="nav-num">S9</span></a>
+
+  <div class="nav-section-title">التسليم</div>
+  <a class="nav-item" href="#mvp">🚀 نطاق MVP <span class="nav-num">S10</span></a>
+  <a class="nav-item" href="#future">🔮 النطاق المستقبلي <span class="nav-num">S11</span></a>
+  <a class="nav-item" href="#risks">⚠️ المخاطر وخطة 12 شهراً <span class="nav-num">S12</span></a>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main class="main">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="doc-badge">📄 وثيقة مشروع رسمية — نسخة 1.0</div>
+    <h1>منصة <span>AquaTrack Pro</span><br>لتتبع السباحين الناشئين</h1>
+    <p>منصة ذكية متكاملة لمتابعة الرياضيين الناشئين في السباحة، مدعومة بالذكاء الاصطناعي والمراجع العلمية، موجهة لأولياء الأمور والمدربين.</p>
+    <div class="hero-meta">
+      <div class="meta-item">
+        <span class="meta-label">نوع المشروع</span>
+        <span class="meta-value">Mobile App (Flutter)</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">المنصة</span>
+        <span class="meta-value">iOS & Android</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Backend</span>
+        <span class="meta-value">Firebase + Node.js</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">الذكاء الاصطناعي</span>
+        <span class="meta-value">RAG + Claude API</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">مدة MVP</span>
+        <span class="meta-value">6 أشهر</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">تاريخ الوثيقة</span>
+        <span class="meta-value">يونيو 2026</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- S1: PROJECT OVERVIEW -->
+  <section class="section" id="overview">
+    <div class="section-header">
+      <div class="section-icon">📋</div>
+      <div class="section-title-block">
+        <div class="section-num">القسم 1</div>
+        <h2>تحليل المشروع الشامل</h2>
+        <p>الرؤية، الأهداف، المستخدمون المستهدفون، وفرصة السوق</p>
+      </div>
+    </div>
+
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon ocean">🎯</div>
+        <h3>رؤية المشروع</h3>
+        <p>بناء منصة رقمية شاملة تمكّن أولياء أمور السباحين الناشئين من متابعة أداء أبنائهم بدقة علمية، والكشف المبكر عن الإجهاد الرياضي والحمل التدريبي الزائد باستخدام الذكاء الاصطناعي.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon blue">🏊</div>
+        <h3>المشكلة المُحلّة</h3>
+        <p>غياب أداة متخصصة بالسباحة تجمع بين متابعة بيانات الصحة (نوم، نبض، تغذية) وتحليلها علمياً مع إمكانية الكشف الاستباقي عن مؤشرات الإرهاق والإصابة.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon teal">👨‍👩‍👧</div>
+        <h3>المستخدم الأساسي</h3>
+        <p>ولي الأمر (18-55 سنة) الذي يمتلك طفلاً رياضياً سابحاً ناشئاً. يريد متابعة سهلة لا تتطلب خبرة تقنية، مع تقارير واضحة ونصائح علمية موثوقة.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon purple">🧪</div>
+        <h3>الميزة التنافسية</h3>
+        <p>مساعد ذكاء اصطناعي يعتمد على مراجع علمية متخصصة (RAG) يحلل بيانات المتدرب الفعلية ويقدم توصيات مخصصة مع ذكر المصدر العلمي لكل توصية.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon amber">💰</div>
+        <h3>نموذج الإيرادات</h3>
+        <p>اشتراك شهري/سنوي. الباقة الأساسية مجانية (متدرب واحد). الباقة الاحترافية للعائلات المتعددة مع تقارير متقدمة وتحليلات ذكاء اصطناعي غير محدودة.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon green">📈</div>
+        <h3>حجم السوق المستهدف</h3>
+        <p>أكثر من 10 مليون سباح ناشئ في المنطقة العربية. سوق تطبيقات الصحة الرياضية للأطفال ينمو بمعدل 18% سنوياً مع شُح الحلول العربية المتخصصة.</p>
+      </div>
+    </div>
+
+    <div class="highlight-box">
+      <h4>🔑 الافتراضات الأساسية للمشروع</h4>
+      <p>يفترض هذا التحليل أن المستخدمين لديهم هاتف ذكي (iOS/Android)، وأن المتدرب يتراوح عمره بين 6-18 سنة، وأن ولي الأمر سيُدخل البيانات يدوياً (مع إمكانية التكامل مع أجهزة الاستشعار مستقبلاً). Firebase يُستخدم كـ Backend أساسي لتبسيط التطوير في المراحل الأولى.</p>
+    </div>
+  </section>
+
+  <!-- S2: FUNCTIONAL REQUIREMENTS -->
+  <section class="section" id="functional">
+    <div class="section-header">
+      <div class="section-icon">⚙️</div>
+      <div class="section-title-block">
+        <div class="section-num">القسم 2</div>
+        <h2>المتطلبات الوظيفية</h2>
+        <p>Functional Requirements — ما يجب أن يفعله النظام</p>
+      </div>
+    </div>
+
+    <table class="req-table">
+      <thead>
+        <tr>
+          <th>الكود</th>
+          <th>المتطلب</th>
+          <th>الوصف</th>
+          <th>الأولوية</th>
+          <th>النطاق</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="field-name">FR-001</span></td>
+          <td><strong>إدارة الحسابات</strong></td>
+          <td>تسجيل دخول/خروج، إنشاء حساب ولي أمر، إضافة/حذف متدربين متعددين، تعديل الملفات الشخصية، إدارة الأدوار (ولي أمر / مدرب)</td>
+          <td><span class="badge badge-high">Critical</span></td>
+          <td><span class="badge badge-blue">MVP</span></td>
+        </tr>
+        <tr>
+          <td><span class="field-name">FR-002</span></td>
+          <td><strong>متابعة النوم</strong></td>
+          <td>تسجيل ساعات النوم اليومية ونوعيتها، تحديد أوقات النوم والاستيقاظ، رصد اتساق النوم عبر الأسبوع، إنذار عند قصور النوم حسب معايير العمر</td>
+          <td><span class="badge badge-high">Critical</span></td>
+          <td><span class="badge badge-blue">MVP</span></td>
+        </tr>
+        <tr>
+          <td><span class="field-name">FR-003</span></td>
+          <td><strong>متابعة نبض الراحة</strong></td>
+          <td>تسجيل نبض الراحة الصباحي، رسم منحنى اتجاه النبض، الكشف عن ارتفاع غير طبيعي مؤشر للتعب، مقارنة مع القيم المرجعية حسب السن</td>
+          <td><span class="badge badge-high">Critical</span></td>
+          <td><span class="badge badge-blue">MVP</span></td>
+        </tr>
+        <tr>
+          <td><span class="field-name">FR-004</span></td>
+          <td><strong>متابعة التغذية</strong></td>
+          <td>تسجيل الوجبات اليومية بالمجموعات الغذائية، تتبع السوائل، حساب تقريبي للسعرات، التحقق من كفاية البروتين ليوم التدريب، إنذار سوء التغذية</td>
+          <td><span class="badge badge-high">Critical</span></td>
+          <td><span class="badge badge-blue">MVP</span></td>
+        </tr>
+        <tr>
+          <td><span class="field-name">FR-005</span></td>
+          <td><strong>متابعة التدريب</strong></td>
+          <td>تسجيل جلسات التدريب (نوع، مدة، شدة، حجم), تقييم ذاتي للجهد (RPE 1-10)، رصد حجم التدريب الأسبوعي، تتبع التقدم في السباحة</td>
+          <td><span class="badge badge-high">Critical</span></td>
+          <td><span class="badge badge-blue">MVP</span></td>
+        </tr>
+        <tr>
+          <td><span class="field-name">FR-006</span></td>
+          <td><strong>متابعة الإصابات</strong></td>
+          <td>تسجيل الإصابات بنوعها وموقعها وتاريخها، متابعة مسار الشفاء، ربط الإصابة بالحمل التدريبي السابق، تتبع العودة للتدريب</td>
+          <td><span class="badge badge-med">High</span></td>
+          <td><span class="badge badge-blue">MVP</span></td>
+        </tr>
+        <tr>
+          <td><span class="field-name">FR-007</span></td>
+          <td><strong>كشف الإجهاد الرياضي</strong></td>
+          <td>خوارزمية تحلل (نوم + نبض + RPE + حجم تدريب) لحساب نقاط الإجهاد، تنبيه استباقي، توصيات الاستشفاء، مقياس wellness صباحي</td>
+          <td><span class="badge badge-high">Critical</span></td>
+          <td><span class="badge badge-blue">MVP</span></td>
+        </tr>
+        <tr>
+          <td><span class="field-name">FR-008</span></td>
+          <td><strong>كشف الحمل الزائد</strong></td>
+          <td>حساب نسبة Acute:Chronic Workload Ratio (ACWR)، تتبع Monotony Score، إنذار عند تجاوز الحد الآمن (ACWR > 1.5)، خط رسومي للحمل</td>
+          <td><span class="badge badge-high">Critical</span></td>
+          <td><span class="badge badge-blue">MVP</span></td>
+        </tr>
+        <tr>
+          <td><span class="field-name">FR-009</span></td>
+          <td><strong>التقارير</strong></td>
+          <td>تقرير أسبوعي تلقائي (ملخص كل محاور)، تقرير شهري بالاتجاهات، مقارنة بين الأسابيع، تصدير PDF/PNG، مشاركة مع المدرب</td>
+          <td><span class="badge badge-med">High</span></td>
+          <td><span class="badge badge-blue">MVP</span></td>
+        </tr>
+        <tr>
+          <td><span class="field-name">FR-010</span></td>
+          <td><strong>المساعد الذكي (RAG)</strong></td>
+          <td>محادثة نصية طبيعية، يحلل بيانات المتدرب الفعلية، يجيب بناءً على مراجع علمية محددة، يذكر المصدر دائماً، يرفض الأسئلة خارج النطاق</td>
+          <td><span class="badge badge-high">Critical</span></td>
+          <td><span class="badge badge-blue">MVP</span></td>
+        </tr>
+        <tr>
+          <td><span class="field-name">FR-011</span></td>
+          <td><strong>إدارة المدرب</strong></td>
+          <td>دعوة مدرب بكود، منح صلاحيات محدودة للاطلاع، عرض بيانات مختصرة للمدرب، تعليقات المدرب على التدريب، إلغاء الصلاحية في أي وقت</td>
+          <td><span class="badge badge-low">Medium</span></td>
+          <td><span class="badge badge-teal">V2</span></td>
+        </tr>
+        <tr>
+          <td><span class="field-name">FR-012</span></td>
+          <td><strong>التذكيرات والإشعارات</strong></td>
+          <td>تذكير يومي بإدخال بيانات النوم والنبض، إشعار فوري عند اكتشاف إجهاد، إشعار موعد التقرير الأسبوعي، تخصيص أوقات الإشعارات</td>
+          <td><span class="badge badge-med">High</span></td>
+          <td><span class="badge badge-blue">MVP</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- S3: NON-FUNCTIONAL REQUIREMENTS -->
+  <section class="section" id="nonfunctional">
+    <div class="section-header">
+      <div class="section-icon">🔒</div>
+      <div class="section-title-block">
+        <div class="section-num">القسم 3</div>
+        <h2>المتطلبات غير الوظيفية</h2>
+        <p>Non-Functional Requirements — كيف يجب أن يعمل النظام</p>
+      </div>
+    </div>
+
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon blue">⚡</div>
+        <h3>الأداء (Performance)</h3>
+        <p>
+          ◆ زمن تحميل الشاشة الرئيسية ≤ 2 ثانية<br>
+          ◆ استجابة المساعد الذكي ≤ 8 ثوانٍ<br>
+          ◆ تولّد التقرير الأسبوعي ≤ 5 ثوانٍ<br>
+          ◆ دعم 10,000 مستخدم متزامن في MVP
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-icon red">🔐</div>
+        <h3>الأمان (Security)</h3>
+        <p>
+          ◆ تشفير البيانات AES-256 في التخزين<br>
+          ◆ TLS 1.3 لجميع الاتصالات<br>
+          ◆ Firebase Authentication + JWT<br>
+          ◆ عزل بيانات كل مستخدم بالكامل<br>
+          ◆ سجل تدقيق للوصول للبيانات الحساسة
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-icon teal">🛡️</div>
+        <h3>الخصوصية (Privacy)</h3>
+        <p>
+          ◆ امتثال GDPR و COPPA (بيانات الأطفال)<br>
+          ◆ موافقة صريحة على جمع البيانات<br>
+          ◆ حق الحذف الكامل للبيانات<br>
+          ◆ لا مشاركة بيانات مع أطراف ثالثة<br>
+          ◆ عدم تخزين بيانات صحية خارج البلد
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-icon purple">🔄</div>
+        <h3>التوافر (Availability)</h3>
+        <p>
+          ◆ Uptime 99.5% (≤ 44 ساعة توقف/سنة)<br>
+          ◆ وضع Offline للقراءة والإدخال<br>
+          ◆ مزامنة تلقائية عند عودة الاتصال<br>
+          ◆ نسخ احتياطي تلقائي كل 24 ساعة
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-icon amber">📱</div>
+        <h3>سهولة الاستخدام (Usability)</h3>
+        <p>
+          ◆ إدخال بيانات يومية ≤ 3 دقائق<br>
+          ◆ دعم اللغة العربية كاملاً (RTL)<br>
+          ◆ حجم خط قابل للتخصيص<br>
+          ◆ تصميم مناسب للمستخدم غير التقني<br>
+          ◆ WCAG 2.1 Level AA Accessibility
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-icon green">🌱</div>
+        <h3>قابلية التوسع (Scalability)</h3>
+        <p>
+          ◆ معمارية Microservices-ready<br>
+          ◆ Firebase Auto-scaling في Blaze Plan<br>
+          ◆ Firestore يتحمل مليون وثيقة/مجموعة<br>
+          ◆ API مفتوح للتكامل المستقبلي<br>
+          ◆ بنية تدعم إضافة الرياضات الأخرى
+        </p>
+      </div>
+    </div>
+
+    <table class="req-table">
+      <thead>
+        <tr><th>الجانب</th><th>المقياس</th><th>القيمة المستهدفة</th><th>طريقة القياس</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>استجابة API</td><td>P95 Latency</td><td>&lt; 500ms</td><td>Firebase Performance Monitoring</td></tr>
+        <tr><td>حجم قاعدة البيانات</td><td>Per User / Month</td><td>&lt; 50KB</td><td>Firestore Usage Dashboard</td></tr>
+        <tr><td>تحميل التطبيق</td><td>App Bundle Size</td><td>&lt; 30MB (iOS/Android)</td><td>Flutter Build Analysis</td></tr>
+        <tr><td>دقة اكتشاف الإجهاد</td><td>Sensitivity/Specificity</td><td>&gt; 80% / &gt; 85%</td><td>Retrospective Validation Study</td></tr>
+        <tr><td>رضا المستخدم</td><td>CSAT Score</td><td>&gt; 4.2 / 5</td><td>In-app Survey Monthly</td></tr>
+        <tr><td>الاحتفاظ بالمستخدمين</td><td>Day-30 Retention</td><td>&gt; 45%</td><td>Firebase Analytics</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- S4: USER STORIES -->
+  <section class="section" id="stories">
+    <div class="section-header">
+      <div class="section-icon">👤</div>
+      <div class="section-title-block">
+        <div class="section-num">القسم 4</div>
+        <h2>قصص المستخدم</h2>
+        <p>User Stories — من منظور ولي الأمر والمدرب والنظام</p>
+      </div>
+    </div>
+
+    <p style="font-weight:600;color:var(--primary);margin-bottom:20px;font-size:14px;">🧑‍👦 قصص ولي الأمر — الشخصية الأساسية</p>
+
+    <div class="story-card">
+      <div class="story-id">US-001 | Priority: Critical</div>
+      <div class="story-text">بوصفي ولي أمر، أريد إضافة أكثر من طفل في التطبيق حتى أتمكن من متابعة جميع أطفالي الرياضيين من مكان واحد.</div>
+      <div class="story-criteria">✅ معايير القبول: يمكن إضافة ≥ 3 متدربين | التنقل بين الملفات بضغطة واحدة | صورة وبيانات مستقلة لكل متدرب | لا تتداخل البيانات</div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-id">US-002 | Priority: Critical</div>
+      <div class="story-text">بوصفي ولي أمر، أريد تسجيل نوم طفلي يومياً بسهولة حتى أعرف هل يحصل على قسط كافٍ من النوم للتعافي.</div>
+      <div class="story-criteria">✅ معايير القبول: إدخال لا يتجاوز 30 ثانية | تحديد وقت النوم/الاستيقاظ أو عدد الساعات | مؤشر ملوّن (أخضر/أصفر/أحمر) فوري | توصية علمية عند قصور النوم</div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-id">US-003 | Priority: Critical</div>
+      <div class="story-text">بوصفي ولي أمر، أريد أن ينبهني التطبيق فور اكتشاف علامات إجهاد رياضي حتى أتدخل قبل أن تتطور إلى إصابة.</div>
+      <div class="story-criteria">✅ معايير القبول: إشعار Push فوري مع وصف المشكلة | مستوى خطورة واضح (تحذير/خطر) | خطوات موصى بها (استراحة/تخفيف) | رابط للمساعد الذكي</div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-id">US-004 | Priority: High</div>
+      <div class="story-text">بوصفي ولي أمر، أريد تقريراً أسبوعياً واضحاً يلخص أداء طفلي حتى أناقشه مع المدرب.</div>
+      <div class="story-criteria">✅ معايير القبول: يصدر تلقائياً كل أحد | يشمل 6 محاور: نوم، نبض، تغذية، تدريب، إجهاد، صحة | قابل للمشاركة PDF | ملخص بـ 3 نقاط قوة و3 نقاط تحسين</div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-id">US-005 | Priority: Critical</div>
+      <div class="story-text">بوصفي ولي أمر، أريد سؤال المساعد الذكي عن تغذية طفلي قبل المسابقة ليجيبني بناءً على بياناته الفعلية وليس معلومات عامة.</div>
+      <div class="story-criteria">✅ معايير القبول: يذكر المصدر العلمي | يربط الإجابة ببيانات الطفل الفعلية | يرفض الأسئلة خارج نطاقه | لا يقدم تشخيصاً طبياً ويُحيل للمختص</div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-id">US-006 | Priority: High</div>
+      <div class="story-text">بوصفي ولي أمر، أريد تسجيل إصابة طفلي ومتابعة تعافيه خطوة بخطوة حتى أعرف متى يمكنه العودة للتدريب بأمان.</div>
+      <div class="story-criteria">✅ معايير القبول: تصنيف الإصابة (نوع/منطقة/شدة) | مراحل تعافٍ واضحة | إشعار عند اكتمال التعافي | تتبع تاريخ الإصابات المتراكمة</div>
+    </div>
+
+    <p style="font-weight:600;color:var(--primary);margin:28px 0 20px;font-size:14px;">🏋️ قصص النظام — خوارزميات الكشف</p>
+
+    <div class="story-card">
+      <div class="story-id">US-007 | Priority: Critical | System Story</div>
+      <div class="story-text">بوصفي نظام ذكي، أريد حساب مؤشر الإجهاد اليومي بدمج (نبض الراحة + نوم + RPE + حجم التدريب) حتى أقدم تقييماً دقيقاً لحالة المتدرب.</div>
+      <div class="story-criteria">✅ خوارزمية: Stress Score = (HR_deviation × 0.3) + (Sleep_deficit × 0.3) + (RPE_weighted × 0.2) + (Volume_ratio × 0.2) | نتيجة 0-100 | تنبيه عند > 70</div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-id">US-008 | Priority: Critical | System Story</div>
+      <div class="story-text">بوصفي نظام ذكي، أريد حساب ACWR يومياً لكشف الحمل التدريبي الزائد قبل حدوث الإصابة.</div>
+      <div class="story-criteria">✅ ACWR = (متوسط حمل 7 أيام) ÷ (متوسط حمل 28 يوم) | النطاق الآمن: 0.8-1.3 | خطر عند > 1.5 | خطر أيضاً عند < 0.5 (undertraining)</div>
+    </div>
+  </section>
+
+  <!-- S5: ARCHITECTURE -->
+  <section class="section" id="architecture">
+    <div class="section-header">
+      <div class="section-icon">🏗️</div>
+      <div class="section-title-block">
+        <div class="section-num">القسم 5</div>
+        <h2>معمارية النظام</h2>
+        <p>System Architecture — الطبقات التقنية والتقنيات المستخدمة</p>
+      </div>
+    </div>
+
+    <div class="arch-layer">
+      <div class="arch-layer-header presentation">
+        <span style="font-size:22px;">📱</span>
+        <div>
+          <div class="arch-layer-title">طبقة العرض — Presentation Layer</div>
+          <div style="font-size:12px;opacity:0.7;">Flutter (iOS + Android) | BLoC Pattern | Clean Architecture</div>
+        </div>
+      </div>
+      <div class="arch-layer-body">
+        <div class="arch-component"><div class="comp-icon">🏠</div><div class="comp-name">Dashboard Screen</div><div class="comp-desc">شاشة الرئيسية</div></div>
+        <div class="arch-component"><div class="comp-icon">📊</div><div class="comp-name">Log Screens</div><div class="comp-desc">شاشات الإدخال</div></div>
+        <div class="arch-component"><div class="comp-icon">📈</div><div class="comp-name">Reports Screen</div><div class="comp-desc">التقارير والرسوم</div></div>
+        <div class="arch-component"><div class="comp-icon">🤖</div><div class="comp-name">AI Chat Screen</div><div class="comp-desc">المساعد الذكي</div></div>
+        <div class="arch-component"><div class="comp-icon">👤</div><div class="comp-name">Athlete Profiles</div><div class="comp-desc">ملفات المتدربين</div></div>
+        <div class="arch-component"><div class="comp-icon">⚠️</div><div class="comp-name">Alerts Screen</div><div class="comp-desc">التنبيهات</div></div>
+      </div>
+    </div>
+
+    <div class="arch-layer">
+      <div class="arch-layer-header business">
+        <span style="font-size:22px;">⚙️</span>
+        <div>
+          <div class="arch-layer-title">طبقة المنطق التجاري — Business Logic Layer</div>
+          <div style="font-size:12px;opacity:0.7;">Firebase Cloud Functions (Node.js) | BLoC Cubits</div>
+        </div>
+      </div>
+      <div class="arch-layer-body">
+        <div class="arch-component"><div class="comp-icon">🧮</div><div class="comp-name">Stress Calculator</div><div class="comp-desc">خوارزمية الإجهاد</div></div>
+        <div class="arch-component"><div class="comp-icon">📐</div><div class="comp-name">ACWR Engine</div><div class="comp-desc">حساب الحمل التدريبي</div></div>
+        <div class="arch-component"><div class="comp-icon">🤖</div><div class="comp-name">RAG Service</div><div class="comp-desc">خدمة الذكاء الاصطناعي</div></div>
+        <div class="arch-component"><div class="comp-icon">📩</div><div class="comp-name">Notification Service</div><div class="comp-desc">خدمة الإشعارات</div></div>
+        <div class="arch-component"><div class="comp-icon">📋</div><div class="comp-name">Report Generator</div><div class="comp-desc">مولّد التقارير</div></div>
+        <div class="arch-component"><div class="comp-icon">🔔</div><div class="comp-name">Alert Rules Engine</div><div class="comp-desc">قواعد التنبيه</div></div>
+      </div>
+    </div>
+
+    <div class="arch-layer">
+      <div class="arch-layer-header data">
+        <span style="font-size:22px;">🗄️</span>
+        <div>
+          <div class="arch-layer-title">طبقة البيانات — Data Layer</div>
+          <div style="font-size:12px;opacity:0.7;">Firebase Firestore | Firebase Storage | Pinecone (Vector DB)</div>
+        </div>
+      </div>
+      <div class="arch-layer-body">
+        <div class="arch-component"><div class="comp-icon">🔥</div><div class="comp-name">Firestore</div><div class="comp-desc">قاعدة بيانات رئيسية</div></div>
+        <div class="arch-component"><div class="comp-icon">📁</div><div class="comp-name">Firebase Storage</div><div class="comp-desc">ملفات PDF/صور</div></div>
+        <div class="arch-component"><div class="comp-icon">🧲</div><div class="comp-name">Pinecone</div><div class="comp-desc">Vector DB للـ RAG</div></div>
+        <div class="arch-component"><div class="comp-icon">💾</div><div class="comp-name">Hive (Local)</div><div class="comp-desc">التخزين المحلي Offline</div></div>
+      </div>
+    </div>
+
+    <div class="arch-layer">
+      <div class="arch-layer-header infrastructure">
+        <span style="font-size:22px;">☁️</span>
+        <div>
+          <div class="arch-layer-title">طبقة البنية التحتية — Infrastructure Layer</div>
+          <div style="font-size:12px;opacity:0.7;">Google Cloud Platform | Firebase Ecosystem</div>
+        </div>
+      </div>
+      <div class="arch-layer-body">
+        <div class="arch-component"><div class="comp-icon">🔐</div><div class="comp-name">Firebase Auth</div><div class="comp-desc">المصادقة والأمان</div></div>
+        <div class="arch-component"><div class="comp-icon">📊</div><div class="comp-name">Firebase Analytics</div><div class="comp-desc">تحليلات الاستخدام</div></div>
+        <div class="arch-component"><div class="comp-icon">📬</div><div class="comp-name">FCM</div><div class="comp-desc">الإشعارات Push</div></div>
+        <div class="arch-component"><div class="comp-icon">⚡</div><div class="comp-name">Cloud Functions</div><div class="comp-desc">الخوارزميات Backend</div></div>
+        <div class="arch-component"><div class="comp-icon">📏</div><div class="comp-name">Firebase Performance</div><div class="comp-desc">مراقبة الأداء</div></div>
+        <div class="arch-component"><div class="comp-icon">🛡️</div><div class="comp-name">App Check</div><div class="comp-desc">حماية API</div></div>
+      </div>
+    </div>
+
+    <div class="highlight-box">
+      <h4>💡 قرارات معمارية رئيسية</h4>
+      <p>
+        <strong>Flutter</strong>: كود موحد لـ iOS + Android يقلل التطوير 40%. 
+        <strong>BLoC Pattern</strong>: فصل واضح بين UI والمنطق يسهّل الاختبار. 
+        <strong>Firebase All-in-One</strong>: يُسرّع MVP بدون DevOps معقد. 
+        <strong>Pinecone منفصل</strong>: قاعدة بيانات متجهية مخصصة للـ RAG لأداء أفضل من Firestore في البحث الدلالي. 
+        <strong>Cloud Functions</strong>: الخوارزميات الثقيلة تعمل في الخادم لا في الهاتف.
+      </p>
+    </div>
+  </section>
+
+  <!-- S6: DATABASE -->
+  <section class="section" id="database">
+    <div class="section-header">
+      <div class="section-icon">🗄️</div>
+      <div class="section-title-block">
+        <div class="section-num">القسم 6</div>
+        <h2>تصميم قاعدة البيانات (ERD + Firestore)</h2>
+        <p>Database Architecture — هيكل Firestore Collections وشرح كل حقل</p>
+      </div>
+    </div>
+
+    <!-- Users Collection -->
+    <div class="collection-block">
+      <div class="collection-header">
+        <div>
+          <div class="collection-name">📂 users/{userId}</div>
+          <div class="collection-desc">سجل المستخدم الأساسي (ولي الأمر)</div>
+        </div>
+      </div>
+      <table class="field-table">
+        <thead><tr><th>اسم الحقل</th><th>النوع</th><th>الشرح والسبب</th></tr></thead>
+        <tbody>
+          <tr><td class="field-name">uid</td><td class="field-type">String (FK)</td><td class="field-desc">معرّف Firebase Auth — مرتبط بالمصادقة لا يمكن تغييره، أساس كل العمليات</td></tr>
+          <tr><td class="field-name">displayName</td><td class="field-type">String</td><td class="field-desc">اسم ولي الأمر للعرض في التطبيق والتقارير</td></tr>
+          <tr><td class="field-name">email</td><td class="field-type">String</td><td class="field-desc">البريد الإلكتروني — للمصادقة والتقارير ورسائل النظام</td></tr>
+          <tr><td class="field-name">phone</td><td class="field-type">String?</td><td class="field-desc">رقم الهاتف — اختياري، للتحقق الثنائي والتنبيهات SMS العاجلة</td></tr>
+          <tr><td class="field-name">role</td><td class="field-type">Enum: parent/coach</td><td class="field-desc">يحدد نوع الوصول — ولي الأمر يرى كل شيء، المدرب يرى بيانات محدودة</td></tr>
+          <tr><td class="field-name">subscriptionPlan</td><td class="field-type">Enum: free/pro/elite</td><td class="field-desc">نموذج Freemium — يتحكم في عدد المتدربين والميزات المتاحة</td></tr>
+          <tr><td class="field-name">subscriptionExpiry</td><td class="field-type">Timestamp</td><td class="field-desc">تاريخ انتهاء الاشتراك — للتحقق عند كل عملية حساسة</td></tr>
+          <tr><td class="field-name">athleteIds</td><td class="field-type">Array&lt;String&gt;</td><td class="field-desc">قائمة معرفات المتدربين المرتبطين — يُسرّع الاستعلام بدلاً من البحث في كل مجموعة</td></tr>
+          <tr><td class="field-name">notificationPrefs</td><td class="field-type">Map</td><td class="field-desc">تفضيلات الإشعارات (أوقات، أنواع) — تخصيص التجربة لكل مستخدم</td></tr>
+          <tr><td class="field-name">createdAt</td><td class="field-type">Timestamp</td><td class="field-desc">تاريخ الإنشاء — للتحليلات وحساب عمر الحساب</td></tr>
+          <tr><td class="field-name">lastActiveAt</td><td class="field-type">Timestamp</td><td class="field-desc">آخر نشاط — لتحليل الاحتفاظ بالمستخدمين وإرسال إشعارات إعادة المشاركة</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Athletes Collection -->
+    <div class="collection-block">
+      <div class="collection-header">
+        <div>
+          <div class="collection-name">📂 athletes/{athleteId}</div>
+          <div class="collection-desc">ملف المتدرب الرياضي (الطفل)</div>
+        </div>
+      </div>
+      <table class="field-table">
+        <thead><tr><th>اسم الحقل</th><th>النوع</th><th>الشرح والسبب</th></tr></thead>
+        <tbody>
+          <tr><td class="field-name">parentId</td><td class="field-type">String (FK)</td><td class="field-desc">ربط المتدرب بولي الأمر — أساس قواعد Firestore Security Rules</td></tr>
+          <tr><td class="field-name">coachId</td><td class="field-type">String? (FK)</td><td class="field-desc">معرف المدرب إن وجد — اختياري، لمنح صلاحيات القراءة المحدودة</td></tr>
+          <tr><td class="field-name">name</td><td class="field-type">String</td><td class="field-desc">اسم الطفل للعرض في جميع الشاشات والتقارير</td></tr>
+          <tr><td class="field-name">dateOfBirth</td><td class="field-type">Timestamp</td><td class="field-desc">تاريخ الميلاد — يُستخدم لحساب العمر وضبط المعايير المرجعية (نوم، نبض) حسب الفئة العمرية</td></tr>
+          <tr><td class="field-name">gender</td><td class="field-type">Enum: male/female</td><td class="field-desc">ضروري لاحتساب المعايير — القيم المرجعية للنبض والنوم تختلف بين الجنسين</td></tr>
+          <tr><td class="field-name">height</td><td class="field-type">Number (cm)</td><td class="field-desc">الطول — لحساب BMI ومؤشرات النمو، ومقاييس التغذية (TDEE)</td></tr>
+          <tr><td class="field-name">weight</td><td class="field-type">Number (kg)</td><td class="field-desc">الوزن — لنفس السبب أعلاه + حساب احتياجات البروتين (g/kg)</td></tr>
+          <tr><td class="field-name">swimSpecialty</td><td class="field-type">Array&lt;String&gt;</td><td class="field-desc">التخصصات (سباحة حرة، ظهر، صدر...) — يخصص توصيات التدريب والمراجع العلمية في RAG</td></tr>
+          <tr><td class="field-name">swimLevel</td><td class="field-type">Enum: beginner/intermediate/advanced/elite</td><td class="field-desc">مستوى الرياضي — يعدّل عتبات التنبيه وتوصيات حجم التدريب</td></tr>
+          <tr><td class="field-name">trainingFrequency</td><td class="field-type">Number</td><td class="field-desc">عدد جلسات التدريب المعتادة/أسبوع — خط أساس لحساب ACWR</td></tr>
+          <tr><td class="field-name">baselineHR</td><td class="field-type">Number</td><td class="field-desc">نبض الراحة الأساسي (متوسط أول 7 أيام) — المرجع لاكتشاف الانحرافات غير الطبيعية</td></tr>
+          <tr><td class="field-name">photoUrl</td><td class="field-type">String?</td><td class="field-desc">صورة المتدرب في Firebase Storage — للتعرف البصري السريع في القائمة</td></tr>
+          <tr><td class="field-name">isActive</td><td class="field-type">Boolean</td><td class="field-desc">حالة النشاط — بدلاً من الحذف الفعلي (Soft Delete) للحفاظ على السجل التاريخي</td></tr>
+          <tr><td class="field-name">createdAt</td><td class="field-type">Timestamp</td><td class="field-desc">تاريخ الإنشاء للتدقيق والتحليل</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Training Sessions -->
+    <div class="collection-block">
+      <div class="collection-header">
+        <div>
+          <div class="collection-name">📂 trainingSessions/{sessionId}</div>
+          <div class="collection-desc">سجلات جلسات التدريب</div>
+        </div>
+      </div>
+      <table class="field-table">
+        <thead><tr><th>اسم الحقل</th><th>النوع</th><th>الشرح والسبب</th></tr></thead>
+        <tbody>
+          <tr><td class="field-name">athleteId</td><td class="field-type">String (FK)</td><td class="field-desc">ربط الجلسة بالمتدرب — أساس الاستعلام لحساب ACWR</td></tr>
+          <tr><td class="field-name">date</td><td class="field-type">Timestamp</td><td class="field-desc">تاريخ الجلسة — للتسلسل الزمني وحسابات الأسبوعية والشهرية</td></tr>
+          <tr><td class="field-name">sessionType</td><td class="field-type">Enum: pool/dryland/competition/rest</td><td class="field-desc">نوع الجلسة — يختلف وزن الحمل بين البركة والبر والمنافسة</td></tr>
+          <tr><td class="field-name">durationMinutes</td><td class="field-type">Number</td><td class="field-desc">مدة الجلسة — مكوّن أساسي في حساب Training Load (Duration × Intensity)</td></tr>
+          <tr><td class="field-name">totalDistanceMeters</td><td class="field-type">Number?</td><td class="field-desc">إجمالي المسافة المقطوعة — مؤشر حجم تدريب خاص بالسباحة</td></tr>
+          <tr><td class="field-name">intensityZones</td><td class="field-type">Map</td><td class="field-desc">توزيع الوقت على مناطق الشدة (Z1-Z5 بالدقائق) — تحليل دقيق لنوعية التدريب</td></tr>
+          <tr><td class="field-name">rpe</td><td class="field-type">Number (1-10)</td><td class="field-desc">معدل الجهد المتصوَّر (Rate of Perceived Exertion) — مقياس Session RPE موثق علمياً (Foster 1998)</td></tr>
+          <tr><td class="field-name">sessionLoad</td><td class="field-type">Number</td><td class="field-desc">الحمل المحسوب = Duration × RPE — وحدات arbitrary units (AU) المعيارية في الأدبيات</td></tr>
+          <tr><td class="field-name">mainSets</td><td class="field-type">Array&lt;Map&gt;</td><td class="field-desc">تفاصيل المجموعات الرئيسية (المسافة، الشدة، التمرين) — للتحليل التفصيلي والمراجعة مع المدرب</td></tr>
+          <tr><td class="field-name">wellnessScore</td><td class="field-type">Number (1-5)?</td><td class="field-desc">تقييم الحالة العامة قبل التدريب — مؤشر مبكر للإجهاد قبل تأثيره على الأداء</td></tr>
+          <tr><td class="field-name">notes</td><td class="field-type">String?</td><td class="field-desc">ملاحظات ولي الأمر/المدرب — سياق نوعي يُغني التحليل الكمي</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sleep Logs -->
+    <div class="collection-block">
+      <div class="collection-header">
+        <div>
+          <div class="collection-name">📂 sleepLogs/{logId}</div>
+          <div class="collection-desc">سجلات النوم اليومية</div>
+        </div>
+      </div>
+      <table class="field-table">
+        <thead><tr><th>اسم الحقل</th><th>النوع</th><th>الشرح والسبب</th></tr></thead>
+        <tbody>
+          <tr><td class="field-name">athleteId</td><td class="field-type">String (FK)</td><td class="field-desc">ربط السجل بالمتدرب</td></tr>
+          <tr><td class="field-name">date</td><td class="field-type">Timestamp</td><td class="field-desc">تاريخ اليوم (يُسجَّل صباحاً عن الليلة السابقة)</td></tr>
+          <tr><td class="field-name">bedTime</td><td class="field-type">Timestamp</td><td class="field-desc">وقت النوم الفعلي — لحساب ساعات النوم بدقة وتحليل اتساق الروتين</td></tr>
+          <tr><td class="field-name">wakeTime</td><td class="field-type">Timestamp</td><td class="field-desc">وقت الاستيقاظ — بالتركيب مع bedTime يُعطي مدة النوم الكاملة</td></tr>
+          <tr><td class="field-name">totalHours</td><td class="field-type">Number</td><td class="field-desc">إجمالي ساعات النوم — مشتق من الحقلين أعلاه أو مدخل مباشرة</td></tr>
+          <tr><td class="field-name">sleepQuality</td><td class="field-type">Enum: poor/fair/good/excellent</td><td class="field-desc">جودة النوم ذاتياً — الكمية وحدها غير كافية، قد يستيقظ الطفل كثيراً</td></tr>
+          <tr><td class="field-name">sleepDebt</td><td class="field-type">Number</td><td class="field-desc">الفجوة عن المعيار المحسوب (ساعات) — يُراكَم أسبوعياً لتقييم العجز التراكمي</td></tr>
+          <tr><td class="field-name">ageRecommendedHours</td><td class="field-type">Number</td><td class="field-desc">المعيار الموصى به حسب عمر الطفل (يُحسب من dateOfBirth) — لتقييم الكفاية</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Heart Rate Logs -->
+    <div class="collection-block">
+      <div class="collection-header">
+        <div>
+          <div class="collection-name">📂 heartRateLogs/{logId}</div>
+          <div class="collection-desc">سجلات نبض الراحة الصباحية</div>
+        </div>
+      </div>
+      <table class="field-table">
+        <thead><tr><th>اسم الحقل</th><th>النوع</th><th>الشرح والسبب</th></tr></thead>
+        <tbody>
+          <tr><td class="field-name">athleteId</td><td class="field-type">String (FK)</td><td class="field-desc">ربط السجل بالمتدرب</td></tr>
+          <tr><td class="field-name">date</td><td class="field-type">Timestamp</td><td class="field-desc">تاريخ القياس — دائماً صباحاً قبل النهوض من الفراش</td></tr>
+          <tr><td class="field-name">bpm</td><td class="field-type">Number</td><td class="field-desc">النبض بالضربة/الدقيقة — المقياس الأساسي للتعب السيمبثاوي</td></tr>
+          <tr><td class="field-name">measurementMethod</td><td class="field-type">Enum: manual/wearable</td><td class="field-desc">طريقة القياس — الأجهزة القابلة للارتداء أدق، لكن القياس اليدوي مقبول</td></tr>
+          <tr><td class="field-name">deviationFromBaseline</td><td class="field-type">Number</td><td class="field-desc">الانحراف عن الخط الأساسي (±bpm) — القيمة المُحسَّبة آلياً، مؤشر الإجهاد الرئيسي</td></tr>
+          <tr><td class="field-name">isAlert</td><td class="field-type">Boolean</td><td class="field-desc">علامة التنبيه إذا تجاوز الانحراف عتبة التحذير (+7bpm) — لفلترة السجلات الحرجة</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Injuries -->
+    <div class="collection-block">
+      <div class="collection-header">
+        <div>
+          <div class="collection-name">📂 injuries/{injuryId}</div>
+          <div class="collection-desc">سجلات الإصابات ومسار التعافي</div>
+        </div>
+      </div>
+      <table class="field-table">
+        <thead><tr><th>اسم الحقل</th><th>النوع</th><th>الشرح والسبب</th></tr></thead>
+        <tbody>
+          <tr><td class="field-name">athleteId</td><td class="field-type">String (FK)</td><td class="field-desc">ربط الإصابة بالمتدرب</td></tr>
+          <tr><td class="field-name">injuryDate</td><td class="field-type">Timestamp</td><td class="field-desc">تاريخ الإصابة — لربطها بالحمل التدريبي السابق وتحليل الأنماط</td></tr>
+          <tr><td class="field-name">bodyPart</td><td class="field-type">Enum</td><td class="field-desc">منطقة الجسم (كتف/ركبة/ظهر/...) — الأكثر شيوعاً في السباحة: Swimmer's Shoulder</td></tr>
+          <tr><td class="field-name">injuryType</td><td class="field-type">Enum</td><td class="field-desc">نوع الإصابة (إجهاد/شد/التهاب/كسر) — يحدد بروتوكول التعافي</td></tr>
+          <tr><td class="field-name">severity</td><td class="field-type">Enum: mild/moderate/severe</td><td class="field-desc">شدة الإصابة — تحدد مدة التعافي المتوقعة والقيود على التدريب</td></tr>
+          <tr><td class="field-name">acwrAtInjury</td><td class="field-type">Number</td><td class="field-desc">قيمة ACWR وقت الإصابة — للبحث في الارتباط بين الحمل الزائد والإصابة</td></tr>
+          <tr><td class="field-name">recoveryPhase</td><td class="field-type">Enum: acute/subacute/rehabbing/return-to-sport</td><td class="field-desc">مرحلة التعافي الحالية — لتوجيه التوصيات المناسبة لكل مرحلة</td></tr>
+          <tr><td class="field-name">expectedReturnDate</td><td class="field-type">Timestamp?</td><td class="field-desc">تاريخ العودة المتوقع — لتخطيط برنامج التدريب وإشعار ولي الأمر</td></tr>
+          <tr><td class="field-name">actualReturnDate</td><td class="field-type">Timestamp?</td><td class="field-desc">تاريخ العودة الفعلي — لتقييم دقة التوقعات وبناء نماذج أفضل</td></tr>
+          <tr><td class="field-name">medicalNotes</td><td class="field-type">String?</td><td class="field-desc">ملاحظات طبية من المختص — سياق نوعي لا يحله الكم وحده</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- AI Recommendations -->
+    <div class="collection-block">
+      <div class="collection-header">
+        <div>
+          <div class="collection-name">📂 aiRecommendations/{recId}</div>
+          <div class="collection-desc">توصيات الذكاء الاصطناعي مع مصادرها</div>
+        </div>
+      </div>
+      <table class="field-table">
+        <thead><tr><th>اسم الحقل</th><th>النوع</th><th>الشرح والسبب</th></tr></thead>
+        <tbody>
+          <tr><td class="field-name">athleteId</td><td class="field-type">String (FK)</td><td class="field-desc">ربط التوصية بمتدرب محدد</td></tr>
+          <tr><td class="field-name">triggeredBy</td><td class="field-type">Enum: auto_alert/user_query</td><td class="field-desc">سبب التوصية — تلقائي (اكتشف خوارزمية) أم بطلب المستخدم</td></tr>
+          <tr><td class="field-name">category</td><td class="field-type">Enum: sleep/nutrition/training/recovery/injury</td><td class="field-desc">تصنيف التوصية — لتنظيم السجل التاريخي وتحليل أنماط الاستخدام</td></tr>
+          <tr><td class="field-name">query</td><td class="field-type">String</td><td class="field-desc">السؤال الأصلي للمستخدم — لتحسين نموذج RAG وتحليل الاحتياجات</td></tr>
+          <tr><td class="field-name">response</td><td class="field-type">String</td><td class="field-desc">إجابة الذكاء الاصطناعي النصية الكاملة</td></tr>
+          <tr><td class="field-name">citations</td><td class="field-type">Array&lt;Map&gt;</td><td class="field-desc">قائمة المراجع المستخدمة (الكتاب، الفصل، الصفحة) — الشفافية العلمية جوهر المشروع</td></tr>
+          <tr><td class="field-name">athleteDataSnapshot</td><td class="field-type">Map</td><td class="field-desc">لقطة من بيانات المتدرب وقت الاستعلام — للتدقيق ولماذا أعطى هذه التوصية</td></tr>
+          <tr><td class="field-name">confidence</td><td class="field-type">Number (0-1)</td><td class="field-desc">درجة ثقة النموذج في إجابته — لعرض تحذير عند الثقة المنخفضة</td></tr>
+          <tr><td class="field-name">userFeedback</td><td class="field-type">Enum: helpful/not_helpful/null</td><td class="field-desc">تقييم المستخدم للتوصية — لتحسين النموذج عبر الزمن</td></tr>
+          <tr><td class="field-name">timestamp</td><td class="field-type">Timestamp</td><td class="field-desc">وقت التوصية — للتاريخ والتدقيق</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- S7: SCREENS -->
+  <section class="section" id="screens">
+    <div class="section-header">
+      <div class="section-icon">📱</div>
+      <div class="section-title-block">
+        <div class="section-num">القسم 7</div>
+        <h2>تصميم شاشات UI/UX</h2>
+        <p>مواصفات كاملة لكل شاشة — Purpose, Components, Validation, Flow</p>
+      </div>
+    </div>
+
+    <!-- Screen 1 -->
+    <div class="screen-card">
+      <div class="screen-header">
+        <div class="screen-name">🔐 شاشة 1: تسجيل الدخول / Register</div>
+        <span class="badge badge-blue">Auth Flow</span>
+      </div>
+      <div class="screen-body">
+        <div class="screen-section-title">الهدف (Purpose)</div>
+        <p style="font-size:13.5px;color:var(--text-secondary);margin-bottom:12px;">مصادقة المستخدم بأمان وسرعة. نقطة دخول المستخدم الجديد وتسجيل دخول المستخدم الحالي. التصميم يعكس الهوية الرياضية للتطبيق.</p>
+        <div class="screen-section-title">المكونات (Components)</div>
+        <div class="screen-list">
+          <span class="screen-tag primary">شعار AquaTrack + slogan</span>
+          <span class="screen-tag">حقل البريد الإلكتروني</span>
+          <span class="screen-tag">حقل كلمة المرور (إخفاء/إظهار)</span>
+          <span class="screen-tag primary">زر "تسجيل الدخول"</span>
+          <span class="screen-tag">رابط "نسيت كلمة المرور"</span>
+          <span class="screen-tag action">زر Google Sign-In</span>
+          <span class="screen-tag">رابط "إنشاء حساب جديد"</span>
+        </div>
+        <div class="screen-section-title">شاشة التسجيل (Register)</div>
+        <div class="screen-list">
+          <span class="screen-tag">الاسم الكامل</span>
+          <span class="screen-tag">البريد الإلكتروني</span>
+          <span class="screen-tag">كلمة المرور + التأكيد</span>
+          <span class="screen-tag warning">موافقة على الشروط (إلزامي)</span>
+          <span class="screen-tag warning">موافقة على جمع بيانات صحية (إلزامي COPPA)</span>
+        </div>
+        <div class="screen-section-title">Validation Rules</div>
+        <div class="screen-list">
+          <span class="screen-tag">Email: تنسيق صحيح + لا مسافات</span>
+          <span class="screen-tag">Password: 8 أحرف + رقم + حرف كبير</span>
+          <span class="screen-tag warning">موافقة الشروط: إلزامية — بدونها لا يعمل الزر</span>
+        </div>
+        <div class="screen-section-title">Navigation Flow</div>
+        <p style="font-size:13px;color:var(--text-muted);">Login Success → Dashboard | Register Success → Setup First Athlete | Forgot Password → Email Sent Screen</p>
+      </div>
+    </div>
+
+    <!-- Screen 2 -->
+    <div class="screen-card">
+      <div class="screen-header">
+        <div class="screen-name">🏠 شاشة 2: Dashboard الرئيسية</div>
+        <span class="badge badge-teal">Core Screen</span>
+      </div>
+      <div class="screen-body">
+        <div class="screen-section-title">الهدف</div>
+        <p style="font-size:13.5px;color:var(--text-secondary);margin-bottom:12px;">نظرة شاملة على حالة المتدرب اليوم. واحدة نظرة ولي الأمر يعرف كل شيء. تصميم Card-based بسيط لا يحتاج شرحاً.</p>
+        <div class="screen-section-title">المكونات</div>
+        <div class="screen-list">
+          <span class="screen-tag primary">Athlete Switcher (أفقي — للتبديل بين المتدربين)</span>
+          <span class="screen-tag">Today's Date + اسم المتدرب</span>
+          <span class="screen-tag warning">Stress Score Card (كبيرة — 0-100 مع لون تدريجي)</span>
+          <span class="screen-tag">Sleep Card (ساعات الليلة + الترند)</span>
+          <span class="screen-tag">Heart Rate Card (نبض اليوم + انحراف)</span>
+          <span class="screen-tag">Nutrition Card (ملخص سريع)</span>
+          <span class="screen-tag">Training Card (جلسة اليوم)</span>
+          <span class="screen-tag action">Quick Log Buttons (إضافة سريعة)</span>
+          <span class="screen-tag primary">Weekly Wellness Chart (رسم بياني 7 أيام)</span>
+        </div>
+        <div class="screen-section-title">Alerts Section</div>
+        <div class="screen-list">
+          <span class="screen-tag warning">إشعارات التحذير (مرئية أعلى الصفحة إذا وُجدت)</span>
+          <span class="screen-tag">رابط "اسأل المساعد الذكي" ثابت</span>
+        </div>
+        <div class="screen-section-title">Navigation Flow</div>
+        <p style="font-size:13px;color:var(--text-muted);">Stress Card → Stress Detail | Quick Log → Log Screen | AI Button → AI Chat | Bottom Nav: Dashboard / Athletes / Reports / AI / Settings</p>
+      </div>
+    </div>
+
+    <!-- Screen 3 -->
+    <div class="screen-card">
+      <div class="screen-header">
+        <div class="screen-name">📊 شاشة 3: تسجيل البيانات اليومية (Universal Log)</div>
+        <span class="badge badge-blue">Input Screen</span>
+      </div>
+      <div class="screen-body">
+        <div class="screen-section-title">الهدف</div>
+        <p style="font-size:13.5px;color:var(--text-secondary);margin-bottom:12px;">إدخال جميع البيانات اليومية في أقل من 3 دقائق. تجربة Wizard خطوة بخطوة تُقلل الإرهاق المعرفي لولي الأمر.</p>
+        <div class="screen-section-title">الخطوات (Wizard Flow)</div>
+        <div class="screen-list">
+          <span class="screen-tag primary">1️⃣ نبض الراحة (숫자 مع +/- أو keypad)</span>
+          <span class="screen-tag primary">2️⃣ النوم (Slider للساعات + تقييم الجودة)</span>
+          <span class="screen-tag primary">3️⃣ Wellness صباحي (1-5 نجوم)</span>
+          <span class="screen-tag primary">4️⃣ التغذية (Quick-select وجبات + شرب الماء)</span>
+          <span class="screen-tag primary">5️⃣ التدريب (تدرّب/لم يتدرب — إذا تدرّب: مدة+RPE+نوع)</span>
+          <span class="screen-tag action">✅ "تم — احفظ اليوم"</span>
+        </div>
+        <div class="screen-section-title">Validation Rules</div>
+        <div class="screen-list">
+          <span class="screen-tag">نبض: 30-200 BPM فقط</span>
+          <span class="screen-tag">نوم: 0-16 ساعة</span>
+          <span class="screen-tag">RPE: 1-10 فقط</span>
+          <span class="screen-tag warning">يمنع تسجيل نفس اليوم مرتين (تحذير للتعديل)</span>
+        </div>
+        <div class="screen-section-title">UX Principles</div>
+        <p style="font-size:13px;color:var(--text-muted);">كل خطوة في شاشة منفردة | تقدم مرئي (1 من 5) | يمكن الرجوع | حفظ مؤقت عند الخروج | "ادخل لاحقاً" لكل خطوة</p>
+      </div>
+    </div>
+
+    <!-- Screen 4 -->
+    <div class="screen-card">
+      <div class="screen-header">
+        <div class="screen-name">🤖 شاشة 4: المساعد الذكي (AI Chat)</div>
+        <span class="badge badge-purple">AI Feature</span>
+      </div>
+      <div class="screen-body">
+        <div class="screen-section-title">الهدف</div>
+        <p style="font-size:13.5px;color:var(--text-secondary);margin-bottom:12px;">محادثة طبيعية مع مساعد علمي يعرف بيانات الطفل الفعلية. تجربة Chat مألوفة لأي مستخدم.</p>
+        <div class="screen-section-title">المكونات</div>
+        <div class="screen-list">
+          <span class="screen-tag primary">Athlete Context Bar (أعلى: اسم المتدرب + ملخص حاله)</span>
+          <span class="screen-tag">منطقة المحادثة (Bubble style)</span>
+          <span class="screen-tag">شارة "استُند لـ: [مصدر]" بعد كل رد</span>
+          <span class="screen-tag primary">حقل الإدخال مع زر الإرسال</span>
+          <span class="screen-tag action">Suggested Questions (3 أسئلة مقترحة)</span>
+          <span class="screen-tag">زر "مشاركة المحادثة مع المدرب"</span>
+        </div>
+        <div class="screen-section-title">أسئلة مقترحة للمستخدم</div>
+        <div class="screen-list">
+          <span class="screen-tag">ماذا يأكل [اسم الطفل] قبل التدريب؟</span>
+          <span class="screen-tag">هل نومه هذا الأسبوع كافٍ؟</span>
+          <span class="screen-tag">كيف أقلل نبضه الصباحي المرتفع؟</span>
+        </div>
+        <div class="screen-section-title">Validation &amp; Safety</div>
+        <div class="screen-list">
+          <span class="screen-tag warning">يرفض طلبات التشخيص الطبي ويُحيل للطبيب</span>
+          <span class="screen-tag warning">يُظهر تحذيراً عند انخفاض Confidence Score</span>
+          <span class="screen-tag">حد 20 رسالة/يوم في الباقة المجانية</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Screen 5 -->
+    <div class="screen-card">
+      <div class="screen-header">
+        <div class="screen-name">📈 شاشة 5: التقارير الأسبوعية والشهرية</div>
+        <span class="badge badge-teal">Reports</span>
+      </div>
+      <div class="screen-body">
+        <div class="screen-section-title">المكونات</div>
+        <div class="screen-list">
+          <span class="screen-tag primary">Tab: أسبوعي / شهري</span>
+          <span class="screen-tag">Period Picker (اختيار الأسبوع/الشهر)</span>
+          <span class="screen-tag primary">Summary Card: نقاط قوة + نقاط تحسين</span>
+          <span class="screen-tag">Stress Trend Chart (خط زمني)</span>
+          <span class="screen-tag">Sleep Compliance Bar Chart</span>
+          <span class="screen-tag">Nutrition Radar Chart</span>
+          <span class="screen-tag">Training Load vs Recommended</span>
+          <span class="screen-tag warning">Injury History Timeline (إن وجدت)</span>
+          <span class="screen-tag action">زر "تصدير PDF" + "مشاركة"</span>
+        </div>
+        <div class="screen-section-title">UX Notes</div>
+        <p style="font-size:13px;color:var(--text-muted);">جميع الرسوم البيانية تفاعلية (Tap للتفاصيل) | ألوان موحدة: أخضر=جيد، أصفر=تحذير، أحمر=خطر | مقارنة الأسبوع الحالي بالسابق</p>
+      </div>
+    </div>
+
+    <!-- Screen 6 -->
+    <div class="screen-card">
+      <div class="screen-header">
+        <div class="screen-name">⚠️ شاشة 6: تفاصيل الإجهاد والتحذيرات</div>
+        <span class="badge badge-high">Alert Screen</span>
+      </div>
+      <div class="screen-body">
+        <div class="screen-section-title">المكونات</div>
+        <div class="screen-list">
+          <span class="screen-tag warning">Stress Gauge كبير (0-100 دائري)</span>
+          <span class="screen-tag">تفصيل مكونات الإجهاد (نوم: X% | نبض: X% | RPE: X%)</span>
+          <span class="screen-tag primary">ACWR Meter (النطاق الآمن مرئي)</span>
+          <span class="screen-tag">سبب التحذير بلغة بسيطة</span>
+          <span class="screen-tag action">خطوات موصى بها (1-2-3 قابلة للتطبيق)</span>
+          <span class="screen-tag">رابط للمساعد الذكي للمزيد</span>
+        </div>
+        <div class="screen-section-title">UX Principle</div>
+        <p style="font-size:13px;color:var(--text-muted);">الشاشة تُركز على الحل لا الخوف — لغة تطمئن لا تُقلق | "ماذا أفعل الآن؟" يجب أن تكون واضحة</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- S8: RAG SYSTEM -->
+  <section class="section" id="rag">
+    <div class="section-header">
+      <div class="section-icon">🧠</div>
+      <div class="section-title-block">
+        <div class="section-num">القسم 8</div>
+        <h2>نظام الذكاء الاصطناعي RAG</h2>
+        <p>Retrieval-Augmented Generation — معمارية المساعد العلمي الرياضي</p>
+      </div>
+    </div>
+
+    <div class="highlight-box">
+      <h4>🎯 مبدأ التصميم الأساسي</h4>
+      <p>المساعد يجب ألا "يخترع" معلومات أبداً. كل إجابة يجب أن تكون مستندة إلى مراجع في قاعدة المعرفة المحددة، ومرتبطة ببيانات المتدرب الفعلية. الهدف: "مرشد علمي شخصي" لا "روبوت عام".</p>
+    </div>
+
+    <div class="rag-step">
+      <div class="rag-num">1</div>
+      <div class="rag-content">
+        <div class="rag-title">📚 Data Pipeline — معالجة المراجع العلمية</div>
+        <div class="rag-desc">
+          <strong>المدخلات:</strong> كتب PDF (سباحة، تغذية رياضية، طب رياضي، استشفاء)<br>
+          <strong>المعالجة:</strong> استخراج النص → تنظيف → تقسيم Chunking → استخراج Metadata → Embedding → تخزين في Vector DB<br>
+          <strong>الأدوات:</strong> Python + LangChain + PyPDF2 + OpenAI Embeddings (text-embedding-3-large)
+        </div>
+      </div>
+    </div>
+
+    <div class="rag-step">
+      <div class="rag-num">2</div>
+      <div class="rag-content">
+        <div class="rag-title">✂️ Chunking Strategy — استراتيجية تقطيع النصوص</div>
+        <div class="rag-desc">
+          <strong>الاستراتيجية المختارة:</strong> Semantic Chunking مع Context-aware Splitting<br>
+          <strong>حجم القطعة:</strong> 400-600 token مع 80 token تداخل (overlap)<br>
+          <strong>المبدأ:</strong> لا يُكسر المفهوم الواحد بين قطعتين — يُكمَّل الفقرة قبل القطع<br>
+          <strong>القطعة تحتفظ بـ:</strong> اسم الكتاب + الفصل + رقم الصفحة + نوع المحتوى + الكلمات المفتاحية
+        </div>
+      </div>
+    </div>
+
+    <div class="rag-step">
+      <div class="rag-num">3</div>
+      <div class="rag-content">
+        <div class="rag-title">🗃️ Vector Database — قاعدة البيانات المتجهية</div>
+        <div class="rag-desc">
+          <strong>المنصة:</strong> Pinecone (Serverless Index)<br>
+          <strong>الأبعاد:</strong> 3072 (text-embedding-3-large)<br>
+          <strong>المسافة:</strong> Cosine Similarity<br>
+          <strong>Metadata Filtering:</strong> category (sleep/nutrition/training/recovery/injury) + ageGroup + sportType<br>
+          <strong>عدد النتائج:</strong> Top-K = 5 قطع عند كل استعلام
+        </div>
+      </div>
+    </div>
+
+    <div class="rag-step">
+      <div class="rag-num">4</div>
+      <div class="rag-content">
+        <div class="rag-title">🔄 RAG Workflow — تسلسل العمليات</div>
+        <div class="rag-desc">
+          <strong>الخطوة 1:</strong> جمع بيانات المتدرب (آخر 7 أيام: نوم، نبض، RPE، ACWR، تغذية)<br>
+          <strong>الخطوة 2:</strong> تصنيف السؤال → تحديد الفئة (sleep/nutrition/...) + استخراج الفئة العمرية<br>
+          <strong>الخطوة 3:</strong> استعلام Pinecone مع Metadata Filter حسب الفئة والسن<br>
+          <strong>الخطوة 4:</strong> بناء Prompt الكامل (System + Context + Athlete Data + Question)<br>
+          <strong>الخطوة 5:</strong> إرسال لـ Claude API / GPT-4 → استقبال الإجابة<br>
+          <strong>الخطوة 6:</strong> استخراج Citations → تنسيق الإجابة → حفظ في Firestore
+        </div>
+      </div>
+    </div>
+
+    <div class="rag-step">
+      <div class="rag-num">5</div>
+      <div class="rag-content">
+        <div class="rag-title">📝 Prompt Engineering — هندسة الموجّهات</div>
+        <div class="rag-desc">
+          <strong>System Prompt:</strong> "أنت مساعد رياضي علمي متخصص في السباحة وصحة الرياضيين الناشئين. تُجيب فقط استناداً للمراجع المُقدَّمة. تربط إجابتك ببيانات المتدرب المُقدَّمة. تذكر المصدر دائماً (الكتاب، الفصل، الصفحة). ترفض الأسئلة خارج نطاقك بأدب. لا تُقدِّم تشخيصاً طبياً وتُحيل للمختص."<br>
+          <strong>Context Template:</strong> بيانات المتدرب (العمر، المستوى، ملخص آخر 7 أيام) + نصوص المراجع المسترجعة + السؤال<br>
+          <strong>Output Format:</strong> الإجابة + [المصادر] + "إذا استمرت المشكلة، راجع مختصاً"
+        </div>
+      </div>
+    </div>
+
+    <div class="rag-step">
+      <div class="rag-num">6</div>
+      <div class="rag-content">
+        <div class="rag-title">📖 Citation System — نظام الاستشهاد العلمي</div>
+        <div class="rag-desc">
+          <strong>التنسيق:</strong> [المؤلف، سنة النشر، الكتاب، الفصل، الصفحة(ص)]<br>
+          <strong>مثال:</strong> [Maglischo, 2003، "Swimming Fastest"، الفصل 12: التعافي، ص.287]<br>
+          <strong>في التطبيق:</strong> Citations كـ Chips قابلة للنقر تعرض المعلومات الببليوغرافية<br>
+          <strong>الضمان:</strong> اللغة النموذجية "لا تستطيع إنشاء مرجع غير موجود في قاعدة المعرفة"
+        </div>
+      </div>
+    </div>
+
+    <div class="code-block">
+      <code>
+<span class="code-comment">// RAG Cloud Function — Core Logic (Node.js)</span>
+<span class="code-keyword">exports</span>.askAI = functions.https.onCall(<span class="code-keyword">async</span> (data, context) => {
+  <span class="code-keyword">const</span> { athleteId, question } = data;
+  
+  <span class="code-comment">// 1. Fetch athlete's last 7-day data</span>
+  <span class="code-keyword">const</span> athleteContext = <span class="code-keyword">await</span> buildAthleteContext(athleteId);
+  
+  <span class="code-comment">// 2. Classify question category</span>
+  <span class="code-keyword">const</span> category = <span class="code-keyword">await</span> classifyQuestion(question); <span class="code-comment">// e.g. 'nutrition'</span>
+  
+  <span class="code-comment">// 3. Query Pinecone with metadata filter</span>
+  <span class="code-keyword">const</span> retrieved = <span class="code-keyword">await</span> pinecone.query({
+    vector: <span class="code-keyword">await</span> embed(question),
+    topK: <span class="code-value">5</span>,
+    filter: { category, ageGroup: athleteContext.ageGroup }
+  });
+  
+  <span class="code-comment">// 4. Build full prompt</span>
+  <span class="code-keyword">const</span> prompt = buildPrompt(athleteContext, retrieved.matches, question);
+  
+  <span class="code-comment">// 5. Call Claude API</span>
+  <span class="code-keyword">const</span> response = <span class="code-keyword">await</span> anthropic.messages.create({
+    model: <span class="code-string">"claude-sonnet-4-20250514"</span>,
+    max_tokens: <span class="code-value">1024</span>,
+    messages: [{ role: <span class="code-string">"user"</span>, content: prompt }]
+  });
+  
+  <span class="code-comment">// 6. Extract citations & save to Firestore</span>
+  <span class="code-keyword">const</span> citations = extractCitations(response.content[0].text);
+  <span class="code-keyword">await</span> saveRecommendation(athleteId, question, response, citations);
+  
+  <span class="code-keyword">return</span> { answer: response.content[0].text, citations };
+});
+      </code>
+    </div>
+  </section>
+
+  <!-- S9: KNOWLEDGE BASE -->
+  <section class="section" id="knowledge">
+    <div class="section-header">
+      <div class="section-icon">📚</div>
+      <div class="section-title-block">
+        <div class="section-num">القسم 9</div>
+        <h2>بناء قاعدة المعرفة العلمية</h2>
+        <p>تحويل الكتب والأبحاث PDF إلى Knowledge Base قابلة للبحث بالذكاء الاصطناعي</p>
+      </div>
+    </div>
+
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon blue">📖</div>
+        <h3>مصادر السباحة</h3>
+        <p>
+          • Swimming Fastest — Maglischo (2003)<br>
+          • FINA Coaching Manual<br>
+          • Science of Swimming Faster — Riewald<br>
+          • Age Group Swimming Development Guidelines
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-icon teal">🥗</div>
+        <h3>التغذية الرياضية</h3>
+        <p>
+          • Sports Nutrition — Burke & Deakin<br>
+          • Nutrition for Athletes — IOC Consensus<br>
+          • Youth Sports Nutrition — Purcell (2013)<br>
+          • ISSN Position Stands (2022-2024)
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-icon green">💪</div>
+        <h3>القوة والتكيّف</h3>
+        <p>
+          • NSCA Strength Conditioning Youth<br>
+          • Periodization — Bompa & Buzzichelli<br>
+          • Training Load Monitoring — Bourdon et al.<br>
+          • ACWR Research — Gabbett (2016-2020)
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-icon amber">🏥</div>
+        <h3>الطب الرياضي والاستشفاء</h3>
+        <p>
+          • Sports Medicine — Brukner & Khan<br>
+          • Overtraining Syndrome — Kreher & Schwartz<br>
+          • Sleep & Athletic Performance — Watson<br>
+          • Recovery Science — Kellmann & Beckmann
+        </p>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <p style="font-weight:700;color:var(--primary);font-size:15px;margin-bottom:20px;">🔧 Embedding Pipeline — خط أنابيب معالجة المراجع</p>
+
+    <table class="req-table">
+      <thead>
+        <tr><th>المرحلة</th><th>الأداة</th><th>العملية</th><th>الناتج</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>1. استخراج PDF</strong></td>
+          <td><span class="field-type">PyMuPDF</span></td>
+          <td>استخراج النص مع الحفاظ على بنية الفقرات وأرقام الصفحات</td>
+          <td>ملفات نصية مُنظّمة JSON</td>
+        </tr>
+        <tr>
+          <td><strong>2. التنظيف</strong></td>
+          <td><span class="field-type">Python/Regex</span></td>
+          <td>إزالة ترقيمات الصفحات، الرؤوس المتكررة، الرموز غير المفيدة، تصحيح الكسر</td>
+          <td>نص نظيف قابل للمعالجة</td>
+        </tr>
+        <tr>
+          <td><strong>3. Semantic Chunking</strong></td>
+          <td><span class="field-type">LangChain SemanticSplitter</span></td>
+          <td>تقطيع بحجم 400-600 token مع 80 token overlap، محاولة الحفاظ على الفقرة الكاملة</td>
+          <td>Array&lt;Chunk&gt; مع نص ومعلومات الموقع</td>
+        </tr>
+        <tr>
+          <td><strong>4. Metadata Tagging</strong></td>
+          <td><span class="field-type">Claude API</span></td>
+          <td>لكل Chunk: تحديد الفئة (sleep/nutrition/...) + الفئة العمرية + الكلمات المفتاحية + درجة الأهمية</td>
+          <td>Chunk + Metadata كاملة</td>
+        </tr>
+        <tr>
+          <td><strong>5. Embedding</strong></td>
+          <td><span class="field-type">OpenAI text-embedding-3-large</span></td>
+          <td>تحويل كل Chunk إلى متجه 3072 بُعداً</td>
+          <td>Vectors جاهزة للتخزين</td>
+        </tr>
+        <tr>
+          <td><strong>6. التخزين</strong></td>
+          <td><span class="field-type">Pinecone Upsert</span></td>
+          <td>رفع الـ Vectors مع Metadata إلى Pinecone Index</td>
+          <td>Index قابل للبحث فوراً</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="highlight-box warning">
+      <h4>⚠️ ملاحظة قانونية حول حقوق النشر</h4>
+      <p>استخدام الكتب للـ RAG يقع في منطقة رمادية قانونياً. توصي بـ: (1) استخدام كتب Open Access أو مراجع مُرخّصة. (2) الاستعلام القانوني حول Fair Use في نطاق العمل التعليمي. (3) التفاوض على ترخيص مع الناشرين قبل الإطلاق التجاري. (4) النظر في بناء قاعدة معرفة من المراجع العلمية المفتوحة (PubMed, BJSM Open Access).</p>
+    </div>
+  </section>
+
+  <!-- S10: MVP -->
+  <section class="section" id="mvp">
+    <div class="section-header">
+      <div class="section-icon">🚀</div>
+      <div class="section-title-block">
+        <div class="section-num">القسم 10</div>
+        <h2>نطاق MVP</h2>
+        <p>المنتج الأدنى القابل للإطلاق — 6 أشهر</p>
+      </div>
+    </div>
+
+    <div class="mvp-phase">
+      <div class="phase-header phase1">
+        <div class="phase-number">1</div>
+        <div>
+          <div class="phase-title">المرحلة 1: البنية الأساسية (الشهر 1-2)</div>
+          <div class="phase-duration">Foundation & Auth</div>
+        </div>
+      </div>
+      <div class="phase-body">
+        <div class="feature-item">إعداد مشروع Flutter مع Clean Architecture + BLoC</div>
+        <div class="feature-item">Firebase Authentication (Email + Google Sign-In)</div>
+        <div class="feature-item">Firestore Security Rules الأساسية</div>
+        <div class="feature-item">شاشات: Login / Register / Setup Athlete / Profile</div>
+        <div class="feature-item">إضافة متدربين متعددين مع التبديل بينهم</div>
+        <div class="feature-item">CI/CD pipeline (GitHub Actions + Firebase App Distribution)</div>
+      </div>
+    </div>
+
+    <div class="mvp-phase">
+      <div class="phase-header phase2">
+        <div class="phase-number">2</div>
+        <div>
+          <div class="phase-title">المرحلة 2: تتبع البيانات (الشهر 2-3)</div>
+          <div class="phase-duration">Data Logging Modules</div>
+        </div>
+      </div>
+      <div class="phase-body">
+        <div class="feature-item">شاشة Universal Daily Log (Wizard 5 خطوات)</div>
+        <div class="feature-item">تسجيل: نوم + نبض الراحة + Wellness + تغذية + تدريب</div>
+        <div class="feature-item">Offline Support مع Hive + مزامنة تلقائية</div>
+        <div class="feature-item">شاشة Dashboard الرئيسية مع Cards</div>
+        <div class="feature-item">تسجيل الإصابات ومتابعة التعافي</div>
+        <div class="feature-item">التذكيرات اليومية بالإشعارات</div>
+      </div>
+    </div>
+
+    <div class="mvp-phase">
+      <div class="phase-header phase3">
+        <div class="phase-number">3</div>
+        <div>
+          <div class="phase-title">المرحلة 3: الذكاء التحليلي (الشهر 3-5)</div>
+          <div class="phase-duration">AI Algorithms + Reports</div>
+        </div>
+      </div>
+      <div class="phase-body">
+        <div class="feature-item">Cloud Functions: خوارزمية حساب Stress Score</div>
+        <div class="feature-item">Cloud Functions: خوارزمية ACWR + كشف الحمل الزائد</div>
+        <div class="feature-item">نظام التنبيهات الآلي مع FCM Notifications</div>
+        <div class="feature-item">التقارير الأسبوعية (شاشة + تصدير PDF)</div>
+        <div class="feature-item">التقارير الشهرية مع الاتجاهات</div>
+        <div class="feature-item">شاشة تفاصيل الإجهاد والـ ACWR</div>
+      </div>
+    </div>
+
+    <div class="mvp-phase">
+      <div class="phase-header phase4">
+        <div class="phase-number">4</div>
+        <div>
+          <div class="phase-title">المرحلة 4: المساعد الذكي RAG (الشهر 5-6)</div>
+          <div class="phase-duration">AI Assistant + Launch</div>
+        </div>
+      </div>
+      <div class="phase-body">
+        <div class="feature-item">بناء قاعدة المعرفة (Embedding Pipeline)</div>
+        <div class="feature-item">Pinecone Index + Cloud Function للـ RAG</div>
+        <div class="feature-item">شاشة AI Chat مع Citation System</div>
+        <div class="feature-item">اختبار Beta مع 20 مستخدم + جمع التغذية الراجعة</div>
+        <div class="feature-item">أمان + GDPR Compliance + Privacy Policy</div>
+        <div class="feature-item">إطلاق على App Store + Google Play</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S11: FUTURE SCOPE -->
+  <section class="section" id="future">
+    <div class="section-header">
+      <div class="section-icon">🔮</div>
+      <div class="section-title-block">
+        <div class="section-num">القسم 11</div>
+        <h2>النطاق المستقبلي</h2>
+        <p>Future Scope — الميزات بعد MVP (الشهر 7+)</p>
+      </div>
+    </div>
+
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon blue">⌚</div>
+        <h3>تكامل الأجهزة الذكية</h3>
+        <p>ربط مع Apple Watch / Garmin / Whoop لاستيراد نبض الراحة ونوم تلقائياً. مزامنة مع Google Fit و Apple Health. تقليل الإدخال اليدوي لأقل من 30 ثانية/يوم.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon teal">🏋️</div>
+        <h3>منصة المدربين</h3>
+        <p>Dashboard مستقل للمدرب يرى جميع رياضييه. تعليقات تدريبية على الجلسات. مقارنة متدرب بآخر. تعيين أهداف وخطط تدريب أسبوعية. Chat بين ولي الأمر والمدرب.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon purple">🎯</div>
+        <h3>التنبؤ بالأداء</h3>
+        <p>نموذج ML يتنبأ بالأداء في المسابقة القادمة بناءً على بيانات الأسابيع الأخيرة. Periodization AI يقترح جدول تدريب مثالي. Peak Performance Windows.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon amber">🌍</div>
+        <h3>توسعة الرياضات</h3>
+        <p>إضافة رياضات أخرى (كرة قدم، ألعاب قوى، تنس) بنفس البنية التحتية. قاعدة معرفة لكل رياضة. نموذج SaaS لأكاديميات رياضية. White-label للأندية.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon red">🔬</div>
+        <h3>تحليل الفيديو بالذكاء الاصطناعي</h3>
+        <p>تحميل فيديو تدريب وتحليل التقنية الحركية بالذكاء الاصطناعي. مقارنة مع النمط المثالي. نقاط تحسين محددة للمدرب. Computer Vision على الحركة.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon green">👥</div>
+        <h3>المجتمع والمنافسة</h3>
+        <p>Leaderboards بين أندية السباحة. تحديات أسبوعية. مشاركة الإنجازات. منتدى أولياء أمور مع مشاركة التجارب. ربط بمنصات السباحة الرسمية.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- S12: RISKS + 12-MONTH ROADMAP -->
+  <section class="section" id="risks">
+    <div class="section-header">
+      <div class="section-icon">⚠️</div>
+      <div class="section-title-block">
+        <div class="section-num">القسم 12</div>
+        <h2>تحليل المخاطر + خطة 12 شهراً</h2>
+        <p>CTO Review — مراجعة شاملة للمخاطر وخطة التنفيذ</p>
+      </div>
+    </div>
+
+    <p style="font-weight:700;color:var(--primary);font-size:15px;margin-bottom:20px;">🔴 المخاطر التقنية والقانونية والذكاء الاصطناعي</p>
+
+    <div class="risk-card">
+      <div class="risk-icon critical">🔐</div>
+      <div class="risk-body">
+        <div class="risk-title">مخاطر خصوصية بيانات الأطفال (COPPA + GDPR-K)</div>
+        <div class="risk-desc">التطبيق يجمع بيانات صحية لقاصرين (تحت 18 سنة) مما يُخضعه لأشد قوانين حماية البيانات صرامة عالمياً. أي خرق قد يعني غرامات مالية ضخمة وإغلاق.</div>
+        <div class="risk-mitigation">✅ الحل: موافقة صريحة موثقة من ولي الأمر | لا تخزين بيانات تعريفية للطفل خارج الدولة | DPIA (Data Protection Impact Assessment) قبل الإطلاق | مستشار قانوني متخصص في GDPR</div>
+      </div>
+    </div>
+
+    <div class="risk-card">
+      <div class="risk-icon critical">🏥</div>
+      <div class="risk-body">
+        <div class="risk-title">المسؤولية الطبية والقانونية (Medical Liability)</div>
+        <div class="risk-desc">التطبيق يكتشف "إجهاداً رياضياً" — إذا أخفق في الكشف عن حالة خطيرة أو أعطى توصية خاطئة وتسبب في إصابة، قد يواجه المشروع دعاوى قانونية.</div>
+        <div class="risk-mitigation">✅ الحل: إخلاء مسؤولية واضح "هذا التطبيق ليس بديلاً عن الاستشارة الطبية" | disclaimer في كل توصية | "راجع الطبيب" عند أي مؤشر خطير | تأمين مسؤولية مهنية قبل الإطلاق التجاري</div>
+      </div>
+    </div>
+
+    <div class="risk-card">
+      <div class="risk-icon high">🤖</div>
+      <div class="risk-body">
+        <div class="risk-title">دقة نموذج الذكاء الاصطناعي (AI Hallucination)</div>
+        <div class="risk-desc">نماذج LLM قد "تخترع" معلومات بثقة. في سياق طبي-رياضي لأطفال هذا خطر مضاعف. RAG يُقلل لكن لا يُلغي المشكلة تماماً.</div>
+        <div class="risk-mitigation">✅ الحل: Temperature = 0 (أقل إبداعاً + أكثر دقة) | Grounding صارم بالمراجع فقط | Human Review لأول 500 استعلام | نظام تقييم للمستخدمين يُطلق إنذار عند التقييمات السلبية المتكررة | Confidence Threshold</div>
+      </div>
+    </div>
+
+    <div class="risk-card">
+      <div class="risk-icon high">📊</div>
+      <div class="risk-body">
+        <div class="risk-title">دقة خوارزميات الكشف عن الإجهاد</div>
+        <div class="risk-desc">الإجهاد الرياضي يتأثر بعوامل كثيرة. خوارزمية بسيطة (ACWR + HR + Sleep) قد تُعطي نتائج مضللة: كثير من الإنذارات الكاذبة (False Positives) يُفقد الثقة.</div>
+        <div class="risk-mitigation">✅ الحل: Calibration period أول أسبوعين (بناء Baseline) | تدريج التنبيهات (تحذير → تنبيه → إنذار) | إمكانية ضبط الحساسية | نسب الأخطاء وتوضيح القيود للمستخدم</div>
+      </div>
+    </div>
+
+    <div class="risk-card">
+      <div class="risk-icon med">💰</div>
+      <div class="risk-body">
+        <div class="risk-title">تكاليف Firebase + AI API مرتفعة عند التوسع</div>
+        <div class="risk-desc">Firestore + Cloud Functions + Pinecone + Anthropic/OpenAI API تُجمّع تكاليف متصاعدة. عند 10k مستخدم نشط يومياً قد تتجاوز التكاليف الإيرادات.</div>
+        <div class="risk-mitigation">✅ الحل: حد استخدام AI per User/Day في MVP | Caching نتائج الاستعلامات المتشابهة | الانتقال لـ Self-hosted LLM (Llama 3) لتقليل التكاليف في V2 | Firestore Optimization (Composite Indexes)</div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <p style="font-weight:700;color:var(--primary);font-size:15px;margin-bottom:20px;">📅 خطة التطوير — 12 شهراً</p>
+
+    <div class="roadmap-row">
+      <div class="roadmap-month">M1-M2</div>
+      <div class="roadmap-bar">
+        <h4>🏗️ Foundation — البنية الأساسية</h4>
+        <p>Flutter Setup + Firebase Config + Auth + Athlete Management + CI/CD | هدف: تطبيق يعمل مع 3 مستخدمين اختبار</p>
+      </div>
+    </div>
+    <div class="roadmap-row">
+      <div class="roadmap-month">M2-M3</div>
+      <div class="roadmap-bar">
+        <h4>📊 Data Layer — طبقة البيانات</h4>
+        <p>جميع شاشات التسجيل + Offline Mode + Dashboard + Notifications | هدف: ولي الأمر يُسجّل يومياً ≤ 3 دقائق</p>
+      </div>
+    </div>
+    <div class="roadmap-row">
+      <div class="roadmap-month">M3-M4</div>
+      <div class="roadmap-bar">
+        <h4>🧮 Algorithms — الخوارزميات</h4>
+        <p>Stress Score + ACWR Engine + Alert Rules في Cloud Functions | هدف: كشف دقيق للإجهاد مع false positive rate &lt; 15%</p>
+      </div>
+    </div>
+    <div class="roadmap-row">
+      <div class="roadmap-month">M4-M5</div>
+      <div class="roadmap-bar">
+        <h4>📈 Reports & Analytics — التقارير</h4>
+        <p>التقارير الأسبوعية والشهرية + PDF Export + تصورات بيانية | هدف: تقرير يُرسَل تلقائياً كل أحد</p>
+      </div>
+    </div>
+    <div class="roadmap-row">
+      <div class="roadmap-month">M5-M6</div>
+      <div class="roadmap-bar">
+        <h4>🤖 AI Assistant — المساعد الذكي</h4>
+        <p>Embedding Pipeline + Pinecone + RAG Cloud Function + AI Chat Screen | هدف: 90%+ استجابة مستندة لمراجع</p>
+      </div>
+    </div>
+    <div class="roadmap-row">
+      <div class="roadmap-month">M6</div>
+      <div class="roadmap-bar" style="border-right: 4px solid #0D9488;">
+        <h4>🚀 Launch — الإطلاق</h4>
+        <p>Beta Testing → App Store Review → Marketing Launch | هدف: 500 مستخدم نشط في أول شهر</p>
+      </div>
+    </div>
+    <div class="roadmap-row">
+      <div class="roadmap-month">M7-M9</div>
+      <div class="roadmap-bar">
+        <h4>📈 Growth — النمو</h4>
+        <p>تحليل بيانات الاستخدام + تحسينات بناءً على Feedback + Coach Portal MVP | هدف: 45% Day-30 Retention</p>
+      </div>
+    </div>
+    <div class="roadmap-row">
+      <div class="roadmap-month">M9-M12</div>
+      <div class="roadmap-bar">
+        <h4>🔮 V2 Features — الإصدار الثاني</h4>
+        <p>Wearable Integration + Advanced ML + Premium Features | هدف: 2000 مستخدم، إيرادات تغطي التكاليف</p>
+      </div>
+    </div>
+
+    <div class="highlight-box danger" style="margin-top:32px;">
+      <h4>🚨 القرار الحرج قبل الإطلاق</h4>
+      <p>استشارة محامٍ متخصص في (1) حماية بيانات الأطفال في المنطقة المستهدفة، (2) المسؤولية القانونية لتطبيقات الصحة، (3) حقوق النشر للمراجع العلمية. هذه الاستشارة يجب أن تتم في الشهر 4 على الأبعد، قبل بناء RAG System وقبل الإطلاق التجاري.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div class="doc-footer">
+    <div>
+      <strong>AquaTrack Pro</strong> — وثيقة المشروع v1.0<br>
+      تم الإعداد بواسطة: Senior Software Architect + DB Architect + UI/UX Designer + CTO Review
+    </div>
+    <div style="text-align:left;">
+      <strong>الحالة:</strong> Draft — في انتظار المراجعة<br>
+      <strong>التالي:</strong> موافقة على المتطلبات → بدء Flutter Setup
+    </div>
+  </div>
+
+</main>
+
+<script>
+  // Smooth scrolling & active nav
+  document.querySelectorAll('.nav-item').forEach(item => {
+    item.addEventListener('click', function(e) {
+      document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+
+  // Intersection Observer for active nav
+  const sections = document.querySelectorAll('.section');
+  const navItems = document.querySelectorAll('.nav-item');
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        navItems.forEach(item => {
+          item.classList.remove('active');
+          if (item.getAttribute('href') === '#' + id) {
+            item.classList.add('active');
+          }
+        });
+      }
+    });
+  }, { threshold: 0.2 });
+
+  sections.forEach(s => observer.observe(s));
+</script>
+
+</body>
+</html>

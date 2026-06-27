@@ -1,0 +1,89 @@
+name: aquatrack_pro
+description: "AquaTrack Pro - Smart Platform for Monitoring Junior Swimmers"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # BLoC State Management
+  flutter_bloc: ^8.1.6
+  provider: ^6.1.2
+  equatable: ^2.0.7
+
+  # Firebase
+  firebase_core: ^3.12.1
+  firebase_auth: ^5.5.1
+  cloud_firestore: ^5.6.5
+  firebase_messaging: ^15.2.4
+  firebase_analytics: ^11.4.4
+  google_sign_in: ^6.2.2
+
+  # Local Storage (for offline support)
+  hive_flutter: ^1.1.0
+  timezone: ^0.10.1
+
+  # HTTP & Networking
+  dio: ^5.7.0
+  connectivity_plus: ^6.1.4
+
+  # UI & Charts
+  fl_chart: ^0.68.0
+  google_fonts: ^6.2.1
+  shimmer: ^3.0.0
+  lottie: ^3.3.3
+  cached_network_image: ^3.4.1
+
+  # PDF & Export
+  pdf: ^3.11.3
+  printing: ^5.14.2
+
+  # SwimVision
+  camera: ^0.10.5+9
+  video_compress: ^3.1.2
+  video_player: ^2.8.1
+  permission_handler: ^11.3.0
+
+  # Utilities
+  intl: ^0.20.2
+  path_provider: ^2.1.5
+  image_picker: ^1.1.2
+  flutter_local_notifications: ^18.0.1
+  dartz: ^0.10.1
+  get_it: ^8.0.3
+  uuid: ^4.5.1
+  flutter_dotenv: ^5.2.1
+  firebase_storage: ^12.4.10
+  file_picker: ^11.0.2
+  syncfusion_flutter_pdf: ^30.2.7
+  sentry_flutter: ^8.14.2
+  firebase_performance: ^0.10.1+10
+  google_mlkit_pose_detection: ^0.14.1
+  image: ^4.8.0
+  ffmpeg_kit_flutter_min_gpl: ^6.0.3
+  flutter_svg: ^2.3.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  bloc_test: ^9.1.7
+  mocktail: ^1.0.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/knowledge_base/books/
+    - assets/knowledge_base/manifest.json
+    - assets/nutrition/
+    - assets/data/world_records.json
+    - assets/data/championships_db.json
+    - .env

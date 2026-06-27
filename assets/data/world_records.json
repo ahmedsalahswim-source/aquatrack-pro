@@ -1,0 +1,66 @@
+{
+  "records": [
+    {
+      "event": "50m Freestyle",
+      "pool": "50m",
+      "gender": "male",
+      "time_seconds": 20.91,
+      "athlete_name": "Cesar Cielo",
+      "country": "BRA",
+      "year": 2009
+    },
+    {
+      "event": "50m Freestyle",
+      "pool": "50m",
+      "gender": "female",
+      "time_seconds": 23.61,
+      "athlete_name": "Sarah Sjöström",
+      "country": "SWE",
+      "year": 2023
+    },
+    {
+      "event": "100m Freestyle",
+      "pool": "50m",
+      "gender": "male",
+      "time_seconds": 46.80,
+      "athlete_name": "Zhanle Pan",
+      "country": "CHN",
+      "year": 2024
+    },
+    {
+      "event": "100m Freestyle",
+      "pool": "50m",
+      "gender": "female",
+      "time_seconds": 51.71,
+      "athlete_name": "Sarah Sjöström",
+      "country": "SWE",
+      "year": 2017
+    },
+    {
+      "event": "100m Butterfly",
+      "pool": "50m",
+      "gender": "male",
+      "time_seconds": 49.45,
+      "athlete_name": "Caeleb Dressel",
+      "country": "USA",
+      "year": 2021
+    },
+    {
+      "event": "100m Butterfly",
+      "pool": "50m",
+      "gender": "female",
+      "time_seconds": 55.18,
+      "athlete_name": "Gretchen Walsh",
+      "country": "USA",
+      "year": 2024
+    }
+  ],
+  "motivational_standards": {
+    "AAAA_multiplier": 1.10,
+    "AAA_multiplier": 1.15,
+    "AA_multiplier": 1.20,
+    "A_multiplier": 1.25,
+    "BB_multiplier": 1.35,
+    "B_multiplier": 1.45
+  }
+}

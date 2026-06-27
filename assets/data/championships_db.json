@@ -1,0 +1,725 @@
+{
+  "championship": "Upper Egypt 2025",
+  "results": [
+    {
+      "event": " (Age 13)",
+      "gender": "female",
+      "swimmer": "ﺣﺒﻴﺒﻪ إﻳﻬﺎب ﻋﺒﺪﷲ ﺣﺴﻦاﻛﺎدﻳﻤﻲ  اﻟﺴلام",
+      "time": "11:09:23",
+      "time_seconds": 669.23,
+      "position": 1
+    },
+    {
+      "event": " (Age 13)",
+      "gender": "female",
+      "swimmer": "ﺟﺎﻧﻴﻞ ﻫﺪرا زاﻫﺮاﺑﻮاﻟﺮﻳﺶ",
+      "time": "11:12:84",
+      "time_seconds": 672.84,
+      "position": 2
+    },
+    {
+      "event": " (Age 13)",
+      "gender": "female",
+      "swimmer": "ﺑﻴﺮى ﻫﺸﺎم ﻣﺤﻤﺪ ﺣﺎﻓﻆ أﺣﻤﺪ ﺳﺘﻰ ﻛﻠﻮب",
+      "time": "12:03:19",
+      "time_seconds": 723.19,
+      "position": 3
+    },
+    {
+      "event": " (Age 13)",
+      "gender": "female",
+      "swimmer": "ﺑﺮﻳﺴﻜلا دﻳﻔﻴﺪ ﻋﻴﺎد ﺻﻐﻴﺮ ﻧﺎدى اﻟﺸﻤﺲ اﻟﺮﻳﺎضى",
+      "time": "12:05:46",
+      "time_seconds": 725.46,
+      "position": 4
+    },
+    {
+      "event": " (Age 13)",
+      "gender": "female",
+      "swimmer": "ﻛﺎدي اﺣﻤﺪ ﻟﻄﻔﻲ ﺳﻴﺪاﻛﺎدﻳﻤﻲ  اﻟﺴلام",
+      "time": "12:27:84",
+      "time_seconds": 747.84,
+      "position": 5
+    },
+    {
+      "event": " (Age 13)",
+      "gender": "male",
+      "swimmer": "ﻣﺤﻤﺪ رﻓﺎﻋﻰ ﻣﺤﻤﺪ ﻋﻠﻰ اﻟﻐﺮدﻗﺔ اﻟﺮﻳﺎضى",
+      "time": "19:44:76",
+      "time_seconds": 1184.76,
+      "position": 2
+    },
+    {
+      "event": " (Age 13)",
+      "gender": "male",
+      "swimmer": "ﻣﻌﺎذ ﻣﺤﻤﺪ ﻋﺒﺪ اﻟﻠﻄﻴﻒ ﺛﺎﺑﺖﺳﺘﻰ ﻛﻠﻮب",
+      "time": "20:33:35",
+      "time_seconds": 1233.35,
+      "position": 3
+    },
+    {
+      "event": " (Age 13)",
+      "gender": "male",
+      "swimmer": "ﺟﻴﺮوم ﺟﺮﺟﺲ ﻋﺒﺪاﻟﻤﺴﻴﺢ ﻧﺎدى اﺳﻮان اﻟﺮﻳﺎضى",
+      "time": "21:17:23",
+      "time_seconds": 1277.23,
+      "position": 5
+    },
+    {
+      "event": " (Age 13)",
+      "gender": "male",
+      "swimmer": "ﻋﻠﻰ ادﻫﻢ اﺣﻤﺪ دﻫﺐاﻛﺎدﻳﻤﻲ  اﻟﺴلام",
+      "time": "21:25:94",
+      "time_seconds": 1285.94,
+      "position": 6
+    },
+    {
+      "event": " (Age 13)",
+      "gender": "male",
+      "swimmer": "اﺣﻤﺪ ﻣﻨﺘصر ﻧﺎﺟﻰ ﻋﺒﺪ اﻟﺴلام ﺣﺴﻦﻧﺎدى اﻟﻤﻨﻴﺎ اﻟﺮﻳﺎضى",
+      "time": "22:14:49",
+      "time_seconds": 1334.49,
+      "position": 7
+    },
+    {
+      "event": " (Age 13)",
+      "gender": "male",
+      "swimmer": "ﻋﺒﺪاﻟﺮﺣﻤﻦ اﺣﻤﺪ اﻟﺴﻴﺪار ﺟﻰ اس",
+      "time": "23:26:68",
+      "time_seconds": 1406.68,
+      "position": 9
+    },
+    {
+      "event": " (Age 13)",
+      "gender": "male",
+      "swimmer": "اﻟﻤﺼﻄﻔﻰ اﺳﺎﻣﺔ ﻳﻮﺳﻒ ﻣﺤﻤﺪﺷﺒﺎب أﻫﻨﺎﺳﻴﺎ",
+      "time": "10:25:39",
+      "time_seconds": 625.39,
+      "position": 1
+    },
+    {
+      "event": " (Age 13)",
+      "gender": "male",
+      "swimmer": "زﻳﻦ اﻟﺪﻳﻦ اﺣﻤﺪ ﺳﻌﺪ اﺣﻤﺪ ﻧﺎدى ﺳﻨﺰو اﻟﺮﻳﺎضى ﺑﺎﻟﻐﺮدﻗﻪ",
+      "time": "10:44:63",
+      "time_seconds": 644.63,
+      "position": 2
+    },
+    {
+      "event": " (Age 13)",
+      "gender": "male",
+      "swimmer": "ﺟﺎك دﻳﻔﻴﺪ ﻣﻴﺠﺮ وﻫﻴﺐﻧﺎدى اﻟﺸﻤﺲ اﻟﺮﻳﺎضى",
+      "time": "10:49:33",
+      "time_seconds": 649.33,
+      "position": 3
+    },
+    {
+      "event": " (Age 13)",
+      "gender": "male",
+      "swimmer": "ﻣﻌﺎذ ﻣﺤﻤﺪ ﻋﺒﺪ اﻟﻠﻄﻴﻒ ﺛﺎﺑﺖﺳﺘﻰ ﻛﻠﻮب",
+      "time": "10:54:30",
+      "time_seconds": 654.3,
+      "position": 4
+    },
+    {
+      "event": " (Age 13)",
+      "gender": "male",
+      "swimmer": "ﺟﻴﺮوم ﺟﺮﺟﺲ ﻋﺒﺪاﻟﻤﺴﻴﺢ ﻧﺎدى اﺳﻮان اﻟﺮﻳﺎضى",
+      "time": "10:58:15",
+      "time_seconds": 658.15,
+      "position": 5
+    },
+    {
+      "event": " (Age 13)",
+      "gender": "male",
+      "swimmer": "أﺣﻤﺪ ﻋﺒﺪرﺑﻪ اﺣﻤﺪ ﻣﺤﻤﺪ اﺣﻤﺪﻧﺎدى اﺳﻴﻮط اﻟﺮﻳﺎضى",
+      "time": "10:59:02",
+      "time_seconds": 659.02,
+      "position": 6
+    },
+    {
+      "event": " (Age 13)",
+      "gender": "male",
+      "swimmer": "ﻋﻠﻰ ادﻫﻢ اﺣﻤﺪ دﻫﺐاﻛﺎدﻳﻤﻲ  اﻟﺴلام",
+      "time": "11:01:65",
+      "time_seconds": 661.65,
+      "position": 7
+    },
+    {
+      "event": " (Age 15)",
+      "gender": "female",
+      "swimmer": "ﻣﺮﻳﻢ اﺣﻤﺪ اﺣﻤﺪ اﻧﻮر ﻧﺎدى اﺳﻴﻮط اﻟﺮﻳﺎضى",
+      "time": "10:43:86",
+      "time_seconds": 643.86,
+      "position": 1
+    },
+    {
+      "event": " (Age 15)",
+      "gender": "female",
+      "swimmer": "ﺳﺠﻲ ﺧﺎﻟﺪ ﺷﻌﺒﺎنﻧﺎدى اﻟﺸﻤﺲ اﻟﺮﻳﺎضى",
+      "time": "11:15:54",
+      "time_seconds": 675.54,
+      "position": 2
+    },
+    {
+      "event": " (Age 15)",
+      "gender": "female",
+      "swimmer": "وﻋﺪ ﻣﺤﻤﺪ ﻋﺒﺪه ﻣﺤﻤﺪﻧﺎدى اﻟﺸﻤﺲ اﻟﺮﻳﺎضى",
+      "time": "11:59:38",
+      "time_seconds": 719.38,
+      "position": 4
+    },
+    {
+      "event": " (Age 15)",
+      "gender": "female",
+      "swimmer": "ﺟﺎﻳﺪا اﻳﻬﺎب ﻣﺤﻤﺪ ﺳﻤﻴﺮﻧﺎدى راس ﻏﺎرب اﻟﺮﻳﺎضى",
+      "time": "12:48:28",
+      "time_seconds": 768.28,
+      "position": 6
+    },
+    {
+      "event": " (Age 15)",
+      "gender": "female",
+      "swimmer": "ﻧﺎﻫﺪ ﻣﺤﻤﺪ رﻓﻌﺖ ﻫﺎﺷﻢ اﺣﻤﺪ ﻧﺎدى اﺳﻮان اﻟﺮﻳﺎضى",
+      "time": "12:56:51",
+      "time_seconds": 776.51,
+      "position": 7
+    },
+    {
+      "event": " (Age 15)",
+      "gender": "female",
+      "swimmer": "ارﻳﺎم ﻣﺤﻤﺪ اﺑﻮ اﻟﺤﺴﻦ ﻣﺤﻤﺪ ﻧﺎدى اﻟﺸﻤﺲ اﻟﺮﻳﺎضى",
+      "time": "13:17:95",
+      "time_seconds": 797.95,
+      "position": 8
+    },
+    {
+      "event": " (Age 15)",
+      "gender": "female",
+      "swimmer": "ﻣﺮﻳﻢ اﻳﻤﻦ ﻣﺤﻤﺪ اﺣﻤﺪ ﻣﺤﻤﺪ ﻧﺎدى الاﻗصر اﻟﺮﻳﺎضى",
+      "time": "13:43:66",
+      "time_seconds": 823.66,
+      "position": 9
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "female",
+      "swimmer": "ﻣﻨﻪ ﻣﺤﻤﺪ اﺣﻤﺪ اﻟﻤﻮﻟﺪﻧﺎدى ﺳﻨﺰو اﻟﺮﻳﺎضى ﺑﺎﻟﻐﺮدﻗﻪ",
+      "time": "11:08:42",
+      "time_seconds": 668.42,
+      "position": 1
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "female",
+      "swimmer": "ﺣﺒﻴﺒﻪ واﺋﻞ ﻣﺤﻤﺪﻧﺎدى اﻟﻤﻨﻴﺎ اﻟﺮﻳﺎضى",
+      "time": "12:38:46",
+      "time_seconds": 758.46,
+      "position": 3
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "female",
+      "swimmer": "ﺟﻨﺎت ﺣﺴﻦ ﻋﺒﺎس اﺣﻤﺪ ﻣﻬﺮانار ﺟﻰ اس",
+      "time": "12:52:00",
+      "time_seconds": 772.0,
+      "position": 4
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "female",
+      "swimmer": "ﻛﺎرول ﺛﺮوت ﻣﻮسى ﻧﺎدى اﺳﻴﻮط اﻟﺮﻳﺎضى",
+      "time": "13:18:87",
+      "time_seconds": 798.87,
+      "position": 5
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "female",
+      "swimmer": "ﻣﺎرﻳﺎ ﻣﺪﺣﺖ رﺷﺎد ﻧﺎدى اﺳﻴﻮط اﻟﺮﻳﺎضى",
+      "time": "14:06:71",
+      "time_seconds": 846.71,
+      "position": 6
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "female",
+      "swimmer": "ﻫﺎﺟﺮ اﺣﻤﺪ ﻧﺒﻴﻞ ﻋﺒﺪ اﻟﺼﻤﺪﻧﺎدى اﻟﺸﻤﺲ اﻟﺮﻳﺎضى",
+      "time": "12:44:13",
+      "time_seconds": 764.13,
+      "position": 1
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "female",
+      "swimmer": "ﺳﺎرة ﻋﺼﺎم ﻣﺤﻤﺪ ﻣﻮسى ﻧﺎدى اﺳﻮان اﻟﺮﻳﺎضى",
+      "time": "13:27:81",
+      "time_seconds": 807.81,
+      "position": 2
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "female",
+      "swimmer": "ﻓﺮح ﻣﺤﻤﺪ ﺻلاح ﻧﺎدى اﻟﻤﻨﻴﺎ اﻟﺮﻳﺎضى",
+      "time": "15:55:75",
+      "time_seconds": 955.75,
+      "position": 3
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "female",
+      "swimmer": "ﺷﻤﺲ ﺣﺎزم ﻣﺤﻤﻮد ﻋﺒﺪ اﻟﻠﻄﻴﻒ ﻧﺎدى ﺳﻮﻫﺎج اﻟﺮﻳﺎضى",
+      "time": "16:45:17",
+      "time_seconds": 1005.17,
+      "position": 4
+    },
+    {
+      "event": " (Age 14)",
+      "gender": "male",
+      "swimmer": "ﻋﺒﺪاﻟﺮﺣﻤﻦ اﺳﺎﻣﻪ اﺑﺮاﻫﻴﻢﻧﺎدى اﻟﻤﻨﻴﺎ اﻟﺮﻳﺎضى",
+      "time": "20:11:07",
+      "time_seconds": 1211.07,
+      "position": 2
+    },
+    {
+      "event": " (Age 14)",
+      "gender": "male",
+      "swimmer": "ﻋﻠﻰ وﺳﺎم ﺑﻜﺮي ﻋﺒﺪﷲ ﻣﺤﻤﺪ ﻧﺎدى اﻟشرق",
+      "time": "21:47:08",
+      "time_seconds": 1307.08,
+      "position": 4
+    },
+    {
+      "event": " (Age 14)",
+      "gender": "male",
+      "swimmer": "ﻋﻤﺮ ﺧﺎﻟﺪ ﻋﺒﺪاﻟﻬﺎدياﻛﺎدﻳﻤﻲ  اﻟﺴلام",
+      "time": "23:35:12",
+      "time_seconds": 1415.12,
+      "position": 5
+    },
+    {
+      "event": " (Age 14)",
+      "gender": "male",
+      "swimmer": "داﻧﻴﻞ وﺳﻴﻢ ﺟﻮنﻧﺎدى اﺳﻮان اﻟﺮﻳﺎضى",
+      "time": "24:16:54",
+      "time_seconds": 1456.54,
+      "position": 7
+    },
+    {
+      "event": " (Age 14)",
+      "gender": "male",
+      "swimmer": "ﻣﺤﻤﺪ اﺣﻤﺪ ﻣﺤﻤﺪ اﻟﻬﻢ ﺧﻠﻴﻞﻣﺮﻛﺰ ﺷﺒﺎب اﻟﻤﺪﻳﻨﺔ أ ﺑﺎﻟﻤﻨﻴﺎ",
+      "time": "25:44:05",
+      "time_seconds": 1544.05,
+      "position": 8
+    },
+    {
+      "event": " (Age 15)",
+      "gender": "male",
+      "swimmer": "زﻳﺎد ﻋﻤﺮو ﺳﻌﻴﺪ ﻣﺤﻤﺪ ﻧﺪا اﺣﻤﺪ اﻟﻐﺮدﻗﺔ اﻟﺮﻳﺎضى",
+      "time": "18:10:45",
+      "time_seconds": 1090.45,
+      "position": 1
+    },
+    {
+      "event": " (Age 15)",
+      "gender": "male",
+      "swimmer": "ﻳﺲ اﻳﻬﺎب ﻣﺨﺘﺎراﻟﻐﺮدﻗﺔ اﻟﺮﻳﺎضى",
+      "time": "19:56:19",
+      "time_seconds": 1196.19,
+      "position": 2
+    },
+    {
+      "event": " (Age 15)",
+      "gender": "male",
+      "swimmer": "ﻋﺒﺪاﻟﺮﺣﻤﻦ ﻣﺤﻤﺪ ﻏﺮﻳﺐﻧﺎدى اﻟﻤﻨﻴﺎ اﻟﺮﻳﺎضى",
+      "time": "20:12:53",
+      "time_seconds": 1212.53,
+      "position": 3
+    },
+    {
+      "event": " (Age 15)",
+      "gender": "male",
+      "swimmer": "ﺣﻤﺰه ﺣﺴﺎم ﻋﺒﺪ اﻟﻠﻄﻴﻒ ﻣﻌﺘﻤﺪ ﻧﺎدى اﻟﻘﻮﺻﻴﺔ اﻟﺮﻳﺎضى",
+      "time": "22:35:96",
+      "time_seconds": 1355.96,
+      "position": 4
+    },
+    {
+      "event": " (Age 15)",
+      "gender": "male",
+      "swimmer": "ﻣﺤﻤﺪ أﺣﻤﺪ ﻋﺒﺪاﻟﻈﺎﻫﺮ ﻋﺒﺪﷲﻧﺎدى اﺳﻮان اﻟﺮﻳﺎضى",
+      "time": "22:47:58",
+      "time_seconds": 1367.58,
+      "position": 5
+    },
+    {
+      "event": " (Age 15)",
+      "gender": "male",
+      "swimmer": "ﻣﺤﻤﺪ ﻋﻠﻰ ﻓﺮج ﻋﺒﺪاﻟﻤﺠﻴﺪ ﻧﺎدى ﺳﻮﻫﺎج اﻟﺮﻳﺎضى",
+      "time": "23:11:87",
+      "time_seconds": 1391.87,
+      "position": 6
+    },
+    {
+      "event": " (Age 15)",
+      "gender": "male",
+      "swimmer": "ﻋﻤﺮ أﻳﻤﻦ ﻣﺤﻤﺪ ﻋﺒﺪ اﻟﺒﺎﻗﻰار ﺟﻰ اس",
+      "time": "24:18:76",
+      "time_seconds": 1458.76,
+      "position": 7
+    },
+    {
+      "event": " (Age 15)",
+      "gender": "male",
+      "swimmer": "ﻣﻴﻨﺎ اﻳﻤﻦ ﻋﺪﻟﻲ ﻋﺒﺪ اﻟﻨﻮر ﺳﻌﺪﻧﺎدى اﻟﻤﻨﻴﺎ اﻟﺮﻳﺎضى",
+      "time": "24:31:48",
+      "time_seconds": 1471.48,
+      "position": 8
+    },
+    {
+      "event": " (Age 15)",
+      "gender": "male",
+      "swimmer": "اﺣﻤﺪ ﺣﺴﻦ ﻋﺒﺎسار ﺟﻰ اس",
+      "time": "25:21:49",
+      "time_seconds": 1521.49,
+      "position": 9
+    },
+    {
+      "event": " (Age 16)",
+      "gender": "male",
+      "swimmer": "ﻣﺤﻤﺪ اﺳﺎﻣﻪ ﻧﺠﺎح ﻋﺒﺪﷲﻧﺎدى ﺳﻨﺰو اﻟﺮﻳﺎضى ﺑﺎﻟﻐﺮدﻗﻪ",
+      "time": "18:56:10",
+      "time_seconds": 1136.1,
+      "position": 1
+    },
+    {
+      "event": " (Age 16)",
+      "gender": "male",
+      "swimmer": "ﺑﺪر ﻣﺤﻤﺪ ﺑﺪرﻧﺎدى اﻟﻤﻨﻴﺎ اﻟﺮﻳﺎضى",
+      "time": "19:24:97",
+      "time_seconds": 1164.97,
+      "position": 2
+    },
+    {
+      "event": " (Age 16)",
+      "gender": "male",
+      "swimmer": "ﻋﻤﺮو ﺧﺎﻟﺪ أﺣﻤﺪ ﻧﺠﻴﺐ ﻧﺎدى اﻟﻤﻨﻴﺎ اﻟﺮﻳﺎضى",
+      "time": "19:27:10",
+      "time_seconds": 1167.1,
+      "position": 3
+    },
+    {
+      "event": " (Age 16)",
+      "gender": "male",
+      "swimmer": "ﻣﺎرك واﺋﻞ ﻋﺎﻃﻒ ﻧﺎدى راس ﻏﺎرب اﻟﺮﻳﺎضى",
+      "time": "22:45:24",
+      "time_seconds": 1365.24,
+      "position": 4
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "male",
+      "swimmer": "ﺣﺴﻴﻦ ﻣﺤﻤﺪ ﺣﺴﻴﻦ اﻣﻴﻦﺳﺘﻰ ﻛﻠﻮب",
+      "time": "18:52:95",
+      "time_seconds": 1132.95,
+      "position": 1
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "male",
+      "swimmer": "ﻣﻬﻨﺪ ﻣﺤﻤﺪ ﻋﺒﺪاﻟﺴﻤﻴﻊ ﻣﺤﻤﺪ ﻋﺜﻤﺎنﻧﺎدى الاﻗصر اﻟﺮﻳﺎضى",
+      "time": "20:53:72",
+      "time_seconds": 1253.72,
+      "position": 2
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "male",
+      "swimmer": "اﺣﻤﺪ ﻫﺎرون اﺣﻤﺪ ﻧﺎدى ﺳﻮﻫﺎج اﻟﺮﻳﺎضى",
+      "time": "23:46:59",
+      "time_seconds": 1426.59,
+      "position": 3
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "male",
+      "swimmer": "ﻋﻤﺮ ﺳﻴﺪ ﻋﺒﺪاﻟﻌﺰﻳﺰ ﻋﺒﺪاﻟﻌﺎل ﻧﺎدى اﺳﻮان اﻟﺮﻳﺎضى",
+      "time": "24:22:90",
+      "time_seconds": 1462.9,
+      "position": 4
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "male",
+      "swimmer": "ﻋﺒﺪاﻟﺮﺣﻤﻦ ﻣﺤﻤﻮد ﻋﺒﺪاﻟﺮﺣﻤﻦﻧﺎدى راس ﻏﺎرب اﻟﺮﻳﺎضى",
+      "time": "22:08:61",
+      "time_seconds": 1328.61,
+      "position": 2
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "male",
+      "swimmer": "ﻋﻤﺮ ﻣﺤﻤﻮد ﻋﺒﺪاﻟﺤﻤﻴﺪﻧﺎدى اﻟﺸﻤﺲ اﻟﺮﻳﺎضى",
+      "time": "22:55:56",
+      "time_seconds": 1375.56,
+      "position": 3
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "male",
+      "swimmer": "ﻣﺤﻤﺪ اﺣﻤﺪ ﻋﺰﻣﻲ اﻣﺎم ﻣﺘﻮﻟﻲ ﻣﺮﻛﺰ ﺷﺒﺎب اﻟﻤﺪﻳﻨﺔ أ ﺑﺎﻟﻤﻨﻴﺎ",
+      "time": "24:25:25",
+      "time_seconds": 1465.25,
+      "position": 4
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "male",
+      "swimmer": "زﻳﺎد اﻳﻤﻦ ﻋﺒﺪ اﻟﻌﻈﻴﻢ ﻧﺎدى اﺳﻴﻮط اﻟﺮﻳﺎضى",
+      "time": "26:34:57",
+      "time_seconds": 1594.57,
+      "position": 5
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "male",
+      "swimmer": "ﺧﺎﻟﺪ أﺣﻤﺪ ﻋﺒﺪاﻟﻈﺎﻫﺮ ﻋﺒﺪﷲﻧﺎدى اﺳﻮان اﻟﺮﻳﺎضى",
+      "time": "26:42:78",
+      "time_seconds": 1602.78,
+      "position": 6
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "male",
+      "swimmer": "ﻛﺮﻳﻢ واﺋﻞ ﻣﺤﻤﺪ ﻧﺎدى اﻟﻤﻨﻴﺎ اﻟﺮﻳﺎضى",
+      "time": "27:24:69",
+      "time_seconds": 1644.69,
+      "position": 7
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "male",
+      "swimmer": "ﺣﻤﺰة ﻋﺒﺪ اﻟﻨﺎصر ﺻﺎﺑﺮ اﺣﻤﺪ ﻧﺎدى اﺳﻮان اﻟﺮﻳﺎضى",
+      "time": "27:50:30",
+      "time_seconds": 1670.3,
+      "position": 8
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "male",
+      "swimmer": "اﻧﺲ ﻓﺮﻏﻠﻰ زﻏﻠﻮل ﺳﻠﻴﻤﺎن ﺣﺴﻦ ﻣﺮﻛﺰ ﺷﺒﺎب اﻟﻤﺪﻳﻨﺔ أ ﺑﺎﻟﻤﻨﻴﺎ",
+      "time": "28:59:85",
+      "time_seconds": 1739.85,
+      "position": 9
+    },
+    {
+      "event": " (Age 14)",
+      "gender": "male",
+      "swimmer": "ﻋﻤﺮ ﺣﺎﻛﻢ ﺣﻤﺪي ﻋﺒﺪاﻟﺴﻤﻴﻊﻧﺎدى اﺳﻴﻮط اﻟﺮﻳﺎضى",
+      "time": "10:06:15",
+      "time_seconds": 606.15,
+      "position": 1
+    },
+    {
+      "event": " (Age 14)",
+      "gender": "male",
+      "swimmer": "ﻋﻠﻰ وﺳﺎم ﺑﻜﺮي ﻋﺒﺪﷲ ﻣﺤﻤﺪ ﻧﺎدى اﻟشرق",
+      "time": "11:31:89",
+      "time_seconds": 691.89,
+      "position": 5
+    },
+    {
+      "event": " (Age 14)",
+      "gender": "male",
+      "swimmer": "ﻋﻤﺮ إﺑﺮاﻫﻴﻢ زﻳﻦ اﻟﺪﻳﻦ ﺑﺴﻴﻮﻧﻰ ار ﺟﻰ اس",
+      "time": "11:46:12",
+      "time_seconds": 706.12,
+      "position": 6
+    },
+    {
+      "event": " (Age 14)",
+      "gender": "male",
+      "swimmer": "ﻋﻤﺮ ﺧﺎﻟﺪ ﻋﺒﺪاﻟﻬﺎدياﻛﺎدﻳﻤﻲ  اﻟﺴلام",
+      "time": "12:07:95",
+      "time_seconds": 727.95,
+      "position": 7
+    },
+    {
+      "event": " (Age 14)",
+      "gender": "male",
+      "swimmer": "ﻣﻌﺰ شرﻳﻒ ﻣﺤﻤﺪ ﺣﺴﻴﻦ اﻛﺎدﻳﻤﻲ اﻟﺴلام",
+      "time": "12:16:29",
+      "time_seconds": 736.29,
+      "position": 8
+    },
+    {
+      "event": " (Age 14)",
+      "gender": "male",
+      "swimmer": "ﻛﺎرﻟﻮس ﺑﻴﺘﺮ ﻋﺒﺎد ﺻﻐﻴﺮ ار ﺟﻰ اس",
+      "time": "12:23:03",
+      "time_seconds": 743.03,
+      "position": 9
+    },
+    {
+      "event": " (Age 15)",
+      "gender": "male",
+      "swimmer": "ﻳﺲ اﻳﻬﺎب ﻣﺨﺘﺎراﻟﻐﺮدﻗﺔ اﻟﺮﻳﺎضى",
+      "time": "10:14:11",
+      "time_seconds": 614.11,
+      "position": 2
+    },
+    {
+      "event": " (Age 15)",
+      "gender": "male",
+      "swimmer": "اسر ﺑﺎﺳﻢ ﻋﺒﺪاﻟﻮﻫﺎباﻟﻐﺮدﻗﺔ اﻟﺮﻳﺎضى",
+      "time": "10:15:64",
+      "time_seconds": 615.64,
+      "position": 3
+    },
+    {
+      "event": " (Age 15)",
+      "gender": "male",
+      "swimmer": "ﻋﺒﺪاﻟﺮﺣﻤﻦ ﻣﺤﻤﺪ ﻏﺮﻳﺐﻧﺎدى اﻟﻤﻨﻴﺎ اﻟﺮﻳﺎضى",
+      "time": "10:31:94",
+      "time_seconds": 631.94,
+      "position": 4
+    },
+    {
+      "event": " (Age 15)",
+      "gender": "male",
+      "swimmer": "شرﻳﻒ ﻣﺤﻤﺪ ﻛﻤﺎل ﻣﺤﻤﺪ ﺣﺴﻴﺐ ﻧﺎدى اﻟﺸﻤﺲ اﻟﺮﻳﺎضى",
+      "time": "10:46:14",
+      "time_seconds": 646.14,
+      "position": 6
+    },
+    {
+      "event": " (Age 15)",
+      "gender": "male",
+      "swimmer": "ادم اﺣﻤﺪ ﺣﻤﺪيﻧﺎدى اﻟﻤﻨﻴﺎ اﻟﺮﻳﺎضى",
+      "time": "11:18:19",
+      "time_seconds": 678.19,
+      "position": 9
+    },
+    {
+      "event": " (Age 16)",
+      "gender": "male",
+      "swimmer": "ﻋﻤﺮو ﺧﺎﻟﺪ أﺣﻤﺪ ﻧﺠﻴﺐ ﻧﺎدى اﻟﻤﻨﻴﺎ اﻟﺮﻳﺎضى",
+      "time": "10:04:43",
+      "time_seconds": 604.43,
+      "position": 2
+    },
+    {
+      "event": " (Age 16)",
+      "gender": "male",
+      "swimmer": "ﺑﺪر ﻣﺤﻤﺪ ﺑﺪرﻧﺎدى اﻟﻤﻨﻴﺎ اﻟﺮﻳﺎضى",
+      "time": "10:14:93",
+      "time_seconds": 614.93,
+      "position": 3
+    },
+    {
+      "event": " (Age 16)",
+      "gender": "male",
+      "swimmer": "ﻣﺎرك واﺋﻞ ﻋﺎﻃﻒ ﻧﺎدى راس ﻏﺎرب اﻟﺮﻳﺎضى",
+      "time": "11:56:38",
+      "time_seconds": 716.38,
+      "position": 6
+    },
+    {
+      "event": " (Age 16)",
+      "gender": "male",
+      "swimmer": "ﻋﺒﺪاﻟﺮﺣﻤﻦ ﻣﺤﻤﺪ زﻳﻦ اﻟﻌﺎﺑﺪﻳﻦ ﻧﺎدى ﺑﻨﻰ ﺳﻮﻳﻒ اﻟﺮﻳﺎضى",
+      "time": "13:02:58",
+      "time_seconds": 782.58,
+      "position": 7
+    },
+    {
+      "event": " (Age 16)",
+      "gender": "male",
+      "swimmer": "ﻳﺤﻴﻰ اﺣﻤﺪ ﺣﺴﻴﻦ ﻋﻠﻰﻧﺎدى ﻓﺰاره اﻟﺮﻳﺎضى",
+      "time": "13:19:07",
+      "time_seconds": 799.07,
+      "position": 8
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "male",
+      "swimmer": "ﺳﻴﻒ ﻋﻤﺎد اﻟﺪﻳﺐ ﻋﺒﺪ اﻟﺤﻤﻴﺪﻧﺎدى ﻓﺰاره اﻟﺮﻳﺎضى",
+      "time": "13:31:19",
+      "time_seconds": 811.19,
+      "position": 3
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "male",
+      "swimmer": "اﺑﺮاﻫﻴﻢ اﺣﻤﺪ ﺗﻮﻓﻴﻖ ﺳﻴﺪ ﺣﺴﻦ ﻣﺮﻛﺰ ﺷﺒﺎب اﻟﻤﺪﻳﻨﺔ أ ﺑﺎﻟﻤﻨﻴﺎ",
+      "time": "14:30:12",
+      "time_seconds": 870.12,
+      "position": 4
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "male",
+      "swimmer": "ﻛﺮﻳﻢ اﻣﻴﻦ زﻳﻦ اﻟﻌﺎﺑﺪﻳﻦ ﻧﺎدى اﻟﻤﻨﻴﺎ اﻟﺮﻳﺎضى",
+      "time": "15:56:84",
+      "time_seconds": 956.84,
+      "position": 6
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "male",
+      "swimmer": "ﻣﺎرك ﻣﻤﺪوح ﺷﻮﻗﻲ ﺧﻠﻪ ﻧﺎدى اﻟﻘﻮﺻﻴﺔ اﻟﺮﻳﺎضى",
+      "time": "11:29:34",
+      "time_seconds": 689.34,
+      "position": 2
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "male",
+      "swimmer": "ﻋﺒﺪاﻟﺮﺣﻤﻦ ﻣﺤﻤﻮد ﻋﺒﺪاﻟﺮﺣﻤﻦﻧﺎدى راس ﻏﺎرب اﻟﺮﻳﺎضى",
+      "time": "11:49:39",
+      "time_seconds": 709.39,
+      "position": 4
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "male",
+      "swimmer": "ﻣﺤﻤﺪ اﺣﻤﺪ ﻋﺰﻣﻲ اﻣﺎم ﻣﺘﻮﻟﻲ ﻣﺮﻛﺰ ﺷﺒﺎب اﻟﻤﺪﻳﻨﺔ أ ﺑﺎﻟﻤﻨﻴﺎ",
+      "time": "12:32:14",
+      "time_seconds": 752.14,
+      "position": 5
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "male",
+      "swimmer": "زﻳﺎد اﻳﻤﻦ ﻋﺒﺪ اﻟﻌﻈﻴﻢ ﻧﺎدى اﺳﻴﻮط اﻟﺮﻳﺎضى",
+      "time": "13:06:89",
+      "time_seconds": 786.89,
+      "position": 6
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "male",
+      "swimmer": "ﻣﺤﻤﺪ اﺳﺎﻣﺔ ﻧﺠﻴﺐ اﺣﻤﺪ ﻣﺤﻤﻮدﻧﺎدى اﻟﻤﻨﻴﺎ اﻟﺮﻳﺎضى",
+      "time": "13:15:28",
+      "time_seconds": 795.28,
+      "position": 7
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "male",
+      "swimmer": "ﺧﺎﻟﺪ أﺣﻤﺪ ﻋﺒﺪاﻟﻈﺎﻫﺮ ﻋﺒﺪﷲﻧﺎدى اﺳﻮان اﻟﺮﻳﺎضى",
+      "time": "13:15:29",
+      "time_seconds": 795.29,
+      "position": 8
+    },
+    {
+      "event": " (Age 17)",
+      "gender": "male",
+      "swimmer": "ﺣﻤﺰة ﻋﺒﺪ اﻟﻨﺎصر ﺻﺎﺑﺮ اﺣﻤﺪ ﻧﺎدى اﺳﻮان اﻟﺮﻳﺎضى",
+      "time": "13:44:05",
+      "time_seconds": 824.05,
+      "position": 9
+    }
+  ]
+}

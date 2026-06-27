@@ -1,0 +1,131 @@
+{
+  "source": {
+    "title": "Bio-mechanisms of Swimming and Flying: Fluid Dynamics, Biomimetic Robots, and Sports Science",
+    "editors": ["Naomi Kato", "Shinji Kamimura"],
+    "publisher": "Springer",
+    "year": 2008,
+    "note": "Reference values extracted/paraphrased for use as a comparison benchmark in a video-based motion analysis program. Original chapters remain copyrighted by Springer and the respective authors."
+  },
+  "swimming_human_model_SWUM": {
+    "chapter": 29,
+    "title": "Analysis of Breast, Back and Butterfly Strokes by the Swimming Human Simulation Model SWUM",
+    "author": "Motomu Nakashima",
+    "pages": "361-372",
+    "video_derivation_method": {
+      "frames_per_stroke_cycle": 18,
+      "method": "Joint angles manually digitized per frame by matching body posture in source video to the simulation model.",
+      "source_videos": "Official Japan Swimming Federation educational 'model swimming' videos (non-competitive intensity)."
+    },
+    "body_model": {
+      "segments": "21 truncated elliptical cone rigid-link segments",
+      "reference_swimmer": {
+        "height_m": 1.705,
+        "weight_kg": 64.9,
+        "population": "average 20-29 year old Japanese male"
+      },
+      "hydrostatic_lift_N": 22.5,
+      "hydrostatic_lift_literature_range_N": [17, 29],
+      "simulation_timestep_normalized": 0.002,
+      "steps_per_cycle": 500
+    },
+    "joint_degrees_of_freedom": {
+      "breaststroke": 34,
+      "backstroke": 28,
+      "butterfly": 35,
+      "crawl": "not specified in this chapter (baseline of prior referenced study)"
+    },
+    "fluid_force_components_modeled": [
+      "inertial force (added mass)",
+      "normal drag force",
+      "tangential drag force",
+      "buoyancy"
+    ],
+    "propulsive_efficiency_formula": {
+      "expression": "eta = U * T / P",
+      "variables": {
+        "U": "swimming speed averaged over one stroke cycle",
+        "T": "drag force on the swimmer's body towed at speed U in gliding position",
+        "P": "average mechanical power consumed by the swimmer"
+      }
+    },
+    "benchmark_results": {
+      "propulsive_efficiency": {
+        "crawl": 0.20,
+        "backstroke": 0.20,
+        "butterfly": 0.20,
+        "breaststroke": 0.036
+      },
+      "normalized_stroke_length_vs_actual_video": {
+        "crawl": "simulation matches actual (video-derived) value closely",
+        "backstroke": "simulation matches actual (video-derived) value closely",
+        "butterfly": "simulation matches actual (video-derived) value closely",
+        "breaststroke": "simulation underestimates actual value by approximately 35%"
+      },
+      "qualitative_notes": [
+        "Breaststroke: hand-generated thrust peak occurs before the larger leg-kick thrust peak.",
+        "Backstroke/Butterfly: peak hand 'push' thrust closely precedes peak body velocity.",
+        "Most strokes show a negative (decelerating) thrust phase during the arm's recovery motion - a possible technique-efficiency indicator from video.",
+        "Reference comparison: front-crawl propelling efficiency reported elsewhere in literature (Toussaint et al. 1988) as 0.46-0.77, notably higher than this model's estimate - flagged by the original author as an open discrepancy."
+      ]
+    }
+  },
+  "hand_palm_fluid_dynamics": {
+    "chapter": 30,
+    "title": "Research in Fluid Dynamical Specification of Hand Palms in Freestyle Swimming",
+    "author": "Shinichiro Ito",
+    "pages": "373-381",
+    "sweepback_angle_gamma_definition": {
+      "45_deg": "arm moves outward from the body's long axis",
+      "90_deg": "arm moves parallel to the body's long axis",
+      "135_deg": "arm moves inward toward the body's long axis",
+      "usage": "Approximates arm-path phase during an S-shaped pull stroke (catch / pull-sculling / finish)."
+    },
+    "angle_of_attack_alpha_range_deg": [0, 90],
+    "angle_of_attack_measurement_resolution_deg": 1,
+    "test_conditions": {
+      "reynolds_number": "~3.4e5, matched to competitive freestyle underwater swimming speed",
+      "wind_velocity_m_s": 20
+    },
+    "hand_shapes_tested": {
+      "Hand_A": "fingers spread, ~3mm gaps - common competitive swimmer configuration",
+      "Hand_C": "fingers fully closed",
+      "Delta_wing_reference": "flat plate, 39.5 degree vertex angle, used as simplified analog of a closed hand"
+    },
+    "key_findings": [
+      "Lift/drag generation mechanism of a hand palm closely resembles that of a delta wing (leading-edge vortex separation, not 2D airfoil theory).",
+      "Closed-finger hand (Hand C) polar curve closely matches delta wing polar curve, including a discontinuity near angle of attack ~45-50 degrees.",
+      "Spread-finger hand (Hand A) lacks this discontinuity, attributed to flow leakage through the finger gaps from palm side to back side.",
+      "Vortex strength is stronger on the little-finger side than the thumb side, due to flow leakage through the thumb/index-finger gap.",
+      "Prior literature (Ito & Okuno 2003) found I-shaped (direct drag) pull stroke produces greater thrust than the traditional S-shaped pull stroke."
+    ]
+  },
+  "supplementary_context": [
+    {
+      "chapter": 5,
+      "topic": "Passive vs. powered posture/trajectory control in swimming fish",
+      "useful_for": "Classifying observed body motion in video as passive (automatic, structure-driven) vs. powered (actively controlled fin/limb movement)."
+    },
+    {
+      "chapter": 6,
+      "topic": "Bluefin tuna caudal fin mechanics",
+      "useful_for": "A measurable phase delay exists between the leading edge and mid-section of an oscillating caudal fin during undulation - relevant if analyzing tail/fin video kinematics."
+    },
+    {
+      "chapter": 9,
+      "topic": "CNS control of fish undulatory swimming (review)",
+      "useful_for": "Theoretical background only (central pattern generators); no extractable numeric benchmarks."
+    },
+    {
+      "chapter": 19,
+      "topic": "PIV flow measurement around a freely swimming fish",
+      "useful_for": "Confirms a reverse Karman vortex street forms behind the tail fin during propulsion - relevant for flow-visualization-based analysis."
+    }
+  ],
+  "suggested_program_integration": [
+    "Compare video-tracked joint angle count/range per stroke against the DOF benchmarks (34/28/35) to identify under-tracked joints.",
+    "If swim speed, estimated drag, and power output are available, compute eta = U*T/P and benchmark against 0.20 (crawl/back/butterfly) or 0.036 (breaststroke).",
+    "Use normalized stroke length (distance per cycle / swimmer height) as a fast comparative metric across swimmers without needing full power/drag estimates.",
+    "Flag a 'recovery-phase deceleration' segment in tracked center-of-mass velocity as a possible technique-efficiency indicator.",
+    "Classify tracked arm-sweep angle into ~45/90/135 degree bins to auto-detect catch/pull/finish stroke phases from video."
+  ]
+}

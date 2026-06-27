@@ -1,0 +1,1610 @@
+{
+  "categories": [
+    "Pre-Workout",
+    "Intra-Workout",
+    "Post-Workout",
+    "Breakfast",
+    "Lunch",
+    "Dinner",
+    "Snacks",
+    "Hydration"
+  ],
+  "items": [
+    {
+      "id": "pw1",
+      "nameAr": "موز مع زبدة الفول السوداني (شريحة توست)",
+      "nameEn": "Banana with Peanut Butter Toast",
+      "category": "Pre-Workout",
+      "macros": {
+        "calories": 250,
+        "protein": 8,
+        "carbs": 40,
+        "fats": 7
+      },
+      "notesAr": "يوفر طاقة سريعة ومستدامة بفضل الكربوهيدرات البسيطة والمعقدة.",
+      "climate": "any"
+    },
+    {
+      "id": "pw2",
+      "nameAr": "شوفان بالحليب والعسل",
+      "nameEn": "Oatmeal with Milk and Honey",
+      "category": "Pre-Workout",
+      "macros": {
+        "calories": 300,
+        "protein": 10,
+        "carbs": 55,
+        "fats": 5
+      },
+      "notesAr": "وجبة مثالية قبل التمرين بـ ساعتين لبطء امتصاص الكربوهيدرات.",
+      "climate": "any"
+    },
+    {
+      "id": "pw3",
+      "nameAr": "عصير فواكه طازج (تفاح وبرتقال)",
+      "nameEn": "Fresh Fruit Juice",
+      "category": "Pre-Workout",
+      "macros": {
+        "calories": 120,
+        "protein": 1,
+        "carbs": 30,
+        "fats": 0
+      },
+      "notesAr": "مصدر سريع للجلوكوز، ممتاز قبل التمرين بـ 30 دقيقة.",
+      "climate": "any"
+    },
+    {
+      "id": "pw4",
+      "nameAr": "زبادي يوناني مع التوت",
+      "nameEn": "Greek Yogurt with Berries",
+      "category": "Pre-Workout",
+      "macros": {
+        "calories": 150,
+        "protein": 15,
+        "carbs": 20,
+        "fats": 2
+      },
+      "notesAr": "بروتين سريع الامتصاص وكربوهيدرات خفيفة.",
+      "climate": "any"
+    },
+    {
+      "id": "pw5",
+      "nameAr": "تمر (3 حبات) مع لوز",
+      "nameEn": "Dates and Almonds",
+      "category": "Pre-Workout",
+      "macros": {
+        "calories": 180,
+        "protein": 4,
+        "carbs": 35,
+        "fats": 6
+      },
+      "notesAr": "التمر يوفر سكريات سريعة واللوز يوفر طاقة مستدامة.",
+      "climate": "any"
+    },
+    {
+      "id": "pw6",
+      "nameAr": "شطيرة دجاج خفيفة (نصف شطيرة)",
+      "nameEn": "Half Chicken Sandwich",
+      "category": "Pre-Workout",
+      "macros": {
+        "calories": 200,
+        "protein": 15,
+        "carbs": 25,
+        "fats": 4
+      },
+      "notesAr": "وجبة قبل التمرين بساعتين لفترات التدريب الطويلة.",
+      "climate": "any"
+    },
+    {
+      "id": "pw7",
+      "nameAr": "أرز أبيض مع صدر دجاج مشوي (كمية صغيرة)",
+      "nameEn": "White Rice with Chicken Breast",
+      "category": "Pre-Workout",
+      "macros": {
+        "calories": 250,
+        "protein": 20,
+        "carbs": 35,
+        "fats": 3
+      },
+      "notesAr": "أفضل اختيار للسباحين قبل المنافسات لسهولة الهضم.",
+      "climate": "any"
+    },
+    {
+      "id": "pw8",
+      "nameAr": "بار الجرانولا (Granola Bar)",
+      "nameEn": "Granola Bar",
+      "category": "Pre-Workout",
+      "macros": {
+        "calories": 150,
+        "protein": 3,
+        "carbs": 25,
+        "fats": 4
+      },
+      "notesAr": "طاقة سريعة وسهلة الحمل.",
+      "climate": "any"
+    },
+    {
+      "id": "pw9",
+      "nameAr": "عصير الشمندر (البنجر)",
+      "nameEn": "Beetroot Juice",
+      "category": "Pre-Workout",
+      "macros": {
+        "calories": 80,
+        "protein": 2,
+        "carbs": 18,
+        "fats": 0
+      },
+      "notesAr": "يحتوي على النترات التي توسع الأوعية الدموية وتحسن التحمل الأكسجيني.",
+      "climate": "any"
+    },
+    {
+      "id": "pw10",
+      "nameAr": "كعك الأرز مع المربى",
+      "nameEn": "Rice Cakes with Jam",
+      "category": "Pre-Workout",
+      "macros": {
+        "calories": 100,
+        "protein": 1,
+        "carbs": 24,
+        "fats": 0
+      },
+      "notesAr": "هضم سريع جداً، ممتاز قبل السباق مباشرة.",
+      "climate": "any"
+    },
+    {
+      "id": "pw11",
+      "nameAr": "بان كيك الشوفان",
+      "nameEn": "Oatmeal Pancakes",
+      "category": "Pre-Workout",
+      "macros": {
+        "calories": 280,
+        "protein": 12,
+        "carbs": 45,
+        "fats": 6
+      },
+      "notesAr": "طاقة عالية للتدريبات الصباحية.",
+      "climate": "any"
+    },
+    {
+      "id": "pw12",
+      "nameAr": "تفاحة مع زبدة اللوز",
+      "nameEn": "Apple with Almond Butter",
+      "category": "Pre-Workout",
+      "macros": {
+        "calories": 200,
+        "protein": 4,
+        "carbs": 25,
+        "fats": 10
+      },
+      "notesAr": "مؤشر جلايسيمي منخفض لطاقة تدوم.",
+      "climate": "any"
+    },
+    {
+      "id": "pw13",
+      "nameAr": "مكرونة بيضاء سادة (كوب)",
+      "nameEn": "Plain White Pasta",
+      "category": "Pre-Workout",
+      "macros": {
+        "calories": 220,
+        "protein": 7,
+        "carbs": 43,
+        "fats": 1
+      },
+      "notesAr": "تحميل كربوهيدرات قبل البطولات.",
+      "climate": "any"
+    },
+    {
+      "id": "pw14",
+      "nameAr": "بطاطا حلوة مشوية (متوسطة)",
+      "nameEn": "Baked Sweet Potato",
+      "category": "Pre-Workout",
+      "macros": {
+        "calories": 112,
+        "protein": 2,
+        "carbs": 26,
+        "fats": 0
+      },
+      "notesAr": "غنية بالبوتاسيوم والكربوهيدرات المعقدة.",
+      "climate": "any"
+    },
+    {
+      "id": "pw15",
+      "nameAr": "سموثي الموز والفراولة",
+      "nameEn": "Banana Strawberry Smoothie",
+      "category": "Pre-Workout",
+      "macros": {
+        "calories": 180,
+        "protein": 5,
+        "carbs": 40,
+        "fats": 1
+      },
+      "notesAr": "سهل الهضم وممتاز للمعدة الحساسة.",
+      "climate": "any"
+    },
+    {
+      "id": "iw1",
+      "nameAr": "مشروب رياضي تجاري (Gatorade/Powerade) - 500 مل",
+      "nameEn": "Commercial Sports Drink",
+      "category": "Intra-Workout",
+      "macros": {
+        "calories": 120,
+        "protein": 0,
+        "carbs": 30,
+        "fats": 0
+      },
+      "notesAr": "يعوض الإلكتروليتات (صوديوم، بوتاسيوم) والجليكوجين بسرعة. ممتاز للبيئات الحارة.",
+      "climate": "hot"
+    },
+    {
+      "id": "iw2",
+      "nameAr": "مشروب رياضي منزلي (ماء، عسل، ملح، ليمون)",
+      "nameEn": "Homemade Isotonic Drink",
+      "category": "Intra-Workout",
+      "macros": {
+        "calories": 100,
+        "protein": 0,
+        "carbs": 25,
+        "fats": 0
+      },
+      "notesAr": "بديل صحي وطبيعي. 500مل ماء + 2 ملعقة عسل + رشة ملح بحري + عصير نصف ليمونة. ممتاز في كل الأجواء.",
+      "climate": "any"
+    },
+    {
+      "id": "iw3",
+      "nameAr": "ماء جوز الهند الطازج (330 مل)",
+      "nameEn": "Fresh Coconut Water",
+      "category": "Intra-Workout",
+      "macros": {
+        "calories": 60,
+        "protein": 0,
+        "carbs": 15,
+        "fats": 0
+      },
+      "notesAr": "غني جداً بالبوتاسيوم الطبيعي، مثالي للتعافي المائي المعتدل.",
+      "climate": "any"
+    },
+    {
+      "id": "iw4",
+      "nameAr": "شاي أخضر بارد مع عسل",
+      "nameEn": "Iced Green Tea with Honey",
+      "category": "Intra-Workout",
+      "macros": {
+        "calories": 80,
+        "protein": 0,
+        "carbs": 20,
+        "fats": 0
+      },
+      "notesAr": "مضادات أكسدة وكافيين طبيعي لتحسين حرق الدهون وزيادة التركيز. ممتاز في الصيف.",
+      "climate": "hot"
+    },
+    {
+      "id": "iw5",
+      "nameAr": "مشروب الشوكولاتة الساخنة (خفيف)",
+      "nameEn": "Hot Chocolate (Light)",
+      "category": "Intra-Workout",
+      "macros": {
+        "calories": 150,
+        "protein": 5,
+        "carbs": 25,
+        "fats": 3
+      },
+      "notesAr": "ممتاز للسباحين في الأجواء الباردة (Winter/Cold Pools) للحفاظ على حرارة الجسم وتوفير الطاقة.",
+      "climate": "cold"
+    },
+    {
+      "id": "iw6",
+      "nameAr": "ماء دافئ بالليمون والزنجبيل",
+      "nameEn": "Warm Lemon Ginger Water",
+      "category": "Intra-Workout",
+      "macros": {
+        "calories": 20,
+        "protein": 0,
+        "carbs": 5,
+        "fats": 0
+      },
+      "notesAr": "يحسن الدورة الدموية ويدفئ الجسم في المسابح الباردة جداً.",
+      "climate": "cold"
+    },
+    {
+      "id": "iw7",
+      "nameAr": "محلول الجفاف الطبي (ORS)",
+      "nameEn": "Oral Rehydration Salts",
+      "category": "Intra-Workout",
+      "macros": {
+        "calories": 40,
+        "protein": 0,
+        "carbs": 10,
+        "fats": 0
+      },
+      "notesAr": "لحالات التعرق الشديد جداً وفقدان الأملاح العالي في الأجواء الحارة.",
+      "climate": "hot"
+    },
+    {
+      "id": "iw8",
+      "nameAr": "جل الطاقة (Energy Gel) - عبوة واحدة",
+      "nameEn": "Energy Gel",
+      "category": "Intra-Workout",
+      "macros": {
+        "calories": 100,
+        "protein": 0,
+        "carbs": 25,
+        "fats": 0
+      },
+      "notesAr": "طاقة فورية مركزة للسباقات الطويلة (فوق 5 كم) دون إرهاق المعدة.",
+      "climate": "any"
+    },
+    {
+      "id": "iw9",
+      "nameAr": "عصير برتقال مخفف (نصف عصير نصف ماء)",
+      "nameEn": "Diluted Orange Juice",
+      "category": "Intra-Workout",
+      "macros": {
+        "calories": 60,
+        "protein": 0,
+        "carbs": 15,
+        "fats": 0
+      },
+      "notesAr": "خيار سريع واقتصادي يعطي كربوهيدرات بتركيز 6-8% المناسب للامتصاص.",
+      "climate": "any"
+    },
+    {
+      "id": "iw10",
+      "nameAr": "مشروب BCAA اثناء التمرين",
+      "nameEn": "BCAA Drink",
+      "category": "Intra-Workout",
+      "macros": {
+        "calories": 20,
+        "protein": 5,
+        "carbs": 0,
+        "fats": 0
+      },
+      "notesAr": "يمنع الهدم العضلي اثناء التمارين المجهدة الطويلة.",
+      "climate": "any"
+    },
+    {
+      "id": "pow1",
+      "nameAr": "حليب بالشوكولاتة (كوب 250 مل)",
+      "nameEn": "Chocolate Milk",
+      "category": "Post-Workout",
+      "macros": {
+        "calories": 200,
+        "protein": 8,
+        "carbs": 28,
+        "fats": 5
+      },
+      "notesAr": "النسبة الذهبية (3:1 أو 4:1 كربوهيدرات إلى بروتين). ممتاز للتعافي السريع والميزانية الاقتصادية.",
+      "climate": "any"
+    },
+    {
+      "id": "pow2",
+      "nameAr": "مخفوق بروتين مصل اللبن (Whey) مع موز",
+      "nameEn": "Whey Protein Banana Shake",
+      "category": "Post-Workout",
+      "macros": {
+        "calories": 250,
+        "protein": 25,
+        "carbs": 30,
+        "fats": 2
+      },
+      "notesAr": "تعافي عضلي فوري لسرعة امتصاص بروتين المصل.",
+      "climate": "any"
+    },
+    {
+      "id": "pow3",
+      "nameAr": "دجاج مشوي مع أرز وخضار",
+      "nameEn": "Grilled Chicken with Rice and Veggies",
+      "category": "Post-Workout",
+      "macros": {
+        "calories": 450,
+        "protein": 35,
+        "carbs": 55,
+        "fats": 8
+      },
+      "notesAr": "وجبة تعافي كاملة لبناء الألياف العضلية.",
+      "climate": "any"
+    },
+    {
+      "id": "pow4",
+      "nameAr": "سمك سلمون مشوي مع بطاطا مهروسة",
+      "nameEn": "Grilled Salmon with Mashed Potatoes",
+      "category": "Post-Workout",
+      "macros": {
+        "calories": 500,
+        "protein": 30,
+        "carbs": 40,
+        "fats": 18
+      },
+      "notesAr": "الأوميجا-3 في السلمون يقلل الالتهابات العضلية بشكل رائع.",
+      "climate": "any"
+    },
+    {
+      "id": "pow5",
+      "nameAr": "بيض مسلوق (3 حبات) مع خبز أسمر",
+      "nameEn": "Boiled Eggs with Whole Wheat Bread",
+      "category": "Post-Workout",
+      "macros": {
+        "calories": 320,
+        "protein": 21,
+        "carbs": 25,
+        "fats": 15
+      },
+      "notesAr": "بروتين عالي الجودة متكامل الأحماض الأمينية.",
+      "climate": "any"
+    },
+    {
+      "id": "pow6",
+      "nameAr": "تونة مع مكرونة وسلطة",
+      "nameEn": "Tuna Pasta Salad",
+      "category": "Post-Workout",
+      "macros": {
+        "calories": 400,
+        "protein": 28,
+        "carbs": 50,
+        "fats": 10
+      },
+      "notesAr": "بروتين وكربوهيدرات ممتازة لوجبة الغداء بعد تمرين الصباح.",
+      "climate": "any"
+    },
+    {
+      "id": "pow7",
+      "nameAr": "لحم بقر مشوي خالي الدهون مع كينوا",
+      "nameEn": "Lean Beef with Quinoa",
+      "category": "Post-Workout",
+      "macros": {
+        "calories": 550,
+        "protein": 40,
+        "carbs": 45,
+        "fats": 15
+      },
+      "notesAr": "غني بالحديد والزنك الضروريين لإنتاج الطاقة وتعافي السباحين.",
+      "climate": "any"
+    },
+    {
+      "id": "pow8",
+      "nameAr": "جبن قريش (Cottage Cheese) مع أناناس",
+      "nameEn": "Cottage Cheese with Pineapple",
+      "category": "Post-Workout",
+      "macros": {
+        "calories": 200,
+        "protein": 20,
+        "carbs": 20,
+        "fats": 3
+      },
+      "notesAr": "الكازين البطيء يعالج العضلات، والأناناس يحتوي على البروميلين المضاد للالتهاب.",
+      "climate": "any"
+    },
+    {
+      "id": "pow9",
+      "nameAr": "ساندويتش ديك رومي (تركي) مع أفوكادو",
+      "nameEn": "Turkey and Avocado Sandwich",
+      "category": "Post-Workout",
+      "macros": {
+        "calories": 350,
+        "protein": 22,
+        "carbs": 35,
+        "fats": 12
+      },
+      "notesAr": "خيار سريع ولذيذ بعد التمرين مباشرة.",
+      "climate": "any"
+    },
+    {
+      "id": "pow10",
+      "nameAr": "شوفان ببروتين الكازين وزبدة اللوز",
+      "nameEn": "Casein Oatmeal with Almond Butter",
+      "category": "Post-Workout",
+      "macros": {
+        "calories": 380,
+        "protein": 30,
+        "carbs": 40,
+        "fats": 10
+      },
+      "notesAr": "وجبة تعافي مثالية إذا كان التمرين في المساء وقبل النوم مباشرة.",
+      "climate": "any"
+    },
+    {
+      "id": "bf1",
+      "nameAr": "بيض مقلي (2) بزيت الزيتون مع خبز شوفان",
+      "nameEn": "Fried Eggs with Oat Bread",
+      "category": "Breakfast",
+      "macros": {
+        "calories": 300,
+        "protein": 14,
+        "carbs": 20,
+        "fats": 16
+      },
+      "notesAr": "إفطار متوازن غني بالدهون الصحية.",
+      "climate": "any"
+    },
+    {
+      "id": "bf2",
+      "nameAr": "فول مدمس مع زيت زيتون وخبز قمح كامل",
+      "nameEn": "Fava Beans with Olive Oil",
+      "category": "Breakfast",
+      "macros": {
+        "calories": 350,
+        "protein": 16,
+        "carbs": 45,
+        "fats": 12
+      },
+      "notesAr": "طاقة ممتدة المفعول بفضل الألياف العالية في الفول.",
+      "climate": "any"
+    },
+    {
+      "id": "bf3",
+      "nameAr": "بان كيك البروتين مع عسل النحل",
+      "nameEn": "Protein Pancakes with Honey",
+      "category": "Breakfast",
+      "macros": {
+        "calories": 400,
+        "protein": 30,
+        "carbs": 45,
+        "fats": 10
+      },
+      "notesAr": "إفطار قوي لأيام التمارين المزدوجة (Double Sessions).",
+      "climate": "any"
+    },
+    {
+      "id": "bf4",
+      "nameAr": "شوفان مطبوخ بالحليب والمكسرات",
+      "nameEn": "Oatmeal with Milk and Nuts",
+      "category": "Breakfast",
+      "macros": {
+        "calories": 380,
+        "protein": 12,
+        "carbs": 50,
+        "fats": 15
+      },
+      "notesAr": "غني بالحديد والألياف والطاقة الثابتة.",
+      "climate": "any"
+    },
+    {
+      "id": "bf5",
+      "nameAr": "زبادي يوناني مع بذور الشيا والفراولة",
+      "nameEn": "Greek Yogurt with Chia Seeds",
+      "category": "Breakfast",
+      "macros": {
+        "calories": 250,
+        "protein": 18,
+        "carbs": 20,
+        "fats": 10
+      },
+      "notesAr": "إفطار خفيف يمنع ثقل المعدة.",
+      "climate": "any"
+    },
+    {
+      "id": "bf6",
+      "nameAr": "عجة بيض (أومليت) بالسبانخ والجبن",
+      "nameEn": "Spinach and Cheese Omelette",
+      "category": "Breakfast",
+      "macros": {
+        "calories": 320,
+        "protein": 20,
+        "carbs": 5,
+        "fats": 22
+      },
+      "notesAr": "مضادات أكسدة وكالسيوم وبروتين.",
+      "climate": "any"
+    },
+    {
+      "id": "bf7",
+      "nameAr": "حلوم مشوي مع طماطم وخيار",
+      "nameEn": "Grilled Halloumi with Veggies",
+      "category": "Breakfast",
+      "macros": {
+        "calories": 280,
+        "protein": 15,
+        "carbs": 10,
+        "fats": 20
+      },
+      "notesAr": "إفطار غني بالصوديوم لتعويض الأملاح المفقودة في التعرق.",
+      "climate": "any"
+    },
+    {
+      "id": "bf8",
+      "nameAr": "عصيدة الشعير (تلبينة) بالعسل",
+      "nameEn": "Barley Porridge with Honey",
+      "category": "Breakfast",
+      "macros": {
+        "calories": 250,
+        "protein": 6,
+        "carbs": 45,
+        "fats": 4
+      },
+      "notesAr": "مريحة جداً للمعدة وتعطي طاقة نظيفة.",
+      "climate": "any"
+    },
+    {
+      "id": "bf9",
+      "nameAr": "توست الأفوكادو مع بيضة مسلوقة",
+      "nameEn": "Avocado Toast with Boiled Egg",
+      "category": "Breakfast",
+      "macros": {
+        "calories": 300,
+        "protein": 12,
+        "carbs": 25,
+        "fats": 18
+      },
+      "notesAr": "دهون الأفوكادو مفيدة جداً لصحة المفاصل والأربطة للسباحين.",
+      "climate": "any"
+    },
+    {
+      "id": "bf10",
+      "nameAr": "كورن فليكس كامل الحبوب مع الحليب",
+      "nameEn": "Whole Grain Cereal with Milk",
+      "category": "Breakfast",
+      "macros": {
+        "calories": 220,
+        "protein": 8,
+        "carbs": 40,
+        "fats": 3
+      },
+      "notesAr": "إفطار سريع قبل التوجه للمدرسة أو العمل بعد التمرين الصباحي.",
+      "climate": "any"
+    },
+    {
+      "id": "mm1",
+      "nameAr": "كبسة دجاج (صدر مشوي مع أرز مبهر)",
+      "nameEn": "Chicken Kabsa",
+      "category": "Lunch",
+      "macros": {
+        "calories": 550,
+        "protein": 35,
+        "carbs": 65,
+        "fats": 15
+      },
+      "notesAr": "وجبة رئيسية ممتازة لتعويض استهلاك الطاقة الكثيف.",
+      "climate": "any"
+    },
+    {
+      "id": "mm2",
+      "nameAr": "مكرونة بولونيز (باللحم المفروم الخالي من الدهن)",
+      "nameEn": "Pasta Bolognese",
+      "category": "Lunch",
+      "macros": {
+        "calories": 600,
+        "protein": 30,
+        "carbs": 80,
+        "fats": 15
+      },
+      "notesAr": "تحميل كربوهيدرات ممتاز أيام البطولات.",
+      "climate": "any"
+    },
+    {
+      "id": "mm3",
+      "nameAr": "شريحة لحم بقري (ستيك) مع بطاطس مشوية",
+      "nameEn": "Beef Steak with Baked Potato",
+      "category": "Lunch",
+      "macros": {
+        "calories": 650,
+        "protein": 45,
+        "carbs": 40,
+        "fats": 30
+      },
+      "notesAr": "يساعد في رفع مستويات الكرياتين الطبيعي في العضلات.",
+      "climate": "any"
+    },
+    {
+      "id": "mm4",
+      "nameAr": "فيليه سمك أبيض مشوي مع أرز بني",
+      "nameEn": "Grilled White Fish with Brown Rice",
+      "category": "Lunch",
+      "macros": {
+        "calories": 400,
+        "protein": 30,
+        "carbs": 55,
+        "fats": 5
+      },
+      "notesAr": "بروتين خفيف الهضم وكربوهيدرات معقدة.",
+      "climate": "any"
+    },
+    {
+      "id": "mm5",
+      "nameAr": "شوربة عدس مع خبز محمص",
+      "nameEn": "Lentil Soup with Toast",
+      "category": "Lunch",
+      "macros": {
+        "calories": 350,
+        "protein": 18,
+        "carbs": 55,
+        "fats": 5
+      },
+      "notesAr": "مصدر رائع للحديد النباتي والبروتين والتدفئة في الشتاء.",
+      "climate": "cold"
+    },
+    {
+      "id": "mm6",
+      "nameAr": "سلطة كينوا بالدجاج والخضروات",
+      "nameEn": "Chicken Quinoa Salad",
+      "category": "Lunch",
+      "macros": {
+        "calories": 450,
+        "protein": 30,
+        "carbs": 45,
+        "fats": 15
+      },
+      "notesAr": "وجبة خفيفة ومغذية جداً.",
+      "climate": "any"
+    },
+    {
+      "id": "mm7",
+      "nameAr": "طاجن بامية باللحم مع أرز شعيرية",
+      "nameEn": "Okra Stew with Beef and Rice",
+      "category": "Lunch",
+      "macros": {
+        "calories": 550,
+        "protein": 25,
+        "carbs": 60,
+        "fats": 20
+      },
+      "notesAr": "غنية بالألياف والمعادن.",
+      "climate": "any"
+    },
+    {
+      "id": "mm8",
+      "nameAr": "فاهيتا دجاج مع خبز تورتيلا بر",
+      "nameEn": "Chicken Fajitas",
+      "category": "Lunch",
+      "macros": {
+        "calories": 500,
+        "protein": 35,
+        "carbs": 50,
+        "fats": 18
+      },
+      "notesAr": "متوازنة ولذيذة وتزيد من الشهية للأكل.",
+      "climate": "any"
+    },
+    {
+      "id": "mm9",
+      "nameAr": "جمبري (روبيان) مشوي مع نودلز الأرز",
+      "nameEn": "Grilled Shrimp with Rice Noodles",
+      "category": "Lunch",
+      "macros": {
+        "calories": 420,
+        "protein": 30,
+        "carbs": 55,
+        "fats": 8
+      },
+      "notesAr": "الجمبري غني بالزنك والفوسفور.",
+      "climate": "any"
+    },
+    {
+      "id": "mm10",
+      "nameAr": "كشري مصري (أرز، عدس، مكرونة، حمص)",
+      "nameEn": "Koshari",
+      "category": "Lunch",
+      "macros": {
+        "calories": 600,
+        "protein": 15,
+        "carbs": 100,
+        "fats": 15
+      },
+      "notesAr": "وجبة كربوهيدرات جبارة، ممتازة في مرحلة التضخيم أو Carbo-loading.",
+      "climate": "any"
+    },
+    {
+      "id": "dn1",
+      "nameAr": "كبسة دجاج (صدر مشوي مع أرز مبهر)",
+      "nameEn": "Chicken Kabsa",
+      "category": "Dinner",
+      "macros": {
+        "calories": 550,
+        "protein": 35,
+        "carbs": 65,
+        "fats": 15
+      },
+      "notesAr": "وجبة رئيسية ممتازة لتعويض استهلاك الطاقة الكثيف.",
+      "climate": "any"
+    },
+    {
+      "id": "dn2",
+      "nameAr": "مكرونة بولونيز (باللحم المفروم الخالي من الدهن)",
+      "nameEn": "Pasta Bolognese",
+      "category": "Dinner",
+      "macros": {
+        "calories": 600,
+        "protein": 30,
+        "carbs": 80,
+        "fats": 15
+      },
+      "notesAr": "تحميل كربوهيدرات ممتاز أيام البطولات.",
+      "climate": "any"
+    },
+    {
+      "id": "dn3",
+      "nameAr": "شريحة لحم بقري (ستيك) مع بطاطس مشوية",
+      "nameEn": "Beef Steak with Baked Potato",
+      "category": "Dinner",
+      "macros": {
+        "calories": 650,
+        "protein": 45,
+        "carbs": 40,
+        "fats": 30
+      },
+      "notesAr": "يساعد في رفع مستويات الكرياتين الطبيعي في العضلات.",
+      "climate": "any"
+    },
+    {
+      "id": "dn4",
+      "nameAr": "فيليه سمك أبيض مشوي مع أرز بني",
+      "nameEn": "Grilled White Fish with Brown Rice",
+      "category": "Dinner",
+      "macros": {
+        "calories": 400,
+        "protein": 30,
+        "carbs": 55,
+        "fats": 5
+      },
+      "notesAr": "بروتين خفيف الهضم وكربوهيدرات معقدة.",
+      "climate": "any"
+    },
+    {
+      "id": "dn5",
+      "nameAr": "شوربة عدس مع خبز محمص",
+      "nameEn": "Lentil Soup with Toast",
+      "category": "Dinner",
+      "macros": {
+        "calories": 350,
+        "protein": 18,
+        "carbs": 55,
+        "fats": 5
+      },
+      "notesAr": "مصدر رائع للحديد النباتي والبروتين والتدفئة في الشتاء.",
+      "climate": "cold"
+    },
+    {
+      "id": "dn6",
+      "nameAr": "سلطة كينوا بالدجاج والخضروات",
+      "nameEn": "Chicken Quinoa Salad",
+      "category": "Dinner",
+      "macros": {
+        "calories": 450,
+        "protein": 30,
+        "carbs": 45,
+        "fats": 15
+      },
+      "notesAr": "وجبة خفيفة ومغذية جداً.",
+      "climate": "any"
+    },
+    {
+      "id": "dn7",
+      "nameAr": "طاجن بامية باللحم مع أرز شعيرية",
+      "nameEn": "Okra Stew with Beef and Rice",
+      "category": "Dinner",
+      "macros": {
+        "calories": 550,
+        "protein": 25,
+        "carbs": 60,
+        "fats": 20
+      },
+      "notesAr": "غنية بالألياف والمعادن.",
+      "climate": "any"
+    },
+    {
+      "id": "dn8",
+      "nameAr": "فاهيتا دجاج مع خبز تورتيلا بر",
+      "nameEn": "Chicken Fajitas",
+      "category": "Dinner",
+      "macros": {
+        "calories": 500,
+        "protein": 35,
+        "carbs": 50,
+        "fats": 18
+      },
+      "notesAr": "متوازنة ولذيذة وتزيد من الشهية للأكل.",
+      "climate": "any"
+    },
+    {
+      "id": "dn9",
+      "nameAr": "جمبري (روبيان) مشوي مع نودلز الأرز",
+      "nameEn": "Grilled Shrimp with Rice Noodles",
+      "category": "Dinner",
+      "macros": {
+        "calories": 420,
+        "protein": 30,
+        "carbs": 55,
+        "fats": 8
+      },
+      "notesAr": "الجمبري غني بالزنك والفوسفور.",
+      "climate": "any"
+    },
+    {
+      "id": "dn10",
+      "nameAr": "كشري مصري (أرز، عدس، مكرونة، حمص)",
+      "nameEn": "Koshari",
+      "category": "Dinner",
+      "macros": {
+        "calories": 600,
+        "protein": 15,
+        "carbs": 100,
+        "fats": 15
+      },
+      "notesAr": "وجبة كربوهيدرات جبارة، ممتازة في مرحلة التضخيم أو Carbo-loading.",
+      "climate": "any"
+    },
+    {
+      "id": "sn1",
+      "nameAr": "مكسرات مشكلة نيئة (30 جرام)",
+      "nameEn": "Mixed Raw Nuts",
+      "category": "Snacks",
+      "macros": {
+        "calories": 180,
+        "protein": 5,
+        "carbs": 6,
+        "fats": 16
+      },
+      "notesAr": "غنية بأوميجا 3 وفيتامين E.",
+      "climate": "any"
+    },
+    {
+      "id": "sn2",
+      "nameAr": "شوكولاتة داكنة (مكعبين 70%+ كاكاو)",
+      "nameEn": "Dark Chocolate",
+      "category": "Snacks",
+      "macros": {
+        "calories": 120,
+        "protein": 2,
+        "carbs": 10,
+        "fats": 8
+      },
+      "notesAr": "تحسن المزاج وتدفق الدم للعضلات.",
+      "climate": "any"
+    },
+    {
+      "id": "sn3",
+      "nameAr": "زبادي مع فواكه مقطعة",
+      "nameEn": "Yogurt with Chopped Fruits",
+      "category": "Snacks",
+      "macros": {
+        "calories": 150,
+        "protein": 8,
+        "carbs": 20,
+        "fats": 4
+      },
+      "notesAr": "وجبة بينية مريحة للمعدة.",
+      "climate": "any"
+    },
+    {
+      "id": "sn4",
+      "nameAr": "تفاح مع زبدة الفول السوداني",
+      "nameEn": "Apple with Peanut Butter",
+      "category": "Snacks",
+      "macros": {
+        "calories": 200,
+        "protein": 5,
+        "carbs": 20,
+        "fats": 12
+      },
+      "notesAr": "مزيج ممتاز للشبع والطاقة.",
+      "climate": "any"
+    },
+    {
+      "id": "sn5",
+      "nameAr": "سلطة فواكه طازجة",
+      "nameEn": "Fresh Fruit Salad",
+      "category": "Snacks",
+      "macros": {
+        "calories": 100,
+        "protein": 1,
+        "carbs": 25,
+        "fats": 0
+      },
+      "notesAr": "فيتامينات طبيعية ومضادات أكسدة.",
+      "climate": "any"
+    },
+    {
+      "id": "sn6",
+      "nameAr": "جزر وخيار مع حمص (Hummus)",
+      "nameEn": "Carrots and Cucumber with Hummus",
+      "category": "Snacks",
+      "macros": {
+        "calories": 160,
+        "protein": 5,
+        "carbs": 15,
+        "fats": 9
+      },
+      "notesAr": "ألياف عالية وتغذية نباتية ممتازة.",
+      "climate": "any"
+    },
+    {
+      "id": "sn7",
+      "nameAr": "بشار (فشار) مفرقع بالهواء",
+      "nameEn": "Air-Popped Popcorn",
+      "category": "Snacks",
+      "macros": {
+        "calories": 120,
+        "protein": 4,
+        "carbs": 22,
+        "fats": 2
+      },
+      "notesAr": "سناك قليل السعرات وغني بالألياف الحبوب الكاملة.",
+      "climate": "any"
+    },
+    {
+      "id": "sn8",
+      "nameAr": "سموثي أخضر (سبانخ، موز، تفاح)",
+      "nameEn": "Green Smoothie",
+      "category": "Snacks",
+      "macros": {
+        "calories": 150,
+        "protein": 3,
+        "carbs": 35,
+        "fats": 1
+      },
+      "notesAr": "طرد السموم (Detox) وتعويض المعادن.",
+      "climate": "any"
+    },
+    {
+      "id": "sn9",
+      "nameAr": "كعك الشوفان الصحي",
+      "nameEn": "Healthy Oat Cookies",
+      "category": "Snacks",
+      "macros": {
+        "calories": 180,
+        "protein": 4,
+        "carbs": 25,
+        "fats": 7
+      },
+      "notesAr": "بديل صحي للحلويات.",
+      "climate": "any"
+    },
+    {
+      "id": "sn10",
+      "nameAr": "أدمامي (فول صويا أخضر)",
+      "nameEn": "Edamame",
+      "category": "Snacks",
+      "macros": {
+        "calories": 120,
+        "protein": 11,
+        "carbs": 10,
+        "fats": 5
+      },
+      "notesAr": "بروتين نباتي كامل وسناك مشبع.",
+      "climate": "any"
+    },
+    {
+      "id": "hy1",
+      "nameAr": "ماء نقي (1 لتر)",
+      "nameEn": "Pure Water (1L)",
+      "category": "Hydration",
+      "macros": {
+        "calories": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fats": 0
+      },
+      "notesAr": "أساس الترطيب. يجب شرب 3-4 لتر يومياً حسب الجهد.",
+      "climate": "any"
+    },
+    {
+      "id": "hy2",
+      "nameAr": "ماء غني بالهيدروجين (Hydrogen Water)",
+      "nameEn": "Hydrogen Water",
+      "category": "Hydration",
+      "macros": {
+        "calories": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fats": 0
+      },
+      "notesAr": "يُعتقد أنه يقلل الإجهاد التأكسدي وسرعة التعافي.",
+      "climate": "any"
+    },
+    {
+      "id": "hy3",
+      "nameAr": "ماء قلوية (Alkaline Water)",
+      "nameEn": "Alkaline Water",
+      "category": "Hydration",
+      "macros": {
+        "calories": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fats": 0
+      },
+      "notesAr": "يساعد في تعديل حموضة الدم (Lactic Acid) الناتجة عن تمرين اللاهوائي.",
+      "climate": "any"
+    },
+    {
+      "id": "hy4",
+      "nameAr": "ماء فوار مع شريحة ليمون",
+      "nameEn": "Sparkling Water with Lemon",
+      "category": "Hydration",
+      "macros": {
+        "calories": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fats": 0
+      },
+      "notesAr": "منعش جداً للمعدة بعد الوجبات الثقيلة.",
+      "climate": "any"
+    },
+    {
+      "id": "ex1",
+      "nameAr": "موزة متوسطة",
+      "nameEn": "Medium Banana",
+      "category": "Snacks",
+      "macros": {
+        "calories": 105,
+        "protein": 1,
+        "carbs": 27,
+        "fats": 0
+      },
+      "notesAr": "ممتازة لتجنب الشد العضلي.",
+      "climate": "any"
+    },
+    {
+      "id": "ex2",
+      "nameAr": "برتقالة كبيرة",
+      "nameEn": "Large Orange",
+      "category": "Snacks",
+      "macros": {
+        "calories": 86,
+        "protein": 1,
+        "carbs": 21,
+        "fats": 0
+      },
+      "notesAr": "فيتامين C لتعزيز المناعة بعد التمارين في المياه الباردة.",
+      "climate": "any"
+    },
+    {
+      "id": "ex3",
+      "nameAr": "حصة بطيخ (رقي)",
+      "nameEn": "Watermelon Slice",
+      "category": "Snacks",
+      "macros": {
+        "calories": 85,
+        "protein": 1,
+        "carbs": 21,
+        "fats": 0
+      },
+      "notesAr": "ترطيب ممتاز في الأجواء الحارة يحتوي على السيترولين.",
+      "climate": "any"
+    },
+    {
+      "id": "ex4",
+      "nameAr": "أناناس طازج",
+      "nameEn": "Fresh Pineapple",
+      "category": "Snacks",
+      "macros": {
+        "calories": 82,
+        "protein": 1,
+        "carbs": 21,
+        "fats": 0
+      },
+      "notesAr": "بروميلين كمضاد التهاب طبيعي للمفاصل.",
+      "climate": "any"
+    },
+    {
+      "id": "ex5",
+      "nameAr": "عنب أحمر (كوب)",
+      "nameEn": "Red Grapes",
+      "category": "Snacks",
+      "macros": {
+        "calories": 104,
+        "protein": 1,
+        "carbs": 27,
+        "fats": 0
+      },
+      "notesAr": "سريع الهضم وطاقة ممتازة.",
+      "climate": "any"
+    },
+    {
+      "id": "ex6",
+      "nameAr": "رمان (نصف كوب)",
+      "nameEn": "Pomegranate",
+      "category": "Snacks",
+      "macros": {
+        "calories": 72,
+        "protein": 1,
+        "carbs": 16,
+        "fats": 1
+      },
+      "notesAr": "مضادات أكسدة قوية لتحسين تدفق الدم للأكسجين.",
+      "climate": "any"
+    },
+    {
+      "id": "ex7",
+      "nameAr": "كيوي (حبتان)",
+      "nameEn": "Kiwi",
+      "category": "Snacks",
+      "macros": {
+        "calories": 84,
+        "protein": 1,
+        "carbs": 20,
+        "fats": 1
+      },
+      "notesAr": "فيتامين سي وإنزيمات هاضمة للبروتين.",
+      "climate": "any"
+    },
+    {
+      "id": "ex8",
+      "nameAr": "أفوكادو كامل",
+      "nameEn": "Whole Avocado",
+      "category": "Snacks",
+      "macros": {
+        "calories": 322,
+        "protein": 4,
+        "carbs": 17,
+        "fats": 29
+      },
+      "notesAr": "دهون صحية 100% لمفاصل السباحين.",
+      "climate": "any"
+    },
+    {
+      "id": "ex9",
+      "nameAr": "بروكلي مطبوخ (كوب)",
+      "nameEn": "Cooked Broccoli",
+      "category": "Snacks",
+      "macros": {
+        "calories": 55,
+        "protein": 4,
+        "carbs": 11,
+        "fats": 0
+      },
+      "notesAr": "كالسيوم وحديد ومعادن خضراء ضرورية.",
+      "climate": "any"
+    },
+    {
+      "id": "ex10",
+      "nameAr": "بطاطا حلوة مهروسة",
+      "nameEn": "Mashed Sweet Potato",
+      "category": "Snacks",
+      "macros": {
+        "calories": 250,
+        "protein": 4,
+        "carbs": 58,
+        "fats": 0
+      },
+      "notesAr": "تحميل كربوهيدرات مثالي.",
+      "climate": "any"
+    },
+    {
+      "id": "ex11",
+      "nameAr": "صدر دجاج مشوي (150 جم)",
+      "nameEn": "Grilled Chicken Breast",
+      "category": "Snacks",
+      "macros": {
+        "calories": 248,
+        "protein": 46,
+        "carbs": 0,
+        "fats": 5
+      },
+      "notesAr": "بروتين صافي.",
+      "climate": "any"
+    },
+    {
+      "id": "ex12",
+      "nameAr": "ستيك لحم بقري (150 جم)",
+      "nameEn": "Beef Steak",
+      "category": "Snacks",
+      "macros": {
+        "calories": 414,
+        "protein": 38,
+        "carbs": 0,
+        "fats": 27
+      },
+      "notesAr": "بروتين وكرياتين وكوليسترول صحي للتيستوستيرون.",
+      "climate": "any"
+    },
+    {
+      "id": "ex13",
+      "nameAr": "فيليه سلمون (150 جم)",
+      "nameEn": "Salmon Fillet",
+      "category": "Snacks",
+      "macros": {
+        "calories": 312,
+        "protein": 30,
+        "carbs": 0,
+        "fats": 20
+      },
+      "notesAr": "أوميجا 3 وأحماض أمينية كاملة.",
+      "climate": "any"
+    },
+    {
+      "id": "ex14",
+      "nameAr": "علبة تونة بالماء",
+      "nameEn": "Canned Tuna in Water",
+      "category": "Snacks",
+      "macros": {
+        "calories": 110,
+        "protein": 25,
+        "carbs": 0,
+        "fats": 1
+      },
+      "notesAr": "أسرع مصدر بروتين واقتصادي.",
+      "climate": "any"
+    },
+    {
+      "id": "ex15",
+      "nameAr": "بيض كامل مسلوق",
+      "nameEn": "Whole Boiled Egg",
+      "category": "Snacks",
+      "macros": {
+        "calories": 78,
+        "protein": 6,
+        "carbs": 1,
+        "fats": 5
+      },
+      "notesAr": "فيتامين B12 والأحماض الكاملة.",
+      "climate": "any"
+    },
+    {
+      "id": "ex16",
+      "nameAr": "جبن قريش (كوب)",
+      "nameEn": "Cottage Cheese",
+      "category": "Snacks",
+      "macros": {
+        "calories": 222,
+        "protein": 25,
+        "carbs": 8,
+        "fats": 10
+      },
+      "notesAr": "بروتين الكازين لتعافي ليلي ممتاز.",
+      "climate": "any"
+    },
+    {
+      "id": "ex17",
+      "nameAr": "عدس مطبوخ (كوب)",
+      "nameEn": "Cooked Lentils",
+      "category": "Snacks",
+      "macros": {
+        "calories": 230,
+        "protein": 18,
+        "carbs": 40,
+        "fats": 1
+      },
+      "notesAr": "أفضل بروتين نباتي مع الألياف والحديد.",
+      "climate": "any"
+    },
+    {
+      "id": "ex18",
+      "nameAr": "فاصوليا سوداء (كوب)",
+      "nameEn": "Black Beans",
+      "category": "Snacks",
+      "macros": {
+        "calories": 227,
+        "protein": 15,
+        "carbs": 40,
+        "fats": 1
+      },
+      "notesAr": "ألياف وطاقة مستدامة.",
+      "climate": "any"
+    },
+    {
+      "id": "ex19",
+      "nameAr": "حمص بالطحينة",
+      "nameEn": "Hummus",
+      "category": "Snacks",
+      "macros": {
+        "calories": 166,
+        "protein": 8,
+        "carbs": 14,
+        "fats": 10
+      },
+      "notesAr": "طاقة مركزة من الدهون والبروتين النباتي.",
+      "climate": "any"
+    },
+    {
+      "id": "ex20",
+      "nameAr": "توفو (نصف كوب)",
+      "nameEn": "Tofu",
+      "category": "Snacks",
+      "macros": {
+        "calories": 94,
+        "protein": 10,
+        "carbs": 2,
+        "fats": 5
+      },
+      "notesAr": "بروتين نباتي كامل للسباحين النباتيين.",
+      "climate": "any"
+    },
+    {
+      "id": "ex21",
+      "nameAr": "أرز أبيض مطبوخ (كوب)",
+      "nameEn": "White Rice",
+      "category": "Snacks",
+      "macros": {
+        "calories": 205,
+        "protein": 4,
+        "carbs": 45,
+        "fats": 0
+      },
+      "notesAr": "هضم سريع.",
+      "climate": "any"
+    },
+    {
+      "id": "ex22",
+      "nameAr": "أرز بني مطبوخ (كوب)",
+      "nameEn": "Brown Rice",
+      "category": "Snacks",
+      "macros": {
+        "calories": 216,
+        "protein": 5,
+        "carbs": 45,
+        "fats": 2
+      },
+      "notesAr": "هضم بطيء وألياف أعلى.",
+      "climate": "any"
+    },
+    {
+      "id": "ex23",
+      "nameAr": "مكرونة قمح كامل (كوب)",
+      "nameEn": "Whole Wheat Pasta",
+      "category": "Snacks",
+      "macros": {
+        "calories": 174,
+        "protein": 7,
+        "carbs": 37,
+        "fats": 1
+      },
+      "notesAr": "طاقة لليالي ما قبل البطولات.",
+      "climate": "any"
+    },
+    {
+      "id": "ex24",
+      "nameAr": "كينوا مطبوخة (كوب)",
+      "nameEn": "Cooked Quinoa",
+      "category": "Snacks",
+      "macros": {
+        "calories": 222,
+        "protein": 8,
+        "carbs": 39,
+        "fats": 4
+      },
+      "notesAr": "كربوهيدرات وبروتين متكامل.",
+      "climate": "any"
+    },
+    {
+      "id": "ex25",
+      "nameAr": "شوفان (نصف كوب جاف)",
+      "nameEn": "Oats",
+      "category": "Snacks",
+      "macros": {
+        "calories": 150,
+        "protein": 5,
+        "carbs": 27,
+        "fats": 3
+      },
+      "notesAr": "الشوفان هو صديق السباح الأول للطاقة الصباحية.",
+      "climate": "any"
+    },
+    {
+      "id": "ex26",
+      "nameAr": "خبز قمح كامل (شريحة)",
+      "nameEn": "Whole Wheat Bread",
+      "category": "Snacks",
+      "macros": {
+        "calories": 80,
+        "protein": 4,
+        "carbs": 15,
+        "fats": 1
+      },
+      "notesAr": "كربوهيدرات مريحة.",
+      "climate": "any"
+    },
+    {
+      "id": "ex27",
+      "nameAr": "خبز أبيض (شريحة)",
+      "nameEn": "White Bread",
+      "category": "Snacks",
+      "macros": {
+        "calories": 75,
+        "protein": 2,
+        "carbs": 14,
+        "fats": 1
+      },
+      "notesAr": "أفضل بعد التمرين مباشرة أو قبله لسرعة الهضم.",
+      "climate": "any"
+    },
+    {
+      "id": "ex28",
+      "nameAr": "تورتيلا الذرة",
+      "nameEn": "Corn Tortilla",
+      "category": "Snacks",
+      "macros": {
+        "calories": 52,
+        "protein": 1,
+        "carbs": 11,
+        "fats": 1
+      },
+      "notesAr": "بديل جلوتين فري.",
+      "climate": "any"
+    },
+    {
+      "id": "ex29",
+      "nameAr": "بطاطس مشوية (متوسطة)",
+      "nameEn": "Baked Potato",
+      "category": "Snacks",
+      "macros": {
+        "calories": 161,
+        "protein": 4,
+        "carbs": 37,
+        "fats": 0
+      },
+      "notesAr": "بوتاسيوم عالي يمنع التشنج العضلي.",
+      "climate": "any"
+    },
+    {
+      "id": "ex30",
+      "nameAr": "نودلز الأرز",
+      "nameEn": "Rice Noodles",
+      "category": "Snacks",
+      "macros": {
+        "calories": 192,
+        "protein": 1,
+        "carbs": 44,
+        "fats": 0
+      },
+      "notesAr": "وجبة خفيفة قبل تمرين الظهيرة.",
+      "climate": "any"
+    },
+    {
+      "id": "ex31",
+      "nameAr": "زبدة الفول السوداني (ملعقتان)",
+      "nameEn": "Peanut Butter",
+      "category": "Snacks",
+      "macros": {
+        "calories": 190,
+        "protein": 8,
+        "carbs": 6,
+        "fats": 16
+      },
+      "notesAr": "طاقة كثيفة ومريحة.",
+      "climate": "any"
+    },
+    {
+      "id": "ex32",
+      "nameAr": "لوز نيء (30 جرام)",
+      "nameEn": "Raw Almonds",
+      "category": "Snacks",
+      "macros": {
+        "calories": 164,
+        "protein": 6,
+        "carbs": 6,
+        "fats": 14
+      },
+      "notesAr": "فيتامين إي ومغنيسيوم لارتخاء العضلات.",
+      "climate": "any"
+    },
+    {
+      "id": "ex33",
+      "nameAr": "جوز (عين الجمل) (30 جرام)",
+      "nameEn": "Walnuts",
+      "category": "Snacks",
+      "macros": {
+        "calories": 185,
+        "protein": 4,
+        "carbs": 4,
+        "fats": 18
+      },
+      "notesAr": "أوميجا 3 لدماغ رياضي متقد.",
+      "climate": "any"
+    },
+    {
+      "id": "ex34",
+      "nameAr": "زيت زيتون (ملعقة كبيرة)",
+      "nameEn": "Olive Oil",
+      "category": "Snacks",
+      "macros": {
+        "calories": 119,
+        "protein": 0,
+        "carbs": 0,
+        "fats": 14
+      },
+      "notesAr": "مضاد للالتهاب الطبيعي الأقوى.",
+      "climate": "any"
+    },
+    {
+      "id": "ex35",
+      "nameAr": "بذور الشيا (ملعقة كبيرة)",
+      "nameEn": "Chia Seeds",
+      "category": "Snacks",
+      "macros": {
+        "calories": 60,
+        "protein": 3,
+        "carbs": 5,
+        "fats": 4
+      },
+      "notesAr": "تحتفظ بالماء وتبطئ الجفاف أثناء التدريب المائي.",
+      "climate": "any"
+    }
+  ]
+}

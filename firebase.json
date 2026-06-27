@@ -1,0 +1,40 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "aquatrack-pro-a4e09",
+          "appId": "1:702335281599:android:bb8f07e481be88adc6990a",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "aquatrack-pro-a4e09",
+          "configurations": {
+            "android": "1:702335281599:android:bb8f07e481be88adc6990a",
+            "ios": "1:702335281599:ios:31127f761350a480c6990a",
+            "macos": "1:702335281599:ios:31127f761350a480c6990a",
+            "web": "1:702335281599:web:2901ff660837dbbdc6990a"
+          }
+        }
+      }
+    }
+  },
+  "firestore": {
+    "indexes": "firestore.indexes.json"
+  },
+  "emulators": {
+    "auth": {
+      "port": 9099
+    },
+    "firestore": {
+      "port": 8080
+    },
+    "ui": {
+      "enabled": true,
+      "port": 4000
+    },
+    "singleProjectMode": true
+  }
+}

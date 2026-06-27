@@ -1,0 +1,2212 @@
+[
+  {
+    "id": "f_001",
+    "name_ar": "أرز أبيض مسلوق",
+    "name_en": "White Rice (Cooked)",
+    "category": "carbs",
+    "serving_size_g": 100.0,
+    "calories": 130.0,
+    "protein_g": 2.7,
+    "carbs_g": 28.0,
+    "fat_g": 0.3,
+    "glycemic_index": "high",
+    "suitable_for": [
+      "post_workout",
+      "carb_loading"
+    ]
+  },
+  {
+    "id": "f_002",
+    "name_ar": "أرز بني مسلوق",
+    "name_en": "Brown Rice (Cooked)",
+    "category": "carbs",
+    "serving_size_g": 100.0,
+    "calories": 111.0,
+    "protein_g": 2.6,
+    "carbs_g": 23.0,
+    "fat_g": 0.9,
+    "glycemic_index": "medium",
+    "suitable_for": [
+      "pre_workout",
+      "breakfast"
+    ]
+  },
+  {
+    "id": "f_003",
+    "name_ar": "شوفان جاف",
+    "name_en": "Dry Oats",
+    "category": "carbs",
+    "serving_size_g": 100.0,
+    "calories": 389.0,
+    "protein_g": 16.9,
+    "carbs_g": 66.3,
+    "fat_g": 6.9,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "breakfast",
+      "pre_workout"
+    ]
+  },
+  {
+    "id": "f_004",
+    "name_ar": "مكرونة قمح كامل مسلوقة",
+    "name_en": "Whole Wheat Pasta (Cooked)",
+    "category": "carbs",
+    "serving_size_g": 100.0,
+    "calories": 124.0,
+    "protein_g": 5.3,
+    "carbs_g": 26.5,
+    "fat_g": 0.5,
+    "glycemic_index": "medium",
+    "suitable_for": [
+      "carb_loading",
+      "pre_workout"
+    ]
+  },
+  {
+    "id": "f_005",
+    "name_ar": "مكرونة بيضاء مسلوقة",
+    "name_en": "White Pasta (Cooked)",
+    "category": "carbs",
+    "serving_size_g": 100.0,
+    "calories": 131.0,
+    "protein_g": 5.0,
+    "carbs_g": 25.0,
+    "fat_g": 1.1,
+    "glycemic_index": "high",
+    "suitable_for": [
+      "post_workout",
+      "carb_loading"
+    ]
+  },
+  {
+    "id": "f_006",
+    "name_ar": "بطاطا حلوة مسلوقة",
+    "name_en": "Sweet Potato (Boiled)",
+    "category": "carbs",
+    "serving_size_g": 100.0,
+    "calories": 86.0,
+    "protein_g": 1.6,
+    "carbs_g": 20.1,
+    "fat_g": 0.1,
+    "glycemic_index": "medium",
+    "suitable_for": [
+      "pre_workout",
+      "recovery"
+    ]
+  },
+  {
+    "id": "f_007",
+    "name_ar": "بطاطس مشوية",
+    "name_en": "Baked Potato",
+    "category": "carbs",
+    "serving_size_g": 100.0,
+    "calories": 93.0,
+    "protein_g": 2.5,
+    "carbs_g": 21.0,
+    "fat_g": 0.1,
+    "glycemic_index": "high",
+    "suitable_for": [
+      "post_workout",
+      "recovery"
+    ]
+  },
+  {
+    "id": "f_008",
+    "name_ar": "كينوا مسلوقة",
+    "name_en": "Quinoa (Cooked)",
+    "category": "carbs",
+    "serving_size_g": 100.0,
+    "calories": 120.0,
+    "protein_g": 4.4,
+    "carbs_g": 21.3,
+    "fat_g": 1.9,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "pre_workout",
+      "dinner"
+    ]
+  },
+  {
+    "id": "f_009",
+    "name_ar": "خبز أسمر",
+    "name_en": "Whole Wheat Bread",
+    "category": "carbs",
+    "serving_size_g": 100.0,
+    "calories": 252.0,
+    "protein_g": 12.5,
+    "carbs_g": 42.7,
+    "fat_g": 3.4,
+    "glycemic_index": "medium",
+    "suitable_for": [
+      "breakfast",
+      "snack"
+    ]
+  },
+  {
+    "id": "f_010",
+    "name_ar": "خبز أبيض",
+    "name_en": "White Bread",
+    "category": "carbs",
+    "serving_size_g": 100.0,
+    "calories": 265.0,
+    "protein_g": 9.0,
+    "carbs_g": 49.0,
+    "fat_g": 3.2,
+    "glycemic_index": "high",
+    "suitable_for": [
+      "post_workout",
+      "immediate_energy"
+    ]
+  },
+  {
+    "id": "f_011",
+    "name_ar": "حنطة سوداء مسلوقة",
+    "name_en": "Buckwheat (Cooked)",
+    "category": "carbs",
+    "serving_size_g": 100.0,
+    "calories": 92.0,
+    "protein_g": 3.4,
+    "carbs_g": 20.0,
+    "fat_g": 0.6,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "pre_workout",
+      "dinner"
+    ]
+  },
+  {
+    "id": "f_012",
+    "name_ar": "برغل مسلوق",
+    "name_en": "Bulgur (Cooked)",
+    "category": "carbs",
+    "serving_size_g": 100.0,
+    "calories": 83.0,
+    "protein_g": 3.1,
+    "carbs_g": 18.6,
+    "fat_g": 0.2,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "lunch",
+      "dinner"
+    ]
+  },
+  {
+    "id": "f_013",
+    "name_ar": "كسكسي مسلوق",
+    "name_en": "Couscous (Cooked)",
+    "category": "carbs",
+    "serving_size_g": 100.0,
+    "calories": 112.0,
+    "protein_g": 3.8,
+    "carbs_g": 23.2,
+    "fat_g": 0.2,
+    "glycemic_index": "medium",
+    "suitable_for": [
+      "lunch",
+      "dinner"
+    ]
+  },
+  {
+    "id": "f_014",
+    "name_ar": "كورن فليكس سادة",
+    "name_en": "Cornflakes",
+    "category": "carbs",
+    "serving_size_g": 100.0,
+    "calories": 357.0,
+    "protein_g": 8.0,
+    "carbs_g": 84.0,
+    "fat_g": 0.4,
+    "glycemic_index": "high",
+    "suitable_for": [
+      "breakfast",
+      "post_workout"
+    ]
+  },
+  {
+    "id": "f_015",
+    "name_ar": "موسلي",
+    "name_en": "Muesli",
+    "category": "carbs",
+    "serving_size_g": 100.0,
+    "calories": 366.0,
+    "protein_g": 11.0,
+    "carbs_g": 66.0,
+    "fat_g": 6.0,
+    "glycemic_index": "medium",
+    "suitable_for": [
+      "breakfast",
+      "snack"
+    ]
+  },
+  {
+    "id": "f_016",
+    "name_ar": "شعير مسلوق",
+    "name_en": "Barley (Cooked)",
+    "category": "carbs",
+    "serving_size_g": 100.0,
+    "calories": 123.0,
+    "protein_g": 2.3,
+    "carbs_g": 28.0,
+    "fat_g": 0.4,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "pre_workout",
+      "lunch"
+    ]
+  },
+  {
+    "id": "f_017",
+    "name_ar": "تورتيلا ذرة",
+    "name_en": "Corn Tortilla",
+    "category": "carbs",
+    "serving_size_g": 100.0,
+    "calories": 218.0,
+    "protein_g": 5.7,
+    "carbs_g": 46.5,
+    "fat_g": 2.8,
+    "glycemic_index": "medium",
+    "suitable_for": [
+      "lunch",
+      "dinner"
+    ]
+  },
+  {
+    "id": "f_018",
+    "name_ar": "أرز بسمتي مسلوق",
+    "name_en": "Basmati Rice (Cooked)",
+    "category": "carbs",
+    "serving_size_g": 100.0,
+    "calories": 121.0,
+    "protein_g": 3.5,
+    "carbs_g": 25.2,
+    "fat_g": 0.4,
+    "glycemic_index": "medium",
+    "suitable_for": [
+      "lunch",
+      "dinner"
+    ]
+  },
+  {
+    "id": "f_019",
+    "name_ar": "صدر دجاج مشوي",
+    "name_en": "Grilled Chicken Breast",
+    "category": "protein",
+    "serving_size_g": 100.0,
+    "calories": 165.0,
+    "protein_g": 31.0,
+    "carbs_g": 0.0,
+    "fat_g": 3.6,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "recovery",
+      "lunch",
+      "dinner"
+    ]
+  },
+  {
+    "id": "f_020",
+    "name_ar": "فخذ دجاج مشوي",
+    "name_en": "Grilled Chicken Thigh",
+    "category": "protein",
+    "serving_size_g": 100.0,
+    "calories": 209.0,
+    "protein_g": 26.0,
+    "carbs_g": 0.0,
+    "fat_g": 10.9,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "dinner"
+    ]
+  },
+  {
+    "id": "f_021",
+    "name_ar": "لحم بقري مفروم قليل الدسم (5%)",
+    "name_en": "Lean Ground Beef (5% Fat)",
+    "category": "protein",
+    "serving_size_g": 100.0,
+    "calories": 137.0,
+    "protein_g": 21.4,
+    "carbs_g": 0.0,
+    "fat_g": 5.0,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "recovery",
+      "dinner"
+    ]
+  },
+  {
+    "id": "f_022",
+    "name_ar": "ستيك بقري مشوي",
+    "name_en": "Grilled Beef Steak",
+    "category": "protein",
+    "serving_size_g": 100.0,
+    "calories": 271.0,
+    "protein_g": 25.0,
+    "carbs_g": 0.0,
+    "fat_g": 19.0,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "dinner"
+    ]
+  },
+  {
+    "id": "f_023",
+    "name_ar": "ديك رومي مشوي",
+    "name_en": "Grilled Turkey Breast",
+    "category": "protein",
+    "serving_size_g": 100.0,
+    "calories": 135.0,
+    "protein_g": 30.0,
+    "carbs_g": 0.0,
+    "fat_g": 1.0,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "recovery",
+      "lunch"
+    ]
+  },
+  {
+    "id": "f_024",
+    "name_ar": "سلمون مشوي",
+    "name_en": "Grilled Salmon",
+    "category": "protein",
+    "serving_size_g": 100.0,
+    "calories": 206.0,
+    "protein_g": 22.0,
+    "carbs_g": 0.0,
+    "fat_g": 13.0,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "recovery",
+      "dinner",
+      "anti_inflammatory"
+    ]
+  },
+  {
+    "id": "f_025",
+    "name_ar": "تونة معلبة في ماء",
+    "name_en": "Canned Tuna in Water",
+    "category": "protein",
+    "serving_size_g": 100.0,
+    "calories": 86.0,
+    "protein_g": 19.4,
+    "carbs_g": 0.0,
+    "fat_g": 1.0,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "recovery",
+      "snack"
+    ]
+  },
+  {
+    "id": "f_026",
+    "name_ar": "تونة معلبة في زيت",
+    "name_en": "Canned Tuna in Oil",
+    "category": "protein",
+    "serving_size_g": 100.0,
+    "calories": 198.0,
+    "protein_g": 29.0,
+    "carbs_g": 0.0,
+    "fat_g": 8.0,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "dinner"
+    ]
+  },
+  {
+    "id": "f_027",
+    "name_ar": "بيض كامل مسلوق",
+    "name_en": "Whole Boiled Egg",
+    "category": "protein",
+    "serving_size_g": 100.0,
+    "calories": 155.0,
+    "protein_g": 12.6,
+    "carbs_g": 1.1,
+    "fat_g": 10.6,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "breakfast",
+      "recovery"
+    ]
+  },
+  {
+    "id": "f_028",
+    "name_ar": "بياض بيض مسلوق",
+    "name_en": "Boiled Egg White",
+    "category": "protein",
+    "serving_size_g": 100.0,
+    "calories": 52.0,
+    "protein_g": 10.9,
+    "carbs_g": 0.7,
+    "fat_g": 0.2,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "breakfast",
+      "recovery"
+    ]
+  },
+  {
+    "id": "f_029",
+    "name_ar": "توفو صلب",
+    "name_en": "Firm Tofu",
+    "category": "protein",
+    "serving_size_g": 100.0,
+    "calories": 144.0,
+    "protein_g": 15.8,
+    "carbs_g": 2.8,
+    "fat_g": 8.7,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "vegan",
+      "dinner"
+    ]
+  },
+  {
+    "id": "f_030",
+    "name_ar": "عدس مسلوق",
+    "name_en": "Boiled Lentils",
+    "category": "protein",
+    "serving_size_g": 100.0,
+    "calories": 116.0,
+    "protein_g": 9.0,
+    "carbs_g": 20.1,
+    "fat_g": 0.4,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "vegan",
+      "lunch"
+    ]
+  },
+  {
+    "id": "f_031",
+    "name_ar": "حمص مسلوق",
+    "name_en": "Boiled Chickpeas",
+    "category": "protein",
+    "serving_size_g": 100.0,
+    "calories": 164.0,
+    "protein_g": 8.9,
+    "carbs_g": 27.4,
+    "fat_g": 2.6,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "vegan",
+      "lunch"
+    ]
+  },
+  {
+    "id": "f_032",
+    "name_ar": "فاصوليا سوداء مسلوقة",
+    "name_en": "Boiled Black Beans",
+    "category": "protein",
+    "serving_size_g": 100.0,
+    "calories": 132.0,
+    "protein_g": 8.9,
+    "carbs_g": 23.7,
+    "fat_g": 0.5,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "vegan",
+      "dinner"
+    ]
+  },
+  {
+    "id": "f_033",
+    "name_ar": "لحم غنم مشوي",
+    "name_en": "Grilled Lamb",
+    "category": "protein",
+    "serving_size_g": 100.0,
+    "calories": 294.0,
+    "protein_g": 25.0,
+    "carbs_g": 0.0,
+    "fat_g": 21.0,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "dinner"
+    ]
+  },
+  {
+    "id": "f_034",
+    "name_ar": "سمك بلطي مشوي",
+    "name_en": "Grilled Tilapia",
+    "category": "protein",
+    "serving_size_g": 100.0,
+    "calories": 128.0,
+    "protein_g": 26.0,
+    "carbs_g": 0.0,
+    "fat_g": 2.7,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "lunch",
+      "recovery"
+    ]
+  },
+  {
+    "id": "f_035",
+    "name_ar": "سمك قد مشوي",
+    "name_en": "Grilled Cod",
+    "category": "protein",
+    "serving_size_g": 100.0,
+    "calories": 105.0,
+    "protein_g": 23.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.9,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "lunch",
+      "recovery"
+    ]
+  },
+  {
+    "id": "f_036",
+    "name_ar": "سردين معلب",
+    "name_en": "Canned Sardines",
+    "category": "protein",
+    "serving_size_g": 100.0,
+    "calories": 208.0,
+    "protein_g": 24.6,
+    "carbs_g": 0.0,
+    "fat_g": 11.5,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "dinner",
+      "anti_inflammatory"
+    ]
+  },
+  {
+    "id": "f_037",
+    "name_ar": "فاصوليا بيضاء مسلوقة",
+    "name_en": "White Beans (Cooked)",
+    "category": "protein",
+    "serving_size_g": 100.0,
+    "calories": 139.0,
+    "protein_g": 9.7,
+    "carbs_g": 25.1,
+    "fat_g": 0.4,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "vegan",
+      "lunch"
+    ]
+  },
+  {
+    "id": "f_038",
+    "name_ar": "إدامامي مسلوق",
+    "name_en": "Edamame (Boiled)",
+    "category": "protein",
+    "serving_size_g": 100.0,
+    "calories": 121.0,
+    "protein_g": 11.9,
+    "carbs_g": 8.9,
+    "fat_g": 5.2,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "vegan",
+      "snack"
+    ]
+  },
+  {
+    "id": "f_039",
+    "name_ar": "حليب بقري كامل الدسم",
+    "name_en": "Whole Milk",
+    "category": "dairy",
+    "serving_size_g": 100.0,
+    "calories": 61.0,
+    "protein_g": 3.2,
+    "carbs_g": 4.8,
+    "fat_g": 3.3,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "breakfast",
+      "recovery"
+    ]
+  },
+  {
+    "id": "f_040",
+    "name_ar": "حليب بقري خالي الدسم",
+    "name_en": "Skim Milk",
+    "category": "dairy",
+    "serving_size_g": 100.0,
+    "calories": 35.0,
+    "protein_g": 3.4,
+    "carbs_g": 5.0,
+    "fat_g": 0.1,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "recovery",
+      "shake_base"
+    ]
+  },
+  {
+    "id": "f_041",
+    "name_ar": "زبادي يوناني سادة قليل الدسم",
+    "name_en": "Greek Yogurt (Low Fat)",
+    "category": "dairy",
+    "serving_size_g": 100.0,
+    "calories": 59.0,
+    "protein_g": 10.0,
+    "carbs_g": 3.6,
+    "fat_g": 0.4,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "breakfast",
+      "bedtime_snack"
+    ]
+  },
+  {
+    "id": "f_042",
+    "name_ar": "جبن قريش (Cottage Cheese)",
+    "name_en": "Cottage Cheese",
+    "category": "dairy",
+    "serving_size_g": 100.0,
+    "calories": 98.0,
+    "protein_g": 11.0,
+    "carbs_g": 3.4,
+    "fat_g": 4.3,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "bedtime_snack",
+      "recovery"
+    ]
+  },
+  {
+    "id": "f_043",
+    "name_ar": "جبن شيدر",
+    "name_en": "Cheddar Cheese",
+    "category": "dairy",
+    "serving_size_g": 100.0,
+    "calories": 402.0,
+    "protein_g": 25.0,
+    "carbs_g": 1.3,
+    "fat_g": 33.0,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "snack"
+    ]
+  },
+  {
+    "id": "f_044",
+    "name_ar": "حليب صويا مدعم",
+    "name_en": "Fortified Soy Milk",
+    "category": "dairy",
+    "serving_size_g": 100.0,
+    "calories": 33.0,
+    "protein_g": 2.9,
+    "carbs_g": 1.8,
+    "fat_g": 1.6,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "vegan",
+      "breakfast"
+    ]
+  },
+  {
+    "id": "f_045",
+    "name_ar": "حليب لوز غير محلى",
+    "name_en": "Unsweetened Almond Milk",
+    "category": "dairy",
+    "serving_size_g": 100.0,
+    "calories": 15.0,
+    "protein_g": 0.6,
+    "carbs_g": 0.3,
+    "fat_g": 1.2,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "vegan",
+      "shake_base"
+    ]
+  },
+  {
+    "id": "f_046",
+    "name_ar": "جبن موزاريلا قليل الدسم",
+    "name_en": "Low Fat Mozzarella",
+    "category": "dairy",
+    "serving_size_g": 100.0,
+    "calories": 254.0,
+    "protein_g": 24.0,
+    "carbs_g": 2.8,
+    "fat_g": 16.0,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "dinner"
+    ]
+  },
+  {
+    "id": "f_047",
+    "name_ar": "لبن عيران / زبادي شرب",
+    "name_en": "Ayran / Drinking Yogurt",
+    "category": "dairy",
+    "serving_size_g": 100.0,
+    "calories": 40.0,
+    "protein_g": 2.5,
+    "carbs_g": 4.0,
+    "fat_g": 1.5,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "hydration",
+      "snack"
+    ]
+  },
+  {
+    "id": "f_048",
+    "name_ar": "كفير (Kefir)",
+    "name_en": "Kefir",
+    "category": "dairy",
+    "serving_size_g": 100.0,
+    "calories": 60.0,
+    "protein_g": 3.3,
+    "carbs_g": 5.0,
+    "fat_g": 3.0,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "digestion",
+      "breakfast"
+    ]
+  },
+  {
+    "id": "f_049",
+    "name_ar": "موز",
+    "name_en": "Banana",
+    "category": "fruits",
+    "serving_size_g": 100.0,
+    "calories": 89.0,
+    "protein_g": 1.1,
+    "carbs_g": 22.8,
+    "fat_g": 0.3,
+    "glycemic_index": "high",
+    "suitable_for": [
+      "pre_workout",
+      "immediate_energy"
+    ]
+  },
+  {
+    "id": "f_050",
+    "name_ar": "تفاح",
+    "name_en": "Apple",
+    "category": "fruits",
+    "serving_size_g": 100.0,
+    "calories": 52.0,
+    "protein_g": 0.3,
+    "carbs_g": 13.8,
+    "fat_g": 0.2,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "snack"
+    ]
+  },
+  {
+    "id": "f_051",
+    "name_ar": "برتقال",
+    "name_en": "Orange",
+    "category": "fruits",
+    "serving_size_g": 100.0,
+    "calories": 47.0,
+    "protein_g": 0.9,
+    "carbs_g": 11.8,
+    "fat_g": 0.1,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "snack",
+      "hydration"
+    ]
+  },
+  {
+    "id": "f_052",
+    "name_ar": "عنب",
+    "name_en": "Grapes",
+    "category": "fruits",
+    "serving_size_g": 100.0,
+    "calories": 69.0,
+    "protein_g": 0.7,
+    "carbs_g": 18.1,
+    "fat_g": 0.2,
+    "glycemic_index": "medium",
+    "suitable_for": [
+      "pre_workout",
+      "immediate_energy"
+    ]
+  },
+  {
+    "id": "f_053",
+    "name_ar": "بطيخ",
+    "name_en": "Watermelon",
+    "category": "fruits",
+    "serving_size_g": 100.0,
+    "calories": 30.0,
+    "protein_g": 0.6,
+    "carbs_g": 7.6,
+    "fat_g": 0.2,
+    "glycemic_index": "high",
+    "suitable_for": [
+      "hydration",
+      "post_workout"
+    ]
+  },
+  {
+    "id": "f_054",
+    "name_ar": "فراولة",
+    "name_en": "Strawberries",
+    "category": "fruits",
+    "serving_size_g": 100.0,
+    "calories": 32.0,
+    "protein_g": 0.7,
+    "carbs_g": 7.7,
+    "fat_g": 0.3,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "snack",
+      "antioxidants"
+    ]
+  },
+  {
+    "id": "f_055",
+    "name_ar": "توت أزرق",
+    "name_en": "Blueberries",
+    "category": "fruits",
+    "serving_size_g": 100.0,
+    "calories": 57.0,
+    "protein_g": 0.7,
+    "carbs_g": 14.5,
+    "fat_g": 0.3,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "snack",
+      "antioxidants"
+    ]
+  },
+  {
+    "id": "f_056",
+    "name_ar": "أناناس",
+    "name_en": "Pineapple",
+    "category": "fruits",
+    "serving_size_g": 100.0,
+    "calories": 50.0,
+    "protein_g": 0.5,
+    "carbs_g": 13.1,
+    "fat_g": 0.1,
+    "glycemic_index": "medium",
+    "suitable_for": [
+      "recovery",
+      "digestion"
+    ]
+  },
+  {
+    "id": "f_057",
+    "name_ar": "مانجو",
+    "name_en": "Mango",
+    "category": "fruits",
+    "serving_size_g": 100.0,
+    "calories": 60.0,
+    "protein_g": 0.8,
+    "carbs_g": 15.0,
+    "fat_g": 0.4,
+    "glycemic_index": "medium",
+    "suitable_for": [
+      "snack",
+      "pre_workout"
+    ]
+  },
+  {
+    "id": "f_058",
+    "name_ar": "كيوي",
+    "name_en": "Kiwi",
+    "category": "fruits",
+    "serving_size_g": 100.0,
+    "calories": 61.0,
+    "protein_g": 1.1,
+    "carbs_g": 14.7,
+    "fat_g": 0.5,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "recovery",
+      "vitamin_c"
+    ]
+  },
+  {
+    "id": "f_059",
+    "name_ar": "رمان",
+    "name_en": "Pomegranate",
+    "category": "fruits",
+    "serving_size_g": 100.0,
+    "calories": 83.0,
+    "protein_g": 1.7,
+    "carbs_g": 18.7,
+    "fat_g": 1.2,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "recovery",
+      "blood_flow"
+    ]
+  },
+  {
+    "id": "f_060",
+    "name_ar": "خوخ",
+    "name_en": "Peach",
+    "category": "fruits",
+    "serving_size_g": 100.0,
+    "calories": 39.0,
+    "protein_g": 0.9,
+    "carbs_g": 9.5,
+    "fat_g": 0.3,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "snack"
+    ]
+  },
+  {
+    "id": "f_061",
+    "name_ar": "كمثرى",
+    "name_en": "Pear",
+    "category": "fruits",
+    "serving_size_g": 100.0,
+    "calories": 57.0,
+    "protein_g": 0.4,
+    "carbs_g": 15.2,
+    "fat_g": 0.1,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "snack"
+    ]
+  },
+  {
+    "id": "f_062",
+    "name_ar": "كرز",
+    "name_en": "Cherries",
+    "category": "fruits",
+    "serving_size_g": 100.0,
+    "calories": 63.0,
+    "protein_g": 1.1,
+    "carbs_g": 16.0,
+    "fat_g": 0.2,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "recovery",
+      "sleep_aid"
+    ]
+  },
+  {
+    "id": "f_063",
+    "name_ar": "شمام",
+    "name_en": "Melon / Cantaloupe",
+    "category": "fruits",
+    "serving_size_g": 100.0,
+    "calories": 34.0,
+    "protein_g": 0.8,
+    "carbs_g": 8.2,
+    "fat_g": 0.2,
+    "glycemic_index": "medium",
+    "suitable_for": [
+      "hydration",
+      "recovery"
+    ]
+  },
+  {
+    "id": "f_064",
+    "name_ar": "جريب فروت",
+    "name_en": "Grapefruit",
+    "category": "fruits",
+    "serving_size_g": 100.0,
+    "calories": 42.0,
+    "protein_g": 0.8,
+    "carbs_g": 10.7,
+    "fat_g": 0.1,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "breakfast",
+      "hydration"
+    ]
+  },
+  {
+    "id": "f_065",
+    "name_ar": "تين طازج",
+    "name_en": "Fresh Figs",
+    "category": "fruits",
+    "serving_size_g": 100.0,
+    "calories": 74.0,
+    "protein_g": 0.8,
+    "carbs_g": 19.2,
+    "fat_g": 0.3,
+    "glycemic_index": "medium",
+    "suitable_for": [
+      "snack",
+      "energy"
+    ]
+  },
+  {
+    "id": "f_066",
+    "name_ar": "مشمش",
+    "name_en": "Apricot",
+    "category": "fruits",
+    "serving_size_g": 100.0,
+    "calories": 48.0,
+    "protein_g": 1.4,
+    "carbs_g": 11.1,
+    "fat_g": 0.4,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "snack"
+    ]
+  },
+  {
+    "id": "f_067",
+    "name_ar": "أفوكادو",
+    "name_en": "Avocado",
+    "category": "fruits",
+    "serving_size_g": 100.0,
+    "calories": 160.0,
+    "protein_g": 2.0,
+    "carbs_g": 8.5,
+    "fat_g": 14.7,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "healthy_fats",
+      "lunch"
+    ]
+  },
+  {
+    "id": "f_068",
+    "name_ar": "تمر (مجفف)",
+    "name_en": "Dates (Dried)",
+    "category": "fruits",
+    "serving_size_g": 100.0,
+    "calories": 282.0,
+    "protein_g": 2.5,
+    "carbs_g": 75.0,
+    "fat_g": 0.4,
+    "glycemic_index": "high",
+    "suitable_for": [
+      "during_workout",
+      "immediate_energy"
+    ]
+  },
+  {
+    "id": "f_069",
+    "name_ar": "زبيب",
+    "name_en": "Raisins",
+    "category": "fruits",
+    "serving_size_g": 100.0,
+    "calories": 299.0,
+    "protein_g": 3.1,
+    "carbs_g": 79.2,
+    "fat_g": 0.5,
+    "glycemic_index": "medium",
+    "suitable_for": [
+      "during_workout",
+      "energy"
+    ]
+  },
+  {
+    "id": "f_070",
+    "name_ar": "تين مجفف",
+    "name_en": "Dried Figs",
+    "category": "fruits",
+    "serving_size_g": 100.0,
+    "calories": 249.0,
+    "protein_g": 3.3,
+    "carbs_g": 63.9,
+    "fat_g": 0.9,
+    "glycemic_index": "medium",
+    "suitable_for": [
+      "pre_workout",
+      "energy"
+    ]
+  },
+  {
+    "id": "f_071",
+    "name_ar": "بروكلي مسلوق",
+    "name_en": "Boiled Broccoli",
+    "category": "vegetables",
+    "serving_size_g": 100.0,
+    "calories": 35.0,
+    "protein_g": 2.4,
+    "carbs_g": 7.2,
+    "fat_g": 0.4,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "lunch",
+      "dinner",
+      "fiber"
+    ]
+  },
+  {
+    "id": "f_072",
+    "name_ar": "سبانخ مطبوخة",
+    "name_en": "Cooked Spinach",
+    "category": "vegetables",
+    "serving_size_g": 100.0,
+    "calories": 23.0,
+    "protein_g": 3.0,
+    "carbs_g": 3.8,
+    "fat_g": 0.3,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "lunch",
+      "dinner",
+      "iron"
+    ]
+  },
+  {
+    "id": "f_073",
+    "name_ar": "جزر طازج",
+    "name_en": "Fresh Carrots",
+    "category": "vegetables",
+    "serving_size_g": 100.0,
+    "calories": 41.0,
+    "protein_g": 0.9,
+    "carbs_g": 9.6,
+    "fat_g": 0.2,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "snack",
+      "lunch"
+    ]
+  },
+  {
+    "id": "f_074",
+    "name_ar": "طماطم طازجة",
+    "name_en": "Fresh Tomato",
+    "category": "vegetables",
+    "serving_size_g": 100.0,
+    "calories": 18.0,
+    "protein_g": 0.9,
+    "carbs_g": 3.9,
+    "fat_g": 0.2,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "salad",
+      "hydration"
+    ]
+  },
+  {
+    "id": "f_075",
+    "name_ar": "خيار",
+    "name_en": "Cucumber",
+    "category": "vegetables",
+    "serving_size_g": 100.0,
+    "calories": 15.0,
+    "protein_g": 0.7,
+    "carbs_g": 3.6,
+    "fat_g": 0.1,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "salad",
+      "hydration"
+    ]
+  },
+  {
+    "id": "f_076",
+    "name_ar": "فلفل حلو",
+    "name_en": "Bell Pepper",
+    "category": "vegetables",
+    "serving_size_g": 100.0,
+    "calories": 20.0,
+    "protein_g": 0.9,
+    "carbs_g": 4.6,
+    "fat_g": 0.2,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "salad",
+      "vitamin_c"
+    ]
+  },
+  {
+    "id": "f_077",
+    "name_ar": "كوسا مطبوخة",
+    "name_en": "Cooked Zucchini",
+    "category": "vegetables",
+    "serving_size_g": 100.0,
+    "calories": 15.0,
+    "protein_g": 1.1,
+    "carbs_g": 2.7,
+    "fat_g": 0.3,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "dinner"
+    ]
+  },
+  {
+    "id": "f_078",
+    "name_ar": "قرنبيط مسلوق",
+    "name_en": "Boiled Cauliflower",
+    "category": "vegetables",
+    "serving_size_g": 100.0,
+    "calories": 23.0,
+    "protein_g": 1.8,
+    "carbs_g": 4.1,
+    "fat_g": 0.5,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "lunch",
+      "dinner"
+    ]
+  },
+  {
+    "id": "f_079",
+    "name_ar": "باذنجان مطبوخ",
+    "name_en": "Cooked Eggplant",
+    "category": "vegetables",
+    "serving_size_g": 100.0,
+    "calories": 35.0,
+    "protein_g": 0.8,
+    "carbs_g": 8.7,
+    "fat_g": 0.2,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "lunch",
+      "dinner"
+    ]
+  },
+  {
+    "id": "f_080",
+    "name_ar": "خس",
+    "name_en": "Lettuce",
+    "category": "vegetables",
+    "serving_size_g": 100.0,
+    "calories": 14.0,
+    "protein_g": 0.9,
+    "carbs_g": 2.9,
+    "fat_g": 0.2,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "salad",
+      "hydration"
+    ]
+  },
+  {
+    "id": "f_081",
+    "name_ar": "ملفوف / كرنب",
+    "name_en": "Cabbage",
+    "category": "vegetables",
+    "serving_size_g": 100.0,
+    "calories": 25.0,
+    "protein_g": 1.3,
+    "carbs_g": 5.8,
+    "fat_g": 0.1,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "salad"
+    ]
+  },
+  {
+    "id": "f_082",
+    "name_ar": "فاصوليا خضراء مطبوخة",
+    "name_en": "Cooked Green Beans",
+    "category": "vegetables",
+    "serving_size_g": 100.0,
+    "calories": 35.0,
+    "protein_g": 1.9,
+    "carbs_g": 7.9,
+    "fat_g": 0.3,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "lunch",
+      "dinner"
+    ]
+  },
+  {
+    "id": "f_083",
+    "name_ar": "بازلاء خضراء مطبوخة",
+    "name_en": "Cooked Green Peas",
+    "category": "vegetables",
+    "serving_size_g": 100.0,
+    "calories": 84.0,
+    "protein_g": 5.4,
+    "carbs_g": 15.6,
+    "fat_g": 0.2,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "lunch"
+    ]
+  },
+  {
+    "id": "f_084",
+    "name_ar": "بصل أحمر طازج",
+    "name_en": "Fresh Red Onion",
+    "category": "vegetables",
+    "serving_size_g": 100.0,
+    "calories": 40.0,
+    "protein_g": 1.1,
+    "carbs_g": 9.3,
+    "fat_g": 0.1,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "salad"
+    ]
+  },
+  {
+    "id": "f_085",
+    "name_ar": "ثوم",
+    "name_en": "Garlic",
+    "category": "vegetables",
+    "serving_size_g": 100.0,
+    "calories": 149.0,
+    "protein_g": 6.4,
+    "carbs_g": 33.0,
+    "fat_g": 0.5,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "immunity",
+      "seasoning"
+    ]
+  },
+  {
+    "id": "f_086",
+    "name_ar": "فطر / مشروم مطبوخ",
+    "name_en": "Cooked Mushrooms",
+    "category": "vegetables",
+    "serving_size_g": 100.0,
+    "calories": 28.0,
+    "protein_g": 2.2,
+    "carbs_g": 5.3,
+    "fat_g": 0.3,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "lunch",
+      "dinner"
+    ]
+  },
+  {
+    "id": "f_087",
+    "name_ar": "بنجر / شمندر مسلوق",
+    "name_en": "Boiled Beetroot",
+    "category": "vegetables",
+    "serving_size_g": 100.0,
+    "calories": 44.0,
+    "protein_g": 1.7,
+    "carbs_g": 10.0,
+    "fat_g": 0.2,
+    "glycemic_index": "medium",
+    "suitable_for": [
+      "pre_workout",
+      "nitric_oxide"
+    ]
+  },
+  {
+    "id": "f_088",
+    "name_ar": "هليون مسلوق",
+    "name_en": "Boiled Asparagus",
+    "category": "vegetables",
+    "serving_size_g": 100.0,
+    "calories": 22.0,
+    "protein_g": 2.4,
+    "carbs_g": 4.1,
+    "fat_g": 0.2,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "dinner"
+    ]
+  },
+  {
+    "id": "f_089",
+    "name_ar": "لوز غير محمص",
+    "name_en": "Raw Almonds",
+    "category": "fats",
+    "serving_size_g": 100.0,
+    "calories": 579.0,
+    "protein_g": 21.2,
+    "carbs_g": 21.6,
+    "fat_g": 49.9,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "snack",
+      "healthy_fats"
+    ]
+  },
+  {
+    "id": "f_090",
+    "name_ar": "جوز (عين الجمل)",
+    "name_en": "Walnuts",
+    "category": "fats",
+    "serving_size_g": 100.0,
+    "calories": 654.0,
+    "protein_g": 15.2,
+    "carbs_g": 13.7,
+    "fat_g": 65.2,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "snack",
+      "omega_3"
+    ]
+  },
+  {
+    "id": "f_091",
+    "name_ar": "كاجو",
+    "name_en": "Cashews",
+    "category": "fats",
+    "serving_size_g": 100.0,
+    "calories": 553.0,
+    "protein_g": 18.2,
+    "carbs_g": 30.2,
+    "fat_g": 43.8,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "snack"
+    ]
+  },
+  {
+    "id": "f_092",
+    "name_ar": "فستق",
+    "name_en": "Pistachios",
+    "category": "fats",
+    "serving_size_g": 100.0,
+    "calories": 562.0,
+    "protein_g": 20.2,
+    "carbs_g": 27.2,
+    "fat_g": 45.3,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "snack"
+    ]
+  },
+  {
+    "id": "f_093",
+    "name_ar": "فول سوداني",
+    "name_en": "Peanuts",
+    "category": "fats",
+    "serving_size_g": 100.0,
+    "calories": 567.0,
+    "protein_g": 25.8,
+    "carbs_g": 16.1,
+    "fat_g": 49.2,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "snack",
+      "protein_boost"
+    ]
+  },
+  {
+    "id": "f_094",
+    "name_ar": "زبدة فول سوداني طبيعية",
+    "name_en": "Natural Peanut Butter",
+    "category": "fats",
+    "serving_size_g": 100.0,
+    "calories": 588.0,
+    "protein_g": 25.0,
+    "carbs_g": 20.0,
+    "fat_g": 50.0,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "breakfast",
+      "snack"
+    ]
+  },
+  {
+    "id": "f_095",
+    "name_ar": "بذور شيا",
+    "name_en": "Chia Seeds",
+    "category": "fats",
+    "serving_size_g": 100.0,
+    "calories": 486.0,
+    "protein_g": 16.5,
+    "carbs_g": 42.1,
+    "fat_g": 30.7,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "omega_3",
+      "hydration_boost"
+    ]
+  },
+  {
+    "id": "f_096",
+    "name_ar": "بذور كتان",
+    "name_en": "Flaxseeds",
+    "category": "fats",
+    "serving_size_g": 100.0,
+    "calories": 534.0,
+    "protein_g": 18.3,
+    "carbs_g": 28.9,
+    "fat_g": 42.2,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "omega_3"
+    ]
+  },
+  {
+    "id": "f_097",
+    "name_ar": "زيت زيتون بكر",
+    "name_en": "Extra Virgin Olive Oil",
+    "category": "fats",
+    "serving_size_g": 100.0,
+    "calories": 884.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 100.0,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "salad_dressing",
+      "anti_inflammatory"
+    ]
+  },
+  {
+    "id": "f_098",
+    "name_ar": "زيت جوز هند",
+    "name_en": "Coconut Oil",
+    "category": "fats",
+    "serving_size_g": 100.0,
+    "calories": 862.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 100.0,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "cooking"
+    ]
+  },
+  {
+    "id": "f_099",
+    "name_ar": "زبدة حيوانية",
+    "name_en": "Butter",
+    "category": "fats",
+    "serving_size_g": 100.0,
+    "calories": 717.0,
+    "protein_g": 0.9,
+    "carbs_g": 0.1,
+    "fat_g": 81.1,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "cooking"
+    ]
+  },
+  {
+    "id": "f_100",
+    "name_ar": "طحينة السمسم",
+    "name_en": "Tahini",
+    "category": "fats",
+    "serving_size_g": 100.0,
+    "calories": 595.0,
+    "protein_g": 17.0,
+    "carbs_g": 21.2,
+    "fat_g": 53.8,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "dinner"
+    ]
+  },
+  {
+    "id": "f_101",
+    "name_ar": "بذور اليقطين",
+    "name_en": "Pumpkin Seeds",
+    "category": "fats",
+    "serving_size_g": 100.0,
+    "calories": 559.0,
+    "protein_g": 30.2,
+    "carbs_g": 10.7,
+    "fat_g": 49.1,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "snack",
+      "magnesium"
+    ]
+  },
+  {
+    "id": "f_102",
+    "name_ar": "بذور دوار الشمس",
+    "name_en": "Sunflower Seeds",
+    "category": "fats",
+    "serving_size_g": 100.0,
+    "calories": 584.0,
+    "protein_g": 20.8,
+    "carbs_g": 20.0,
+    "fat_g": 51.5,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "snack"
+    ]
+  },
+  {
+    "id": "f_103",
+    "name_ar": "بروتين مصل اللبن (Whey Protein)",
+    "name_en": "Whey Protein Powder",
+    "category": "supplements",
+    "serving_size_g": 100.0,
+    "calories": 359.0,
+    "protein_g": 78.0,
+    "carbs_g": 5.0,
+    "fat_g": 2.0,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "post_workout",
+      "recovery"
+    ]
+  },
+  {
+    "id": "f_104",
+    "name_ar": "بروتين الكازين (Casein)",
+    "name_en": "Casein Protein Powder",
+    "category": "supplements",
+    "serving_size_g": 100.0,
+    "calories": 365.0,
+    "protein_g": 75.0,
+    "carbs_g": 10.0,
+    "fat_g": 2.0,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "bedtime_snack"
+    ]
+  },
+  {
+    "id": "f_105",
+    "name_ar": "كرياتين مونوهيدرات",
+    "name_en": "Creatine Monohydrate",
+    "category": "supplements",
+    "serving_size_g": 100.0,
+    "calories": 0.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.0,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "strength_building"
+    ]
+  },
+  {
+    "id": "f_106",
+    "name_ar": "مشروب رياضي (مثل إيزوتونيك)",
+    "name_en": "Sports Drink (Isotonic)",
+    "category": "supplements",
+    "serving_size_g": 100.0,
+    "calories": 24.0,
+    "protein_g": 0.0,
+    "carbs_g": 6.0,
+    "fat_g": 0.0,
+    "glycemic_index": "high",
+    "suitable_for": [
+      "during_workout",
+      "hydration"
+    ]
+  },
+  {
+    "id": "f_107",
+    "name_ar": "جيل طاقة رياضي",
+    "name_en": "Energy Gel",
+    "category": "supplements",
+    "serving_size_g": 100.0,
+    "calories": 260.0,
+    "protein_g": 0.0,
+    "carbs_g": 65.0,
+    "fat_g": 0.0,
+    "glycemic_index": "high",
+    "suitable_for": [
+      "during_workout",
+      "immediate_energy"
+    ]
+  },
+  {
+    "id": "f_108",
+    "name_ar": "لوح بروتين رياضي",
+    "name_en": "Protein Bar",
+    "category": "supplements",
+    "serving_size_g": 100.0,
+    "calories": 380.0,
+    "protein_g": 30.0,
+    "carbs_g": 35.0,
+    "fat_g": 12.0,
+    "glycemic_index": "medium",
+    "suitable_for": [
+      "snack",
+      "post_workout"
+    ]
+  },
+  {
+    "id": "f_109",
+    "name_ar": "مسحوق BCAAs",
+    "name_en": "BCAA Powder",
+    "category": "supplements",
+    "serving_size_g": 100.0,
+    "calories": 40.0,
+    "protein_g": 10.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.0,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "during_workout",
+      "muscle_sparing"
+    ]
+  },
+  {
+    "id": "f_110",
+    "name_ar": "عسل طبيعي",
+    "name_en": "Natural Honey",
+    "category": "sweets",
+    "serving_size_g": 100.0,
+    "calories": 304.0,
+    "protein_g": 0.3,
+    "carbs_g": 82.4,
+    "fat_g": 0.0,
+    "glycemic_index": "high",
+    "suitable_for": [
+      "pre_workout",
+      "immediate_energy"
+    ]
+  },
+  {
+    "id": "f_111",
+    "name_ar": "شوكولاتة داكنة (70%+)",
+    "name_en": "Dark Chocolate (70%+)",
+    "category": "sweets",
+    "serving_size_g": 100.0,
+    "calories": 598.0,
+    "protein_g": 7.8,
+    "carbs_g": 45.9,
+    "fat_g": 42.6,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "snack",
+      "antioxidants"
+    ]
+  },
+  {
+    "id": "f_112",
+    "name_ar": "مربى فواكه",
+    "name_en": "Fruit Jam",
+    "category": "sweets",
+    "serving_size_g": 100.0,
+    "calories": 278.0,
+    "protein_g": 0.4,
+    "carbs_g": 68.9,
+    "fat_g": 0.1,
+    "glycemic_index": "high",
+    "suitable_for": [
+      "breakfast",
+      "pre_workout"
+    ]
+  },
+  {
+    "id": "f_113",
+    "name_ar": "ماء نقي (بارد أو معتدل)",
+    "name_en": "Pure Water (Cold or Ambient)",
+    "category": "hydration",
+    "serving_size_g": 100.0,
+    "calories": 0.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.0,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "hydration",
+      "during_workout"
+    ]
+  },
+  {
+    "id": "f_114",
+    "name_ar": "ماء جوز الهند الطبيعي",
+    "name_en": "Natural Coconut Water",
+    "category": "hydration",
+    "serving_size_g": 100.0,
+    "calories": 19.0,
+    "protein_g": 0.7,
+    "carbs_g": 3.7,
+    "fat_g": 0.2,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "hydration",
+      "electrolytes",
+      "hot_weather"
+    ]
+  },
+  {
+    "id": "f_115",
+    "name_ar": "مشروب رياضي منزلي (ماء، عسل، ليمون، رشة ملح)",
+    "name_en": "Homemade Sports Drink (Honey & Lemon)",
+    "category": "hydration",
+    "serving_size_g": 100.0,
+    "calories": 15.0,
+    "protein_g": 0.0,
+    "carbs_g": 4.0,
+    "fat_g": 0.0,
+    "glycemic_index": "high",
+    "suitable_for": [
+      "during_workout",
+      "hydration",
+      "electrolytes"
+    ]
+  },
+  {
+    "id": "f_116",
+    "name_ar": "مشروب استشفاء منزلي حار (شاي أخضر، زنجبيل، عسل)",
+    "name_en": "Hot Homemade Recovery Drink (Green Tea, Ginger, Honey)",
+    "category": "hydration",
+    "serving_size_g": 100.0,
+    "calories": 10.0,
+    "protein_g": 0.0,
+    "carbs_g": 2.5,
+    "fat_g": 0.0,
+    "glycemic_index": "medium",
+    "suitable_for": [
+      "cold_weather",
+      "recovery",
+      "anti_inflammatory"
+    ]
+  },
+  {
+    "id": "f_117",
+    "name_ar": "مشروب رياضي منزلي دافئ (ماء دافئ، قرفة، عسل، ملح بحري)",
+    "name_en": "Warm Homemade Sports Drink (Cinnamon, Honey, Sea Salt)",
+    "category": "hydration",
+    "serving_size_g": 100.0,
+    "calories": 12.0,
+    "protein_g": 0.0,
+    "carbs_g": 3.0,
+    "fat_g": 0.0,
+    "glycemic_index": "high",
+    "suitable_for": [
+      "during_workout",
+      "cold_weather",
+      "electrolytes"
+    ]
+  },
+  {
+    "id": "f_118",
+    "name_ar": "عصير برتقال مخفف بالماء والملح (للبيئة الحارة)",
+    "name_en": "Diluted Orange Juice with Salt",
+    "category": "hydration",
+    "serving_size_g": 100.0,
+    "calories": 22.0,
+    "protein_g": 0.4,
+    "carbs_g": 5.2,
+    "fat_g": 0.0,
+    "glycemic_index": "high",
+    "suitable_for": [
+      "during_workout",
+      "hot_weather",
+      "electrolytes"
+    ]
+  },
+  {
+    "id": "f_119",
+    "name_ar": "مشروب إلكتروليتات خالي السعرات (أقراص فوارة)",
+    "name_en": "Zero Calorie Electrolyte Tablet (Dissolved)",
+    "category": "hydration",
+    "serving_size_g": 100.0,
+    "calories": 2.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.5,
+    "fat_g": 0.0,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "hydration",
+      "hot_weather",
+      "electrolytes"
+    ]
+  },
+  {
+    "id": "f_120",
+    "name_ar": "مشروب رياضي هايبرتونيك (عالي الكربوهيدرات لقبل البطولات)",
+    "name_en": "Hypertonic Sports Drink",
+    "category": "hydration",
+    "serving_size_g": 100.0,
+    "calories": 60.0,
+    "protein_g": 0.0,
+    "carbs_g": 15.0,
+    "fat_g": 0.0,
+    "glycemic_index": "high",
+    "suitable_for": [
+      "carb_loading",
+      "pre_workout"
+    ]
+  },
+  {
+    "id": "f_121",
+    "name_ar": "مشروب رياضي هايبوتونيك (قليل الكربوهيدرات للترطيب السريع)",
+    "name_en": "Hypotonic Sports Drink",
+    "category": "hydration",
+    "serving_size_g": 100.0,
+    "calories": 15.0,
+    "protein_g": 0.0,
+    "carbs_g": 3.5,
+    "fat_g": 0.0,
+    "glycemic_index": "high",
+    "suitable_for": [
+      "hot_weather",
+      "during_workout",
+      "fast_hydration"
+    ]
+  },
+  {
+    "id": "f_122",
+    "name_ar": "عصير الشمندر (الشمندر/البنجر) المركز",
+    "name_en": "Concentrated Beetroot Juice",
+    "category": "hydration",
+    "serving_size_g": 100.0,
+    "calories": 45.0,
+    "protein_g": 1.0,
+    "carbs_g": 10.0,
+    "fat_g": 0.0,
+    "glycemic_index": "medium",
+    "suitable_for": [
+      "pre_workout",
+      "nitric_oxide",
+      "endurance"
+    ]
+  },
+  {
+    "id": "f_123",
+    "name_ar": "عصير الكرز اللاذع (Tart Cherry Juice)",
+    "name_en": "Tart Cherry Juice",
+    "category": "hydration",
+    "serving_size_g": 100.0,
+    "calories": 50.0,
+    "protein_g": 0.5,
+    "carbs_g": 12.0,
+    "fat_g": 0.0,
+    "glycemic_index": "medium",
+    "suitable_for": [
+      "recovery",
+      "anti_inflammatory",
+      "sleep_aid"
+    ]
+  },
+  {
+    "id": "f_124",
+    "name_ar": "حليب الشوكولاتة قليل الدسم (للاستشفاء)",
+    "name_en": "Low Fat Chocolate Milk",
+    "category": "hydration",
+    "serving_size_g": 100.0,
+    "calories": 62.0,
+    "protein_g": 3.2,
+    "carbs_g": 10.0,
+    "fat_g": 1.0,
+    "glycemic_index": "medium",
+    "suitable_for": [
+      "post_workout",
+      "recovery",
+      "protein_carb_ratio"
+    ]
+  },
+  {
+    "id": "f_125",
+    "name_ar": "قهوة سوداء (اسبريسو / فلتر)",
+    "name_en": "Black Coffee",
+    "category": "hydration",
+    "serving_size_g": 100.0,
+    "calories": 2.0,
+    "protein_g": 0.1,
+    "carbs_g": 0.0,
+    "fat_g": 0.0,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "pre_workout",
+      "focus",
+      "ergogenic_aid"
+    ]
+  },
+  {
+    "id": "f_126",
+    "name_ar": "ماء نقي (بارد أو معتدل)",
+    "name_en": "Pure Water (Cold or Ambient)",
+    "category": "hydration",
+    "serving_size_g": 100.0,
+    "calories": 0.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.0,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "hydration",
+      "during_workout"
+    ]
+  },
+  {
+    "id": "f_127",
+    "name_ar": "ماء جوز الهند الطبيعي",
+    "name_en": "Natural Coconut Water",
+    "category": "hydration",
+    "serving_size_g": 100.0,
+    "calories": 19.0,
+    "protein_g": 0.7,
+    "carbs_g": 3.7,
+    "fat_g": 0.2,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "hydration",
+      "electrolytes",
+      "hot_weather"
+    ]
+  },
+  {
+    "id": "f_128",
+    "name_ar": "مشروب رياضي منزلي (ماء، عسل، ليمون، رشة ملح)",
+    "name_en": "Homemade Sports Drink (Honey & Lemon)",
+    "category": "hydration",
+    "serving_size_g": 100.0,
+    "calories": 15.0,
+    "protein_g": 0.0,
+    "carbs_g": 4.0,
+    "fat_g": 0.0,
+    "glycemic_index": "high",
+    "suitable_for": [
+      "during_workout",
+      "hydration",
+      "electrolytes"
+    ]
+  },
+  {
+    "id": "f_129",
+    "name_ar": "مشروب استشفاء منزلي حار (شاي أخضر، زنجبيل، عسل)",
+    "name_en": "Hot Homemade Recovery Drink (Green Tea, Ginger, Honey)",
+    "category": "hydration",
+    "serving_size_g": 100.0,
+    "calories": 10.0,
+    "protein_g": 0.0,
+    "carbs_g": 2.5,
+    "fat_g": 0.0,
+    "glycemic_index": "medium",
+    "suitable_for": [
+      "cold_weather",
+      "recovery",
+      "anti_inflammatory"
+    ]
+  },
+  {
+    "id": "f_130",
+    "name_ar": "مشروب رياضي منزلي دافئ (ماء دافئ، قرفة، عسل، ملح بحري)",
+    "name_en": "Warm Homemade Sports Drink (Cinnamon, Honey, Sea Salt)",
+    "category": "hydration",
+    "serving_size_g": 100.0,
+    "calories": 12.0,
+    "protein_g": 0.0,
+    "carbs_g": 3.0,
+    "fat_g": 0.0,
+    "glycemic_index": "high",
+    "suitable_for": [
+      "during_workout",
+      "cold_weather",
+      "electrolytes"
+    ]
+  },
+  {
+    "id": "f_131",
+    "name_ar": "عصير برتقال مخفف بالماء والملح (للبيئة الحارة)",
+    "name_en": "Diluted Orange Juice with Salt",
+    "category": "hydration",
+    "serving_size_g": 100.0,
+    "calories": 22.0,
+    "protein_g": 0.4,
+    "carbs_g": 5.2,
+    "fat_g": 0.0,
+    "glycemic_index": "high",
+    "suitable_for": [
+      "during_workout",
+      "hot_weather",
+      "electrolytes"
+    ]
+  },
+  {
+    "id": "f_132",
+    "name_ar": "مشروب إلكتروليتات خالي السعرات (أقراص فوارة)",
+    "name_en": "Zero Calorie Electrolyte Tablet (Dissolved)",
+    "category": "hydration",
+    "serving_size_g": 100.0,
+    "calories": 2.0,
+    "protein_g": 0.0,
+    "carbs_g": 0.5,
+    "fat_g": 0.0,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "hydration",
+      "hot_weather",
+      "electrolytes"
+    ]
+  },
+  {
+    "id": "f_133",
+    "name_ar": "مشروب رياضي هايبرتونيك (عالي الكربوهيدرات لقبل البطولات)",
+    "name_en": "Hypertonic Sports Drink",
+    "category": "hydration",
+    "serving_size_g": 100.0,
+    "calories": 60.0,
+    "protein_g": 0.0,
+    "carbs_g": 15.0,
+    "fat_g": 0.0,
+    "glycemic_index": "high",
+    "suitable_for": [
+      "carb_loading",
+      "pre_workout"
+    ]
+  },
+  {
+    "id": "f_134",
+    "name_ar": "مشروب رياضي هايبوتونيك (قليل الكربوهيدرات للترطيب السريع)",
+    "name_en": "Hypotonic Sports Drink",
+    "category": "hydration",
+    "serving_size_g": 100.0,
+    "calories": 15.0,
+    "protein_g": 0.0,
+    "carbs_g": 3.5,
+    "fat_g": 0.0,
+    "glycemic_index": "high",
+    "suitable_for": [
+      "hot_weather",
+      "during_workout",
+      "fast_hydration"
+    ]
+  },
+  {
+    "id": "f_135",
+    "name_ar": "عصير الشمندر (الشمندر/البنجر) المركز",
+    "name_en": "Concentrated Beetroot Juice",
+    "category": "hydration",
+    "serving_size_g": 100.0,
+    "calories": 45.0,
+    "protein_g": 1.0,
+    "carbs_g": 10.0,
+    "fat_g": 0.0,
+    "glycemic_index": "medium",
+    "suitable_for": [
+      "pre_workout",
+      "nitric_oxide",
+      "endurance"
+    ]
+  },
+  {
+    "id": "f_136",
+    "name_ar": "عصير الكرز اللاذع (Tart Cherry Juice)",
+    "name_en": "Tart Cherry Juice",
+    "category": "hydration",
+    "serving_size_g": 100.0,
+    "calories": 50.0,
+    "protein_g": 0.5,
+    "carbs_g": 12.0,
+    "fat_g": 0.0,
+    "glycemic_index": "medium",
+    "suitable_for": [
+      "recovery",
+      "anti_inflammatory",
+      "sleep_aid"
+    ]
+  },
+  {
+    "id": "f_137",
+    "name_ar": "حليب الشوكولاتة قليل الدسم (للاستشفاء)",
+    "name_en": "Low Fat Chocolate Milk",
+    "category": "hydration",
+    "serving_size_g": 100.0,
+    "calories": 62.0,
+    "protein_g": 3.2,
+    "carbs_g": 10.0,
+    "fat_g": 1.0,
+    "glycemic_index": "medium",
+    "suitable_for": [
+      "post_workout",
+      "recovery",
+      "protein_carb_ratio"
+    ]
+  },
+  {
+    "id": "f_138",
+    "name_ar": "قهوة سوداء (اسبريسو / فلتر)",
+    "name_en": "Black Coffee",
+    "category": "hydration",
+    "serving_size_g": 100.0,
+    "calories": 2.0,
+    "protein_g": 0.1,
+    "carbs_g": 0.0,
+    "fat_g": 0.0,
+    "glycemic_index": "low",
+    "suitable_for": [
+      "pre_workout",
+      "focus",
+      "ergogenic_aid"
+    ]
+  }
+]

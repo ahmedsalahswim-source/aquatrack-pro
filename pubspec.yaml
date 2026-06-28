@@ -67,7 +67,7 @@ dependencies:
   firebase_performance: ^0.10.1+10
   google_mlkit_pose_detection: ^0.14.1
   image: ^4.8.0
-  ffmpeg_kit_flutter_min_gpl: ^6.0.3
+  ffmpeg_kit_flutter_new_min_gpl: ^2.1.1
   flutter_svg: ^2.3.0
 dev_dependencies:
   flutter_test:
